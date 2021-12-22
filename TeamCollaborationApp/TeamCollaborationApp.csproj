@@ -52,6 +52,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuPages">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
       <HintPath>..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
     </Reference>
