@@ -683,6 +683,7 @@ namespace TeamCollaborationApp
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmlogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team Collaboration";
             this.bunifuLoginPage.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
