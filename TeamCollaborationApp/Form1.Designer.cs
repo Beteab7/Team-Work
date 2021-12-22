@@ -447,10 +447,10 @@ namespace TeamCollaborationApp
             this.BunifuPage.Location = new System.Drawing.Point(166, 12);
             this.BunifuPage.Multiline = true;
             this.BunifuPage.Name = "BunifuPage";
-            this.BunifuPage.Page = this.JournalPage;
-            this.BunifuPage.PageIndex = 2;
-            this.BunifuPage.PageName = "JournalPage";
-            this.BunifuPage.PageTitle = "Journal";
+            this.BunifuPage.Page = this.ProjectPages;
+            this.BunifuPage.PageIndex = 1;
+            this.BunifuPage.PageName = "ProjectPages";
+            this.BunifuPage.PageTitle = "Project";
             this.BunifuPage.SelectedIndex = 0;
             this.BunifuPage.Size = new System.Drawing.Size(822, 549);
             this.BunifuPage.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
