@@ -342,9 +342,8 @@ namespace TeamCollaborationApp
             this.txtPassword.TabIndex = 5;
             this.txtPassword.Text = "Password";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPassword.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged_1);
-            this.txtPassword.Enter += new System.EventHandler(this.bunifuMaterialTextbox2_Enter);
-            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
+            this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             // 
             // txtUserName
             // 
@@ -369,8 +368,8 @@ namespace TeamCollaborationApp
             this.txtUserName.TabIndex = 4;
             this.txtUserName.Text = "User Name";
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUserName.OnValueChanged += new System.EventHandler(this.txtUserName_OnValueChanged);
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
-            this.txtUserName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuMaterialTextbox1_MouseClick);
             // 
             // bunifuPictureBox1
             // 

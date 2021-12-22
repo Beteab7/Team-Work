@@ -12,6 +12,7 @@ namespace TeamCollaborationApp
 {
     public partial class frmlogin : Form
     {
+        static bool change = false;
         public frmlogin()
         {
             InitializeComponent();
@@ -70,32 +71,42 @@ namespace TeamCollaborationApp
 
         }
 
-        private void bunifuMaterialTextbox1_MouseClick(object sender, MouseEventArgs e)
+        private void bunifuMaterialTextbox2_Enter(object sender, EventArgs e)
         {
-            txtUserName.Text = "";
+          
         }
 
         private void txtUserName_Enter(object sender, EventArgs e)
         {
-            txtUserName.Text = "";
-
-        }
-
-        private void bunifuMaterialTextbox2_Enter(object sender, EventArgs e)
-        {
-            txtUserName.Text = "";
-        }
-
-        private void bunifuMaterialTextbox2_OnValueChanged_1(object sender, EventArgs e)
-        {
             
+            if (change == false) {
+                txtUserName.Text = "";
+                change = true;
+                                 }
         }
 
-        private void txtPassword_MouseEnter(object sender, EventArgs e)
+        private void txtUserName_OnValueChanged(object sender, EventArgs e)
         {
-            txtPassword.Text = "";
-            if(txtPassword.Text != "")
-            txtPassword.isPassword = true;
+            string UserName = txtUserName.Text;
+            txtUserName.Text = UserName;
+        }
+
+        private void txtPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            string password = txtPassword.Text;
+            txtPassword.Text = password;
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            change = false;
+            if (change == false)
+            {
+                txtPassword.Text = "";
+                txtPassword.isPassword = true;
+                change = true;
+            }
+
         }
     }
 }
