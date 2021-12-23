@@ -91,10 +91,9 @@ namespace TeamCollaborationApp
             // 
             this.indicator.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.indicator.BackColor = System.Drawing.Color.DarkOrange;
-            this.indicator.Location = new System.Drawing.Point(4, 0);
-            this.indicator.Margin = new System.Windows.Forms.Padding(4);
+            this.indicator.Location = new System.Drawing.Point(3, 0);
             this.indicator.Name = "indicator";
-            this.indicator.Size = new System.Drawing.Size(4, 49);
+            this.indicator.Size = new System.Drawing.Size(3, 40);
             this.indicator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.indicator.TabIndex = 2;
             this.indicator.TabStop = false;
@@ -139,8 +138,7 @@ namespace TeamCollaborationApp
             this.btnReference.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnReference.IdleIconLeftImage")));
             this.btnReference.IdleIconRightImage = null;
             this.btnReference.IndicateFocus = false;
-            this.btnReference.Location = new System.Drawing.Point(0, 147);
-            this.btnReference.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReference.Location = new System.Drawing.Point(0, 117);
             this.btnReference.Name = "btnReference";
             stateProperties1.BorderColor = System.Drawing.Color.White;
             stateProperties1.BorderRadius = 3;
@@ -160,7 +158,7 @@ namespace TeamCollaborationApp
             stateProperties2.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("stateProperties2.IconLeftImage")));
             stateProperties2.IconRightImage = null;
             this.btnReference.OnPressedState = stateProperties2;
-            this.btnReference.Size = new System.Drawing.Size(145, 49);
+            this.btnReference.Size = new System.Drawing.Size(117, 39);
             this.btnReference.TabIndex = 5;
             this.btnReference.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnReference.TextMarginLeft = 0;
@@ -206,8 +204,7 @@ namespace TeamCollaborationApp
             this.btnJournal.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnJournal.IdleIconLeftImage")));
             this.btnJournal.IdleIconRightImage = null;
             this.btnJournal.IndicateFocus = true;
-            this.btnJournal.Location = new System.Drawing.Point(0, 98);
-            this.btnJournal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnJournal.Location = new System.Drawing.Point(0, 78);
             this.btnJournal.Name = "btnJournal";
             stateProperties3.BorderColor = System.Drawing.Color.White;
             stateProperties3.BorderRadius = 3;
@@ -227,7 +224,7 @@ namespace TeamCollaborationApp
             stateProperties4.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("stateProperties4.IconLeftImage")));
             stateProperties4.IconRightImage = null;
             this.btnJournal.OnPressedState = stateProperties4;
-            this.btnJournal.Size = new System.Drawing.Size(127, 49);
+            this.btnJournal.Size = new System.Drawing.Size(105, 39);
             this.btnJournal.TabIndex = 4;
             this.btnJournal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnJournal.TextMarginLeft = 0;
@@ -273,8 +270,7 @@ namespace TeamCollaborationApp
             this.btnProject.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnProject.IdleIconLeftImage")));
             this.btnProject.IdleIconRightImage = null;
             this.btnProject.IndicateFocus = true;
-            this.btnProject.Location = new System.Drawing.Point(0, 49);
-            this.btnProject.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProject.Location = new System.Drawing.Point(0, 39);
             this.btnProject.Name = "btnProject";
             stateProperties5.BorderColor = System.Drawing.Color.White;
             stateProperties5.BorderRadius = 3;
@@ -295,7 +291,7 @@ namespace TeamCollaborationApp
             stateProperties6.IconRightImage = null;
             this.btnProject.OnPressedState = stateProperties6;
             this.btnProject.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnProject.Size = new System.Drawing.Size(126, 49);
+            this.btnProject.Size = new System.Drawing.Size(102, 39);
             this.btnProject.TabIndex = 3;
             this.btnProject.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnProject.TextMarginLeft = 0;
@@ -341,8 +337,7 @@ namespace TeamCollaborationApp
             this.btnSetting.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnSetting.IdleIconLeftImage")));
             this.btnSetting.IdleIconRightImage = null;
             this.btnSetting.IndicateFocus = true;
-            this.btnSetting.Location = new System.Drawing.Point(0, 381);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetting.Location = new System.Drawing.Point(0, 310);
             this.btnSetting.Name = "btnSetting";
             stateProperties7.BorderColor = System.Drawing.Color.White;
             stateProperties7.BorderRadius = 3;
@@ -362,7 +357,7 @@ namespace TeamCollaborationApp
             stateProperties8.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("stateProperties8.IconLeftImage")));
             stateProperties8.IconRightImage = null;
             this.btnSetting.OnPressedState = stateProperties8;
-            this.btnSetting.Size = new System.Drawing.Size(125, 49);
+            this.btnSetting.Size = new System.Drawing.Size(103, 39);
             this.btnSetting.TabIndex = 6;
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSetting.TextMarginLeft = 0;
@@ -409,7 +404,6 @@ namespace TeamCollaborationApp
             this.btnStart.IdleIconRightImage = null;
             this.btnStart.IndicateFocus = true;
             this.btnStart.Location = new System.Drawing.Point(0, 0);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             stateProperties9.BorderColor = System.Drawing.Color.White;
             stateProperties9.BorderRadius = 3;
@@ -430,7 +424,7 @@ namespace TeamCollaborationApp
             stateProperties10.IconRightImage = null;
             this.btnStart.OnPressedState = stateProperties10;
             this.btnStart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnStart.Size = new System.Drawing.Size(180, 49);
+            this.btnStart.Size = new System.Drawing.Size(145, 39);
             this.btnStart.TabIndex = 1;
             this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnStart.TextMarginLeft = 0;
@@ -450,8 +444,7 @@ namespace TeamCollaborationApp
             this.BunifuPage.Controls.Add(this.JournalPage);
             this.BunifuPage.Controls.Add(this.ReferencePage);
             this.BunifuPage.Controls.Add(this.SettingPage);
-            this.BunifuPage.Location = new System.Drawing.Point(221, 15);
-            this.BunifuPage.Margin = new System.Windows.Forms.Padding(4);
+            this.BunifuPage.Location = new System.Drawing.Point(166, 12);
             this.BunifuPage.Multiline = true;
             this.BunifuPage.Name = "BunifuPage";
             this.BunifuPage.Page = this.ProjectPages;
@@ -459,7 +452,7 @@ namespace TeamCollaborationApp
             this.BunifuPage.PageName = "ProjectPages";
             this.BunifuPage.PageTitle = "Project";
             this.BunifuPage.SelectedIndex = 0;
-            this.BunifuPage.Size = new System.Drawing.Size(1096, 676);
+            this.BunifuPage.Size = new System.Drawing.Size(822, 549);
             this.BunifuPage.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.BunifuPage.TabIndex = 1;
             this.BunifuPage.TabStop = false;
@@ -487,10 +480,9 @@ namespace TeamCollaborationApp
             this.StartPage.Controls.Add(this.lblWelcome);
             this.StartPage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartPage.Location = new System.Drawing.Point(4, 4);
-            this.StartPage.Margin = new System.Windows.Forms.Padding(4);
             this.StartPage.Name = "StartPage";
-            this.StartPage.Padding = new System.Windows.Forms.Padding(4);
-            this.StartPage.Size = new System.Drawing.Size(1088, 647);
+            this.StartPage.Padding = new System.Windows.Forms.Padding(3);
+            this.StartPage.Size = new System.Drawing.Size(814, 523);
             this.StartPage.TabIndex = 0;
             this.StartPage.Text = "Welcome";
             // 
@@ -498,10 +490,9 @@ namespace TeamCollaborationApp
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblWelcome.Location = new System.Drawing.Point(48, 39);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(36, 32);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(99, 28);
+            this.lblWelcome.Size = new System.Drawing.Size(82, 21);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome";
             // 
@@ -510,10 +501,9 @@ namespace TeamCollaborationApp
             this.ProjectPages.BackColor = System.Drawing.Color.White;
             this.ProjectPages.Controls.Add(this.lblMember);
             this.ProjectPages.Location = new System.Drawing.Point(4, 4);
-            this.ProjectPages.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectPages.Name = "ProjectPages";
-            this.ProjectPages.Padding = new System.Windows.Forms.Padding(4);
-            this.ProjectPages.Size = new System.Drawing.Size(1088, 647);
+            this.ProjectPages.Padding = new System.Windows.Forms.Padding(3);
+            this.ProjectPages.Size = new System.Drawing.Size(814, 523);
             this.ProjectPages.TabIndex = 1;
             this.ProjectPages.Text = "Project";
             this.ProjectPages.Click += new System.EventHandler(this.tabPage2_Click);
@@ -523,10 +513,9 @@ namespace TeamCollaborationApp
             this.lblMember.AutoSize = true;
             this.lblMember.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMember.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblMember.Location = new System.Drawing.Point(33, 41);
-            this.lblMember.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMember.Location = new System.Drawing.Point(25, 33);
             this.lblMember.Name = "lblMember";
-            this.lblMember.Size = new System.Drawing.Size(100, 28);
+            this.lblMember.Size = new System.Drawing.Size(81, 21);
             this.lblMember.TabIndex = 1;
             this.lblMember.Text = "Members";
             // 
@@ -534,10 +523,9 @@ namespace TeamCollaborationApp
             // 
             this.JournalPage.Controls.Add(this.lblJournal);
             this.JournalPage.Location = new System.Drawing.Point(4, 4);
-            this.JournalPage.Margin = new System.Windows.Forms.Padding(4);
             this.JournalPage.Name = "JournalPage";
-            this.JournalPage.Padding = new System.Windows.Forms.Padding(4);
-            this.JournalPage.Size = new System.Drawing.Size(1088, 647);
+            this.JournalPage.Padding = new System.Windows.Forms.Padding(3);
+            this.JournalPage.Size = new System.Drawing.Size(814, 523);
             this.JournalPage.TabIndex = 2;
             this.JournalPage.Text = "Journal";
             this.JournalPage.UseVisualStyleBackColor = true;
@@ -548,10 +536,9 @@ namespace TeamCollaborationApp
             this.lblJournal.AutoSize = true;
             this.lblJournal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJournal.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblJournal.Location = new System.Drawing.Point(43, 55);
-            this.lblJournal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblJournal.Location = new System.Drawing.Point(32, 45);
             this.lblJournal.Name = "lblJournal";
-            this.lblJournal.Size = new System.Drawing.Size(82, 28);
+            this.lblJournal.Size = new System.Drawing.Size(67, 21);
             this.lblJournal.TabIndex = 1;
             this.lblJournal.Text = "Journal";
             // 
@@ -559,10 +546,9 @@ namespace TeamCollaborationApp
             // 
             this.ReferencePage.Controls.Add(this.lblReference);
             this.ReferencePage.Location = new System.Drawing.Point(4, 4);
-            this.ReferencePage.Margin = new System.Windows.Forms.Padding(4);
             this.ReferencePage.Name = "ReferencePage";
-            this.ReferencePage.Padding = new System.Windows.Forms.Padding(4);
-            this.ReferencePage.Size = new System.Drawing.Size(1088, 647);
+            this.ReferencePage.Padding = new System.Windows.Forms.Padding(3);
+            this.ReferencePage.Size = new System.Drawing.Size(814, 523);
             this.ReferencePage.TabIndex = 3;
             this.ReferencePage.Text = "Reference";
             this.ReferencePage.UseVisualStyleBackColor = true;
@@ -572,10 +558,9 @@ namespace TeamCollaborationApp
             this.lblReference.AutoSize = true;
             this.lblReference.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReference.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblReference.Location = new System.Drawing.Point(43, 42);
-            this.lblReference.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReference.Location = new System.Drawing.Point(32, 34);
             this.lblReference.Name = "lblReference";
-            this.lblReference.Size = new System.Drawing.Size(107, 28);
+            this.lblReference.Size = new System.Drawing.Size(86, 21);
             this.lblReference.TabIndex = 1;
             this.lblReference.Text = "Reference";
             // 
@@ -585,10 +570,9 @@ namespace TeamCollaborationApp
             this.SettingPage.Controls.Add(this.lblSetting);
             this.SettingPage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingPage.Location = new System.Drawing.Point(4, 4);
-            this.SettingPage.Margin = new System.Windows.Forms.Padding(4);
             this.SettingPage.Name = "SettingPage";
-            this.SettingPage.Padding = new System.Windows.Forms.Padding(4);
-            this.SettingPage.Size = new System.Drawing.Size(1088, 647);
+            this.SettingPage.Padding = new System.Windows.Forms.Padding(3);
+            this.SettingPage.Size = new System.Drawing.Size(814, 523);
             this.SettingPage.TabIndex = 4;
             this.SettingPage.Text = "Setting";
             this.SettingPage.UseVisualStyleBackColor = true;
@@ -598,10 +582,9 @@ namespace TeamCollaborationApp
             this.lblSetting.AutoSize = true;
             this.lblSetting.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSetting.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblSetting.Location = new System.Drawing.Point(29, 50);
-            this.lblSetting.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSetting.Location = new System.Drawing.Point(22, 41);
             this.lblSetting.Name = "lblSetting";
-            this.lblSetting.Size = new System.Drawing.Size(80, 28);
+            this.lblSetting.Size = new System.Drawing.Size(65, 21);
             this.lblSetting.TabIndex = 1;
             this.lblSetting.Text = "Setting";
             // 
@@ -653,12 +636,11 @@ namespace TeamCollaborationApp
             this.shadowPanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.shadowPanelMenu.ForeColor = System.Drawing.Color.DarkGreen;
             this.shadowPanelMenu.Location = new System.Drawing.Point(0, 0);
-            this.shadowPanelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.shadowPanelMenu.Name = "shadowPanelMenu";
             this.shadowPanelMenu.PanelColor = System.Drawing.Color.Empty;
             this.shadowPanelMenu.ShadowDept = 2;
             this.shadowPanelMenu.ShadowTopLeftVisible = false;
-            this.shadowPanelMenu.Size = new System.Drawing.Size(239, 690);
+            this.shadowPanelMenu.Size = new System.Drawing.Size(179, 561);
             this.shadowPanelMenu.TabIndex = 4;
             // 
             // panel1
@@ -670,9 +652,8 @@ namespace TeamCollaborationApp
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(235, 690);
+            this.panel1.Size = new System.Drawing.Size(176, 561);
             this.panel1.TabIndex = 0;
             // 
             // bunifuLabel1
@@ -684,11 +665,10 @@ namespace TeamCollaborationApp
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bunifuLabel1.Location = new System.Drawing.Point(63, 177);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(47, 144);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(116, 28);
+            this.bunifuLabel1.Size = new System.Drawing.Size(87, 23);
             this.bunifuLabel1.TabIndex = 10;
             this.bunifuLabel1.Text = "User Name";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -702,10 +682,9 @@ namespace TeamCollaborationApp
             this.bunifuPictureBox2.BorderRadius = 43;
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
             this.bunifuPictureBox2.IsCircle = false;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(63, 55);
-            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(47, 45);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(116, 116);
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(87, 87);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox2.TabIndex = 9;
             this.bunifuPictureBox2.TabStop = false;
@@ -751,7 +730,6 @@ namespace TeamCollaborationApp
             this.btnMenu.IdleIconRightImage = null;
             this.btnMenu.IndicateFocus = false;
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
             stateProperties11.BorderColor = System.Drawing.Color.White;
             stateProperties11.BorderRadius = 3;
@@ -771,7 +749,7 @@ namespace TeamCollaborationApp
             stateProperties12.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("stateProperties12.IconLeftImage")));
             stateProperties12.IconRightImage = null;
             this.btnMenu.OnPressedState = stateProperties12;
-            this.btnMenu.Size = new System.Drawing.Size(115, 49);
+            this.btnMenu.Size = new System.Drawing.Size(97, 39);
             this.btnMenu.TabIndex = 7;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMenu.TextMarginLeft = 0;
@@ -788,10 +766,9 @@ namespace TeamCollaborationApp
             this.panel2.Controls.Add(this.btnProject);
             this.panel2.Controls.Add(this.btnSetting);
             this.panel2.Controls.Add(this.btnStart);
-            this.panel2.Location = new System.Drawing.Point(0, 234);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(0, 190);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(231, 430);
+            this.panel2.Size = new System.Drawing.Size(173, 349);
             this.panel2.TabIndex = 8;
             // 
             // topPanel
@@ -804,27 +781,25 @@ namespace TeamCollaborationApp
             this.topPanel.GradientBottomRight = System.Drawing.Color.White;
             this.topPanel.GradientTopLeft = System.Drawing.Color.White;
             this.topPanel.GradientTopRight = System.Drawing.Color.White;
-            this.topPanel.Location = new System.Drawing.Point(233, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.topPanel.Location = new System.Drawing.Point(175, 0);
             this.topPanel.Name = "topPanel";
             this.topPanel.Quality = 10;
-            this.topPanel.Size = new System.Drawing.Size(1079, 33);
+            this.topPanel.Size = new System.Drawing.Size(809, 27);
             this.topPanel.TabIndex = 5;
             // 
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.shadowPanelMenu);
             this.Controls.Add(this.BunifuPage);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
