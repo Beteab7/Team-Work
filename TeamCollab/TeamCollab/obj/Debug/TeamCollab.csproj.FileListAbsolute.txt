@@ -1,0 +1,12 @@
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\bin\Debug\TeamCollab.exe.config
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\bin\Debug\TeamCollab.exe
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\bin\Debug\TeamCollab.pdb
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.csproj.AssemblyReference.cache
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.csproj.SuggestedBindingRedirects.cache
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.Form1.resources
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.Properties.Resources.resources
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.csproj.GenerateResource.cache
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.csproj.CoreCompileInputs.cache
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.exe
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.pdb
+C:\Users\esube\source\repos\TeamCollab\TeamCollab\obj\Debug\TeamCollab.Getting_Started.resources
