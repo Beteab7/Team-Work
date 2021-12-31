@@ -90,10 +90,10 @@ namespace TeamCollaborationApp
             this.bunifuLoginPage.Location = new System.Drawing.Point(328, 0);
             this.bunifuLoginPage.Multiline = true;
             this.bunifuLoginPage.Name = "bunifuLoginPage";
-            this.bunifuLoginPage.Page = this.tabPage2;
-            this.bunifuLoginPage.PageIndex = 1;
-            this.bunifuLoginPage.PageName = "tabPage2";
-            this.bunifuLoginPage.PageTitle = "SignUpPage";
+            this.bunifuLoginPage.Page = this.tabPage1;
+            this.bunifuLoginPage.PageIndex = 0;
+            this.bunifuLoginPage.PageName = "tabPage1";
+            this.bunifuLoginPage.PageTitle = "";
             this.bunifuLoginPage.SelectedIndex = 0;
             this.bunifuLoginPage.Size = new System.Drawing.Size(412, 454);
             this.bunifuLoginPage.TabIndex = 1;
@@ -129,7 +129,6 @@ namespace TeamCollaborationApp
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(404, 428);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "LoginPage";
             // 
             // bunifuButton3
             // 
@@ -294,8 +293,8 @@ namespace TeamCollaborationApp
             this.btnStart.IdleBorderRadius = 3;
             this.btnStart.IdleBorderThickness = 1;
             this.btnStart.IdleFillColor = System.Drawing.Color.White;
-            this.btnStart.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnStart.IdleIconLeftImage")));
-            this.btnStart.IdleIconRightImage = null;
+            this.btnStart.IdleIconLeftImage = null;
+            this.btnStart.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnStart.IdleIconRightImage")));
             this.btnStart.IndicateFocus = true;
             this.btnStart.Location = new System.Drawing.Point(39, 339);
             this.btnStart.Name = "btnStart";
@@ -335,7 +334,7 @@ namespace TeamCollaborationApp
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.HintForeColor = System.Drawing.Color.DimGray;
             this.txtPassword.HintText = "Password...";
-            this.txtPassword.isPassword = false;
+            this.txtPassword.isPassword = true;
             this.txtPassword.LineFocusedColor = System.Drawing.Color.DarkOrange;
             this.txtPassword.LineIdleColor = System.Drawing.Color.DarkGray;
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
@@ -346,6 +345,7 @@ namespace TeamCollaborationApp
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(290, 33);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.TabStop = false;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);

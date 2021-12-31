@@ -41,9 +41,17 @@ namespace TeamCollaborationApp
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Form1 obj = new Form1();
-            this.Hide();
-            obj.Show();
+            User u = new User();
+            bool value = u.authentication(txtUserName.Text, txtPassword.Text);
+            if (value == true)
+            {
+                Form1 obj = new Form1();
+                this.Hide();
+                obj.Show();
+            }
+            else
+                MessageBox.Show("Invalid Username or Password");
+
         }
 
         private void bunifuButton2_Click_1(object sender, EventArgs e)
@@ -142,15 +150,13 @@ namespace TeamCollaborationApp
             if (txtSignUpRepeatPassword.Text != "")
                 txtSignUpRepeatPassword.LineIdleColor = Color.DarkGray;
 
-
-
-
-
-
-
-
             if (txtSignUpPassword.Text.CompareTo(txtSignUpRepeatPassword.Text) != 0)
                 MessageBox.Show("Incorrect Password");
+            else
+            {
+                User u = new User(txtSignupFullName.Text, txtSignUpEmail.Text, txtSignUpUserName.Text, txtSignUpPassword.Text);
+                u.saveUser();
+            }
         }
     }
 }
