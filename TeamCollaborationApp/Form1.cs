@@ -120,7 +120,7 @@ namespace TeamCollaborationApp
         {
             if (minMenu == false)
             {
-                this.panel1.Size = new System.Drawing.Size(41, 450);
+               this.panel1.Size = new System.Drawing.Size(41, 450);
                 shadowPanelMenu.Width = 45;
                 shadowPanelMenu.Height = 561;
 

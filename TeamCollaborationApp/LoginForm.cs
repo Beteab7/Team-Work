@@ -48,12 +48,11 @@ namespace TeamCollaborationApp
 
         private void bunifuButton2_Click_1(object sender, EventArgs e)
         {
-            bunifuLoginPage.SetPage("LoginPage");
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-            bunifuLoginPage.SetPage("RegisterPage");
+            bunifuLoginPage.SetPage("SignUpPage");
         }
 
         private void bunifuMaterialTextbox4_OnValueChanged(object sender, EventArgs e)
@@ -78,35 +77,80 @@ namespace TeamCollaborationApp
 
         private void txtUserName_Enter(object sender, EventArgs e)
         {
-            
-            if (change == false) {
-                txtUserName.Text = "";
-                change = true;
-                                 }
+     
         }
 
         private void txtUserName_OnValueChanged(object sender, EventArgs e)
         {
-            string UserName = txtUserName.Text;
-            txtUserName.Text = UserName;
+           
         }
 
         private void txtPassword_OnValueChanged(object sender, EventArgs e)
         {
-            string password = txtPassword.Text;
-            txtPassword.Text = password;
+           
         }
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-            change = false;
-            if (change == false)
-            {
-                txtPassword.Text = "";
-                txtPassword.isPassword = true;
-                change = true;
-            }
+          
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            bunifuLoginPage.SetPage("LoginPage");
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            if (txtSignupFullName.Text == "")
+                txtSignupFullName.LineIdleColor = Color.Red;
+            if (txtSignUpEmail.Text == "")
+                txtSignUpEmail.LineIdleColor = Color.Red;
+            if (txtSignUpUserName.Text == "")
+                txtSignUpUserName.LineIdleColor = Color.Red;
+            if (txtSignUpPassword.Text == "")
+                txtSignUpPassword.LineIdleColor = Color.Red;
+            if (txtSignUpRepeatPassword.Text == "")
+                txtSignUpRepeatPassword.LineIdleColor = Color.Red;
+
+
+
+            if (txtSignupFullName.Text != "")
+                txtSignupFullName.LineIdleColor = Color.DarkGray;
+            if (txtSignUpEmail.Text != "")
+                txtSignUpEmail.LineIdleColor = Color.DarkGray;
+            if (txtSignUpUserName.Text != "")
+                txtSignUpUserName.LineIdleColor = Color.DarkGray;
+            if (txtSignUpPassword.Text != "")
+                txtSignUpPassword.LineIdleColor = Color.DarkGray;
+            if (txtSignUpRepeatPassword.Text != "")
+                txtSignUpRepeatPassword.LineIdleColor = Color.DarkGray;
+
+
+
+
+
+
+
+
+            if (txtSignUpPassword.Text.CompareTo(txtSignUpRepeatPassword.Text) != 0)
+                MessageBox.Show("Incorrect Password");
         }
     }
 }
