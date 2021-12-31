@@ -136,7 +136,7 @@
         +DcQt0OVDwrAwAAAD1lrxamqG9kAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="stateProperties14.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties2.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAItJREFUOE9j
         GFwgJiamOzo6+jsQ/0fDP4HYGqoMN4Aq5INy4QBqyLPIyEgbqBB2AFIIZaIAkDjQdUZA+klUVJQLVBgT
@@ -161,7 +161,7 @@
         FICBAQA+bGI4/IELpQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="stateProperties16.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties4.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAEhJREFUOE9j
         GFwgJiamOzo6+jsQ/8eHocoxAVDyJxDzQblYASEDcEtCwagBQ8IAIKY4IclAuaQDoOYuIP4DsgUfhiof
@@ -201,7 +201,7 @@
         L601wRve/8uj8DPILzdYyaSjJtTU1NTU/L8MDPwDnEB51iTkW7MAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="stateProperties18.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties6.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABCFJREFUeF7t
         mktrFEEQx3MRBDEYjM98lgTxKHjwEczmRcghn0DES4gK5tOYk3jwIKKCYnznIepJkBxEMD4RRIz/Wv49
@@ -245,7 +245,7 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="stateProperties20.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties8.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAASVJREFUOE/N
         k71Kw3AUxbO4KA7utn48VcjXkCEv4OJQsBV9BKs0IA6ttKigo5W8j1Do0A5mq78TroEkRifBA4d7z7n3
@@ -276,7 +276,7 @@
         2RwaavXQdodzGykxfTRdHE3WAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="stateProperties22.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties10.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQFJREFUOE+9
         kk1OAkEUhBvc6uwId9AYT2E4wQTmx81wAb3BLPQKcghPgEqIIbhQt8awhr3RRF3C9zK1c4aeCQmVVPpV
@@ -286,35 +286,35 @@
         2RwaavXQdodzGykxfTRdHE3WAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="animation2.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation2.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation2.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation2.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation2.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
@@ -391,7 +391,7 @@
         GBwgOjr6P6kYqnUUwAC2QCKEoVpHAQxgCyRCGKp16AMGBgAjYFBxv7pROgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="stateProperties24.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties12.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACpJREFUOE9j
         GBwgOjr6P6kYqnUUwAC2QCKEoVpHAQxgCyRCGKp16AMGBgAjYFBxv7pROgAAAABJRU5ErkJggg==

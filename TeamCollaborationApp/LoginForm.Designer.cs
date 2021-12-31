@@ -40,12 +40,12 @@ namespace TeamCollaborationApp
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuLoginPage = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -55,6 +55,13 @@ namespace TeamCollaborationApp
             this.txtUserName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnSignIn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.txtSignUpRepeatPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSignUpPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSignUpUserName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.btnSignUp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -65,13 +72,6 @@ namespace TeamCollaborationApp
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSignUpUserName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSignUpPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSignUpRepeatPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnSignIn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLoginPage.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -90,10 +90,10 @@ namespace TeamCollaborationApp
             this.bunifuLoginPage.Location = new System.Drawing.Point(328, 0);
             this.bunifuLoginPage.Multiline = true;
             this.bunifuLoginPage.Name = "bunifuLoginPage";
-            this.bunifuLoginPage.Page = this.tabPage1;
-            this.bunifuLoginPage.PageIndex = 0;
-            this.bunifuLoginPage.PageName = "tabPage1";
-            this.bunifuLoginPage.PageTitle = "";
+            this.bunifuLoginPage.Page = this.tabPage2;
+            this.bunifuLoginPage.PageIndex = 1;
+            this.bunifuLoginPage.PageName = "tabPage2";
+            this.bunifuLoginPage.PageTitle = "SignUpPage";
             this.bunifuLoginPage.SelectedIndex = 0;
             this.bunifuLoginPage.Size = new System.Drawing.Size(412, 454);
             this.bunifuLoginPage.TabIndex = 1;
@@ -129,6 +129,7 @@ namespace TeamCollaborationApp
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(404, 428);
             this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "LoginPage";
             // 
             // bunifuButton3
             // 
@@ -414,6 +415,179 @@ namespace TeamCollaborationApp
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "SignUpPage";
             // 
+            // btnSignIn
+            // 
+            this.btnSignIn.AllowToggling = true;
+            this.btnSignIn.AnimationSpeed = 200;
+            this.btnSignIn.AutoGenerateColors = false;
+            this.btnSignIn.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignIn.BackColor1 = System.Drawing.Color.White;
+            this.btnSignIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.BackgroundImage")));
+            this.btnSignIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSignIn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSignIn.ButtonText = "Sign in";
+            this.btnSignIn.ButtonTextMarginLeft = 0;
+            this.btnSignIn.ColorContrastOnClick = 45;
+            this.btnSignIn.ColorContrastOnHover = 80;
+            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnSignIn.CustomizableEdges = borderEdges4;
+            this.btnSignIn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSignIn.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.btnSignIn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSignIn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSignIn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnSignIn.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignIn.IconMarginLeft = 15;
+            this.btnSignIn.IconPadding = 7;
+            this.btnSignIn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignIn.IdleBorderColor = System.Drawing.Color.White;
+            this.btnSignIn.IdleBorderRadius = 25;
+            this.btnSignIn.IdleBorderThickness = 1;
+            this.btnSignIn.IdleFillColor = System.Drawing.Color.White;
+            this.btnSignIn.IdleIconLeftImage = null;
+            this.btnSignIn.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.IdleIconRightImage")));
+            this.btnSignIn.IndicateFocus = true;
+            this.btnSignIn.Location = new System.Drawing.Point(229, 390);
+            this.btnSignIn.Name = "btnSignIn";
+            stateProperties7.BorderColor = System.Drawing.Color.White;
+            stateProperties7.BorderRadius = 25;
+            stateProperties7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties7.BorderThickness = 1;
+            stateProperties7.FillColor = System.Drawing.Color.White;
+            stateProperties7.ForeColor = System.Drawing.Color.DimGray;
+            stateProperties7.IconLeftImage = null;
+            stateProperties7.IconRightImage = null;
+            this.btnSignIn.onHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.White;
+            stateProperties8.BorderRadius = 25;
+            stateProperties8.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties8.BorderThickness = 1;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.DimGray;
+            stateProperties8.IconLeftImage = null;
+            stateProperties8.IconRightImage = null;
+            this.btnSignIn.OnPressedState = stateProperties8;
+            this.btnSignIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnSignIn.Size = new System.Drawing.Size(94, 32);
+            this.btnSignIn.TabIndex = 18;
+            this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSignIn.TextMarginLeft = 0;
+            this.btnSignIn.UseDefaultRadiusAndThickness = true;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            // 
+            // txtSignUpRepeatPassword
+            // 
+            this.txtSignUpRepeatPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSignUpRepeatPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtSignUpRepeatPassword.AutoSize = true;
+            this.txtSignUpRepeatPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSignUpRepeatPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSignUpRepeatPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSignUpRepeatPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSignUpRepeatPassword.HintForeColor = System.Drawing.Color.Gray;
+            this.txtSignUpRepeatPassword.HintText = "*********";
+            this.txtSignUpRepeatPassword.isPassword = true;
+            this.txtSignUpRepeatPassword.LineFocusedColor = System.Drawing.Color.DarkOrange;
+            this.txtSignUpRepeatPassword.LineIdleColor = System.Drawing.Color.DarkGray;
+            this.txtSignUpRepeatPassword.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
+            this.txtSignUpRepeatPassword.LineThickness = 3;
+            this.txtSignUpRepeatPassword.Location = new System.Drawing.Point(20, 349);
+            this.txtSignUpRepeatPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSignUpRepeatPassword.MaxLength = 32767;
+            this.txtSignUpRepeatPassword.Name = "txtSignUpRepeatPassword";
+            this.txtSignUpRepeatPassword.Size = new System.Drawing.Size(180, 27);
+            this.txtSignUpRepeatPassword.TabIndex = 17;
+            this.txtSignUpRepeatPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(17, 330);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 15);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Repeat Password";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txtSignUpPassword
+            // 
+            this.txtSignUpPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSignUpPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtSignUpPassword.AutoSize = true;
+            this.txtSignUpPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSignUpPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSignUpPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSignUpPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSignUpPassword.HintForeColor = System.Drawing.Color.Gray;
+            this.txtSignUpPassword.HintText = "*********";
+            this.txtSignUpPassword.isPassword = true;
+            this.txtSignUpPassword.LineFocusedColor = System.Drawing.Color.DarkOrange;
+            this.txtSignUpPassword.LineIdleColor = System.Drawing.Color.DarkGray;
+            this.txtSignUpPassword.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
+            this.txtSignUpPassword.LineThickness = 3;
+            this.txtSignUpPassword.Location = new System.Drawing.Point(20, 283);
+            this.txtSignUpPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSignUpPassword.MaxLength = 32767;
+            this.txtSignUpPassword.Name = "txtSignUpPassword";
+            this.txtSignUpPassword.Size = new System.Drawing.Size(180, 27);
+            this.txtSignUpPassword.TabIndex = 15;
+            this.txtSignUpPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(18, 264);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 15);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Password";
+            // 
+            // txtSignUpUserName
+            // 
+            this.txtSignUpUserName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSignUpUserName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtSignUpUserName.AutoSize = true;
+            this.txtSignUpUserName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSignUpUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSignUpUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSignUpUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSignUpUserName.HintForeColor = System.Drawing.Color.Gray;
+            this.txtSignUpUserName.HintText = "Username...";
+            this.txtSignUpUserName.isPassword = false;
+            this.txtSignUpUserName.LineFocusedColor = System.Drawing.Color.DarkOrange;
+            this.txtSignUpUserName.LineIdleColor = System.Drawing.Color.DarkGray;
+            this.txtSignUpUserName.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
+            this.txtSignUpUserName.LineThickness = 3;
+            this.txtSignUpUserName.Location = new System.Drawing.Point(20, 220);
+            this.txtSignUpUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSignUpUserName.MaxLength = 32767;
+            this.txtSignUpUserName.Name = "txtSignUpUserName";
+            this.txtSignUpUserName.Size = new System.Drawing.Size(180, 27);
+            this.txtSignUpUserName.TabIndex = 13;
+            this.txtSignUpUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(21, 201);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 15);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Username";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -523,7 +697,7 @@ namespace TeamCollaborationApp
             this.txtSignUpEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtSignUpEmail.MaxLength = 32767;
             this.txtSignUpEmail.Name = "txtSignUpEmail";
-            this.txtSignUpEmail.Size = new System.Drawing.Size(180, 26);
+            this.txtSignUpEmail.Size = new System.Drawing.Size(180, 27);
             this.txtSignUpEmail.TabIndex = 6;
             this.txtSignUpEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSignUpEmail.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox4_OnValueChanged);
@@ -610,179 +784,6 @@ namespace TeamCollaborationApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 451);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(21, 201);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 15);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Username";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // txtSignUpUserName
-            // 
-            this.txtSignUpUserName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtSignUpUserName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtSignUpUserName.AutoSize = true;
-            this.txtSignUpUserName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtSignUpUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSignUpUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSignUpUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSignUpUserName.HintForeColor = System.Drawing.Color.Gray;
-            this.txtSignUpUserName.HintText = "Username...";
-            this.txtSignUpUserName.isPassword = false;
-            this.txtSignUpUserName.LineFocusedColor = System.Drawing.Color.DarkOrange;
-            this.txtSignUpUserName.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.txtSignUpUserName.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
-            this.txtSignUpUserName.LineThickness = 3;
-            this.txtSignUpUserName.Location = new System.Drawing.Point(20, 220);
-            this.txtSignUpUserName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSignUpUserName.MaxLength = 32767;
-            this.txtSignUpUserName.Name = "txtSignUpUserName";
-            this.txtSignUpUserName.Size = new System.Drawing.Size(180, 27);
-            this.txtSignUpUserName.TabIndex = 13;
-            this.txtSignUpUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(18, 264);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 15);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Password";
-            // 
-            // txtSignUpPassword
-            // 
-            this.txtSignUpPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtSignUpPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtSignUpPassword.AutoSize = true;
-            this.txtSignUpPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtSignUpPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSignUpPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSignUpPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSignUpPassword.HintForeColor = System.Drawing.Color.Gray;
-            this.txtSignUpPassword.HintText = "*********";
-            this.txtSignUpPassword.isPassword = true;
-            this.txtSignUpPassword.LineFocusedColor = System.Drawing.Color.DarkOrange;
-            this.txtSignUpPassword.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.txtSignUpPassword.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
-            this.txtSignUpPassword.LineThickness = 3;
-            this.txtSignUpPassword.Location = new System.Drawing.Point(20, 283);
-            this.txtSignUpPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSignUpPassword.MaxLength = 32767;
-            this.txtSignUpPassword.Name = "txtSignUpPassword";
-            this.txtSignUpPassword.Size = new System.Drawing.Size(180, 27);
-            this.txtSignUpPassword.TabIndex = 15;
-            this.txtSignUpPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(17, 330);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 15);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Repeat Password";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txtSignUpRepeatPassword
-            // 
-            this.txtSignUpRepeatPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtSignUpRepeatPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtSignUpRepeatPassword.AutoSize = true;
-            this.txtSignUpRepeatPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtSignUpRepeatPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSignUpRepeatPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSignUpRepeatPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSignUpRepeatPassword.HintForeColor = System.Drawing.Color.Gray;
-            this.txtSignUpRepeatPassword.HintText = "*********";
-            this.txtSignUpRepeatPassword.isPassword = true;
-            this.txtSignUpRepeatPassword.LineFocusedColor = System.Drawing.Color.DarkOrange;
-            this.txtSignUpRepeatPassword.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.txtSignUpRepeatPassword.LineMouseHoverColor = System.Drawing.Color.DarkOrange;
-            this.txtSignUpRepeatPassword.LineThickness = 3;
-            this.txtSignUpRepeatPassword.Location = new System.Drawing.Point(20, 349);
-            this.txtSignUpRepeatPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSignUpRepeatPassword.MaxLength = 32767;
-            this.txtSignUpRepeatPassword.Name = "txtSignUpRepeatPassword";
-            this.txtSignUpRepeatPassword.Size = new System.Drawing.Size(180, 27);
-            this.txtSignUpRepeatPassword.TabIndex = 17;
-            this.txtSignUpRepeatPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // btnSignIn
-            // 
-            this.btnSignIn.AllowToggling = true;
-            this.btnSignIn.AnimationSpeed = 200;
-            this.btnSignIn.AutoGenerateColors = false;
-            this.btnSignIn.BackColor = System.Drawing.Color.Transparent;
-            this.btnSignIn.BackColor1 = System.Drawing.Color.White;
-            this.btnSignIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.BackgroundImage")));
-            this.btnSignIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSignIn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSignIn.ButtonText = "Sign in";
-            this.btnSignIn.ButtonTextMarginLeft = 0;
-            this.btnSignIn.ColorContrastOnClick = 45;
-            this.btnSignIn.ColorContrastOnHover = 80;
-            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnSignIn.CustomizableEdges = borderEdges4;
-            this.btnSignIn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSignIn.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.btnSignIn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSignIn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSignIn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnSignIn.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignIn.IconMarginLeft = 15;
-            this.btnSignIn.IconPadding = 7;
-            this.btnSignIn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignIn.IdleBorderColor = System.Drawing.Color.White;
-            this.btnSignIn.IdleBorderRadius = 25;
-            this.btnSignIn.IdleBorderThickness = 1;
-            this.btnSignIn.IdleFillColor = System.Drawing.Color.White;
-            this.btnSignIn.IdleIconLeftImage = null;
-            this.btnSignIn.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.IdleIconRightImage")));
-            this.btnSignIn.IndicateFocus = true;
-            this.btnSignIn.Location = new System.Drawing.Point(229, 390);
-            this.btnSignIn.Name = "btnSignIn";
-            stateProperties7.BorderColor = System.Drawing.Color.White;
-            stateProperties7.BorderRadius = 25;
-            stateProperties7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties7.BorderThickness = 1;
-            stateProperties7.FillColor = System.Drawing.Color.White;
-            stateProperties7.ForeColor = System.Drawing.Color.DimGray;
-            stateProperties7.IconLeftImage = null;
-            stateProperties7.IconRightImage = null;
-            this.btnSignIn.onHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.White;
-            stateProperties8.BorderRadius = 25;
-            stateProperties8.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties8.BorderThickness = 1;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.DimGray;
-            stateProperties8.IconLeftImage = null;
-            stateProperties8.IconRightImage = null;
-            this.btnSignIn.OnPressedState = stateProperties8;
-            this.btnSignIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnSignIn.Size = new System.Drawing.Size(94, 32);
-            this.btnSignIn.TabIndex = 18;
-            this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSignIn.TextMarginLeft = 0;
-            this.btnSignIn.UseDefaultRadiusAndThickness = true;
-            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // frmlogin
             // 
