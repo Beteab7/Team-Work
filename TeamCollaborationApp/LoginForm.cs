@@ -42,15 +42,7 @@ namespace TeamCollaborationApp
         private void btnStart_Click(object sender, EventArgs e)
         {
             User u = new User();
-            bool value = u.authentication(txtUserName.Text, txtPassword.Text);
-            if (value == true)
-            {
-                Form1 obj = new Form1();
-                this.Hide();
-                obj.Show();
-            }
-            else
-                MessageBox.Show("Invalid Username or Password");
+            u.authentication(txtUserName.Text, txtPassword.Text,this);
 
         }
 
@@ -126,18 +118,19 @@ namespace TeamCollaborationApp
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            if (txtSignupFullName.Text == "")
-                txtSignupFullName.LineIdleColor = Color.Red;
-            if (txtSignUpEmail.Text == "")
-                txtSignUpEmail.LineIdleColor = Color.Red;
-            if (txtSignUpUserName.Text == "")
-                txtSignUpUserName.LineIdleColor = Color.Red;
-            if (txtSignUpPassword.Text == "")
-                txtSignUpPassword.LineIdleColor = Color.Red;
-            if (txtSignUpRepeatPassword.Text == "")
-                txtSignUpRepeatPassword.LineIdleColor = Color.Red;
+           
+                if (txtSignupFullName.Text == " " || txtSignupFullName.Text.Length < 1)
+                    txtSignupFullName.LineIdleColor = Color.Red;
+                if (txtSignUpEmail.Text == " ")
+                    txtSignUpEmail.LineIdleColor = Color.Red;
+                if (txtSignUpUserName.Text == " ")
+                    txtSignUpUserName.LineIdleColor = Color.Red;
+                if (txtSignUpPassword.Text == " ")
+                    txtSignUpPassword.LineIdleColor = Color.Red;
+                if (txtSignUpRepeatPassword.Text == " ")
+                    txtSignUpRepeatPassword.LineIdleColor = Color.Red;
 
-
+           
 
             if (txtSignupFullName.Text != "")
                 txtSignupFullName.LineIdleColor = Color.DarkGray;

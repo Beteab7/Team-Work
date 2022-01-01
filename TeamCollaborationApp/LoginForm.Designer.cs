@@ -27,6 +27,8 @@ namespace TeamCollaborationApp
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        /// 
+       
         private void InitializeComponent()
         {
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
@@ -444,16 +446,16 @@ namespace TeamCollaborationApp
             this.btnSignIn.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnSignIn.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.IconMarginLeft = 15;
-            this.btnSignIn.IconPadding = 7;
+            this.btnSignIn.IconPadding = 5;
             this.btnSignIn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.IdleBorderColor = System.Drawing.Color.White;
             this.btnSignIn.IdleBorderRadius = 25;
             this.btnSignIn.IdleBorderThickness = 1;
             this.btnSignIn.IdleFillColor = System.Drawing.Color.White;
-            this.btnSignIn.IdleIconLeftImage = null;
-            this.btnSignIn.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.IdleIconRightImage")));
+            this.btnSignIn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.IdleIconLeftImage")));
+            this.btnSignIn.IdleIconRightImage = null;
             this.btnSignIn.IndicateFocus = true;
-            this.btnSignIn.Location = new System.Drawing.Point(229, 390);
+            this.btnSignIn.Location = new System.Drawing.Point(257, 396);
             this.btnSignIn.Name = "btnSignIn";
             stateProperties7.BorderColor = System.Drawing.Color.White;
             stateProperties7.BorderRadius = 25;
@@ -474,7 +476,7 @@ namespace TeamCollaborationApp
             stateProperties8.IconRightImage = null;
             this.btnSignIn.OnPressedState = stateProperties8;
             this.btnSignIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnSignIn.Size = new System.Drawing.Size(94, 32);
+            this.btnSignIn.Size = new System.Drawing.Size(107, 26);
             this.btnSignIn.TabIndex = 18;
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignIn.TextMarginLeft = 0;
@@ -618,7 +620,7 @@ namespace TeamCollaborationApp
             this.btnSignUp.AnimationSpeed = 200;
             this.btnSignUp.AutoGenerateColors = false;
             this.btnSignUp.BackColor = System.Drawing.Color.Transparent;
-            this.btnSignUp.BackColor1 = System.Drawing.Color.DarkOrange;
+            this.btnSignUp.BackColor1 = System.Drawing.Color.White;
             this.btnSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignUp.BackgroundImage")));
             this.btnSignUp.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSignUp.ButtonText = "Sign up";
@@ -637,15 +639,15 @@ namespace TeamCollaborationApp
             this.btnSignUp.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnSignUp.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnSignUp.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignUp.IconMarginLeft = 15;
             this.btnSignUp.IconPadding = 10;
             this.btnSignUp.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignUp.IdleBorderColor = System.Drawing.Color.DarkOrange;
+            this.btnSignUp.IdleBorderColor = System.Drawing.Color.White;
             this.btnSignUp.IdleBorderRadius = 25;
             this.btnSignUp.IdleBorderThickness = 1;
-            this.btnSignUp.IdleFillColor = System.Drawing.Color.DarkOrange;
+            this.btnSignUp.IdleFillColor = System.Drawing.Color.White;
             this.btnSignUp.IdleIconLeftImage = null;
             this.btnSignUp.IdleIconRightImage = null;
             this.btnSignUp.IndicateFocus = true;
