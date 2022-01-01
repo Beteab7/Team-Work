@@ -506,6 +506,7 @@ namespace TeamCollaborationApp
             this.txtSignUpRepeatPassword.Size = new System.Drawing.Size(180, 27);
             this.txtSignUpRepeatPassword.TabIndex = 17;
             this.txtSignUpRepeatPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSignUpRepeatPassword.OnValueChanged += new System.EventHandler(this.txtSignUpRepeatPassword_OnValueChanged);
             // 
             // label4
             // 
@@ -542,6 +543,7 @@ namespace TeamCollaborationApp
             this.txtSignUpPassword.Size = new System.Drawing.Size(180, 27);
             this.txtSignUpPassword.TabIndex = 15;
             this.txtSignUpPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSignUpPassword.OnValueChanged += new System.EventHandler(this.txtSignUpPassword_OnValueChanged);
             // 
             // label2
             // 
@@ -577,6 +579,7 @@ namespace TeamCollaborationApp
             this.txtSignUpUserName.Size = new System.Drawing.Size(180, 27);
             this.txtSignUpUserName.TabIndex = 13;
             this.txtSignUpUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSignUpUserName.OnValueChanged += new System.EventHandler(this.txtSignUpUserName_OnValueChanged);
             // 
             // label1
             // 
@@ -728,6 +731,7 @@ namespace TeamCollaborationApp
             this.txtSignupFullName.Size = new System.Drawing.Size(160, 28);
             this.txtSignupFullName.TabIndex = 5;
             this.txtSignupFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSignupFullName.OnValueChanged += new System.EventHandler(this.txtSignupFullName_OnValueChanged);
             // 
             // bunifuLabel1
             // 
