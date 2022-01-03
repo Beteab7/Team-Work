@@ -12,12 +12,17 @@ namespace TeamCollaborationApp
 {
     public partial class Form1 : Form
     {
-        static bool minMenu = false;
+        
         public Form1()
         {
             InitializeComponent();
-           // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
+            // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
             //bunifuFormDock1.SubscribeControlToDragEvents(panel2);
+            for (int i = 0; i < 50; i++)
+            {
+                grid.Rows.Add(new object[]{ 
+                 });
+            }
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
@@ -27,33 +32,21 @@ namespace TeamCollaborationApp
 
         private void StartEvent(object sender, EventArgs e)
         {
-            if(minMenu == true)
-            {
-                this.BunifuPage.Location = new System.Drawing.Point(41, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(762, 438);
-            }
+           
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Welcome");
         }
 
         private void ProjectEvent(object sender, EventArgs e)
         {
-            if (minMenu == true)
-            {
-                this.BunifuPage.Location = new System.Drawing.Point(41, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(762, 438);
-            }
+           
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Project");
         }
 
         private void JournalEvent(object sender, EventArgs e)
         {
-            if (minMenu == true)
-            {
-                this.BunifuPage.Location = new System.Drawing.Point(41, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(762, 438);
-            }
+          
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Journal");
           
@@ -61,11 +54,7 @@ namespace TeamCollaborationApp
 
         private void ReferenceEvent(object sender, EventArgs e)
         {
-            if (minMenu == true)
-            {
-                this.BunifuPage.Location = new System.Drawing.Point(41, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(762, 438);
-            }
+           
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Reference");
 
@@ -73,11 +62,7 @@ namespace TeamCollaborationApp
 
         private void SettingEvent(object sender, EventArgs e)
         {
-            if (minMenu == true)
-            {
-                this.BunifuPage.Location = new System.Drawing.Point(41, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(762, 438);
-            }
+            
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Setting");
         }
@@ -118,33 +103,36 @@ namespace TeamCollaborationApp
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            if (minMenu == false)
-            {
-                this.panel1.Size = new System.Drawing.Size(41, 450);
-                shadowPanelMenu.Width = 45;
-                shadowPanelMenu.Height = 561;
+           
+            
+        }
 
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+             
+        }
 
-    
-                this.BunifuPage.Location = new System.Drawing.Point(45, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(952, 549);
-              
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
 
-                minMenu = true;
+        }
 
-            }
-            else
-            {
-                this.panel1.Size = new System.Drawing.Size(173, 362);
-                shadowPanelMenu.Width = 179;
-                shadowPanelMenu.Height = 561;
-                this.BunifuPage.Location = new System.Drawing.Point(166, 12);
-                this.BunifuPage.Size = new System.Drawing.Size(822, 549);
-              
-                minMenu = false;
-            }
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void bunifuButton2_Click_1(object sender, EventArgs e)
+        {
+          
+            BunifuPage.SetPage("ProjectCreation");
+
         }
     }
 }
