@@ -16,13 +16,8 @@ namespace TeamCollaborationApp
         public Form1()
         {
             InitializeComponent();
-            // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
+           // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
             //bunifuFormDock1.SubscribeControlToDragEvents(panel2);
-            for (int i = 0; i < 50; i++)
-            {
-                grid.Rows.Add(new object[]{ 
-                 });
-            }
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
@@ -110,29 +105,6 @@ namespace TeamCollaborationApp
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
              
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void bunifuButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton1_Click_1(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void bunifuButton2_Click_1(object sender, EventArgs e)
-        {
-          
-            BunifuPage.SetPage("ProjectCreation");
-
         }
     }
 }
