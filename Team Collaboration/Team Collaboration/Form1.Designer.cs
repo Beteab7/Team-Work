@@ -228,6 +228,7 @@
             this.Controls.Add(this.start1);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelLeft);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Team Collaboration";
             this.panelLeft.ResumeLayout(false);

@@ -14,3 +14,19 @@ C:\Users\esube\source\repos\Team Collaboration\Team Collaboration\obj\Debug\Team
 C:\Users\esube\source\repos\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Resources.resources
 C:\Users\esube\source\repos\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Settings.resources
 C:\Users\esube\source\repos\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.csproj.AssemblyReference.cache
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\bin\Debug\Team Collaboration.exe.config
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\bin\Debug\Team Collaboration.exe
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\bin\Debug\Team Collaboration.pdb
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.csproj.AssemblyReference.cache
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.csproj.SuggestedBindingRedirects.cache
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Form1.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Journal.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Projects.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Properties.Resources.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Resources.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Settings.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team_Collaboration.Start.resources
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.csproj.GenerateResource.cache
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.csproj.CoreCompileInputs.cache
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.exe
+C:\Users\esube\Documents\GitHub\Team-Work\Team Collaboration\Team Collaboration\obj\Debug\Team Collaboration.pdb
