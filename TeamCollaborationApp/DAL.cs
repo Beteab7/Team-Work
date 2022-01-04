@@ -25,22 +25,12 @@ namespace TeamCollaborationApp
             {
                 using (SqlConnection con = new SqlConnection(constr))
                 {
-                    
                     SqlCommand cmd = new SqlCommand("spUserInfoRetrival", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = con;
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = "spUserInfoRetrival";
 
-
-
-
-
-
-
-
-
-               
                     cmd.Parameters.AddWithValue("@Username", username);
                     cmd.Parameters.Add("@userid", SqlDbType.VarChar, 50);
                     cmd.Parameters["@userid"].Direction = ParameterDirection.Output;
@@ -57,8 +47,6 @@ namespace TeamCollaborationApp
                     cmd.Parameters.Add("@password", SqlDbType.VarChar, 30);
                     cmd.Parameters["@password"].Direction = ParameterDirection.Output;
 
-                    
-  
                     con.Open();
                     cmd.ExecuteNonQuery();
 
@@ -69,28 +57,14 @@ namespace TeamCollaborationApp
                         string email = Convert.ToString(cmd.Parameters["@email"].Value);
                         //string photo = Convert.ToString(cmd.Parameters["@photo"].Value);
                         string password = Convert.ToString(cmd.Parameters["@password"].Value);
-                        
-
 
                         u.GetUserDetails(id, username, Fname, lname, phone, email, password);
-                         
-                    
-                       
-                
-
-                 
-                   
-
-                    
-                   
-
                 }
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
 
@@ -130,10 +104,8 @@ namespace TeamCollaborationApp
 
         public bool Authentication_StoredProcedure( string username , string password)
         {
-           
             try
             {
-
                 using (SqlConnection con = new SqlConnection(constr))
                 {
                      
@@ -145,18 +117,12 @@ namespace TeamCollaborationApp
                     int rowAffected = Convert.ToInt32(cmd.ExecuteScalar());
                     if (rowAffected == 1)
                         value = true;
-
-                 
-
-
                 }
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
-
             return value;
         }
 
