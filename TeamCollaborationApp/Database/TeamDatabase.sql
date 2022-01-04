@@ -10,8 +10,10 @@ CREATE TABLE [User](
 	Phone varchar(20),
 	Email varchar(80),
 	photo image,
-	[Password] varchar(50)
+	[Password] varchar(50),
+	DepId varchar(22)
 )
+
 --------------------------------------------------------------
 
 CREATE TABLE Project(
@@ -107,10 +109,5 @@ REFERENCES [User]([uid])
 
 --------------------------------------------------------------
 
-CREATE TABLE Department(
-	did AS 'D-' + RIGHT(REPLICATE('0', 8) + CONVERT(VARCHAR, #), 20)  PERSISTED not null primary key,
-	# int not null identity(1,1),
-	[Name] varchar(50),
-	[Description] varchar(200),
-	depHead varchar(22)
-)
+
+
