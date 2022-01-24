@@ -160,5 +160,10 @@ namespace TeamCollaborationApp
         {
 
         }
+
+        private void bunifuGradientPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
