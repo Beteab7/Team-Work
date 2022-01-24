@@ -1,6 +1,4 @@
 
-
-
 CREATE TABLE [User](
     [uid] AS 'U-' + RIGHT(REPLICATE('0', 8) + CONVERT(VARCHAR, #), 20) PERSISTED not null primary key,
 	# int not null identity(1,1) ,
@@ -10,10 +8,8 @@ CREATE TABLE [User](
 	Phone varchar(20),
 	Email varchar(80),
 	photo image,
-	[Password] varchar(50),
-	DepId varchar(22)
+	[Password] varchar(50)
 )
-
 --------------------------------------------------------------
 
 CREATE TABLE Project(
@@ -21,8 +17,14 @@ CREATE TABLE Project(
 	# int not null identity(1,1) ,
 	[Name] varchar(50),
 	dateCreated Date,
-	[Description] varchar(200)
+	[Description] varchar(200),
+	ProjectAdmin varchar(22)
 )
+
+ALTER TABLE Project
+ADD CONSTRAINT FK_ProjectAdmin 
+FOREIGN KEY(ProjectAdmin)
+REFERENCES [User]([uid]);
 --------------------------------------------------------------
 
 CREATE TABLE Task(
@@ -41,28 +43,6 @@ ALTER TABLE Task
 ADD CONSTRAINT FK_Task_Project 
 FOREIGN KEY(projectId)
 REFERENCES Project(pid);
-
---------------------------------------------------------------
-
-
-CREATE TABLE ProjectAdmin(
-	ProjectId varchar(22) not null,
-	UserId varchar(22) not null
-)
-
-ALTER TABLE ProjectAdmin
-ADD CONSTRAINT PK_padmin
-PRIMARY KEY(ProjectId, UserId)
-
-ALTER TABLE ProjectAdmin
-ADD CONSTRAINT FK_PA
-FOREIGN KEY(ProjectId)
-REFERENCES Project(Pid);
-
-ALTER TABLE ProjectAdmin
-ADD CONSTRAINT FK_PA2
-FOREIGN KEY(UserId)
-REFERENCES [User]([uid]);
 
 --------------------------------------------------------------
 
