@@ -1,7 +1,6 @@
 
 CREATE TABLE [User](
-    [uid] AS 'U-' + RIGHT(REPLICATE('0', 8) + CONVERT(VARCHAR, #), 20) PERSISTED not null primary key,
-	# int not null identity(1,1) ,
+    [uid] int not null identity(1,1)  primary key,
 	Fname varchar(50) not null,
 	Lname varchar(50),
 	Username varchar(50),
@@ -13,12 +12,11 @@ CREATE TABLE [User](
 --------------------------------------------------------------
 
 CREATE TABLE Project(
-    pid AS 'P-' + RIGHT(REPLICATE('0', 8) + CONVERT(VARCHAR, #), 20)  PERSISTED not null primary key,
-	# int not null identity(1,1) ,
+    pid int not null identity(1,1)  primary key,
 	[Name] varchar(50),
 	dateCreated Date,
 	[Description] varchar(200),
-	ProjectAdmin varchar(22),
+	ProjectAdmin int,
 	BeginDate Date,
 	EndDate Date
 )
@@ -30,13 +28,12 @@ REFERENCES [User]([uid]);
 --------------------------------------------------------------
 
 CREATE TABLE Task(
-    tid AS 'T-' + RIGHT(REPLICATE('0', 8) + CONVERT(VARCHAR, #), 20)  PERSISTED not null primary key,
-	# int not null identity(1,1),
+    tid int not null identity(1,1)  primary key,
 	[Name] varchar(50),
 	[Description] varchar(200),
 	[Priority] int,
 	Completion bit,
-	projectId varchar(22),
+	projectId int,
 	dateCreated Date,
 	Deadline Date
 )
@@ -49,8 +46,8 @@ REFERENCES Project(pid);
 --------------------------------------------------------------
 
 CREATE TABLE TaskMember(
-	TaskId varchar(22) not null,
-	UserId varchar(22) not null
+	TaskId int not null,
+	UserId int not null
 )
 
 ALTER TABLE TaskMember
@@ -71,8 +68,8 @@ REFERENCES [User]([uid]);
 --------------------------------------------------------------
 
 CREATE TABLE ProjectMember(
-	ProjectId varchar(22) not null,
-	UserId varchar(22) not null,
+	ProjectId int not null,
+	UserId int not null,
 	DateAdded date
 )
 
