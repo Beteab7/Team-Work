@@ -1,15 +1,17 @@
 GO
-CREATE PROC	spInsertProject(
+Alter PROC	spInsertProject(
 	@userID varchar(22),
 	@Name varchar(50),
 	@Description varchar(200),
 	@BeginDate Date,
-	@EndDate Date
+	@EndDate Date,
+	@ProjectID varchar(22) OUTPUT
 )
 AS
 BEGIN
 	INSERT INTO Project
 	VALUES (@Name,GETDATE(),@Description,@userID,@BeginDate,@EndDate)
+	select @ProjectID = SCOPE_IDENTITY()
 END
 
 ---------------------------------------------------------
@@ -19,9 +21,9 @@ CREATE PROC spGetProject(
 	@userID varchar(22))
 AS
 BEGIN
-	SELECT DISTINCT [Name], [Description], BeginDate, EndDate
+	SELECT DISTINCT pid as [Project ID], [Name], [Description], BeginDate, EndDate
 	FROM Project, ProjectMember
-	WHERE (UserId=@userID AND pid=ProjectId) OR ProjectAdmin=@userID
+	WHERE (UserId=@userID AND pid=ProjectId) OR (ProjectAdmin=@userID)
 END
 
 ---------------------------------------------------------
@@ -58,13 +60,11 @@ END
 GO
 CREATE PROC spSearchProject(
 	@userID varchar(22),
-	@Name varchar(50),
-	@BeginDate Date,
-	@EndDate Date
+	@Name varchar(50)
 )
 AS
 BEGIN
-	SELECT [Name], [Description], BeginDate=@BeginDate, EndDate=@EndDate
+	SELECT DISTINCT pid as [Project ID], [Name], [Description], BeginDate, EndDate
 	FROM Project, ProjectMember
-	WHERE (UserId=@userID OR ProjectAdmin=@userID) AND [Name] LIKE @Name+'%'
+	WHERE ((UserId=@userID AND pid=ProjectId) OR (ProjectAdmin=@userID)) AND [Name] LIKE @Name+'%'
 END
