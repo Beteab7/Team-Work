@@ -142,3 +142,7 @@ C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\obj\Debug\TeamCollab
 C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\obj\Debug\TeamCollaborationApp.csproj.CoreCompileInputs.cache
 C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\obj\Debug\TeamCollaborationApp.exe
 C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\obj\Debug\TeamCollaborationApp.pdb
+C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml

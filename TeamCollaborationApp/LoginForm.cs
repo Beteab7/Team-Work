@@ -189,7 +189,7 @@ namespace TeamCollaborationApp
           
 
 
-            if (check = false)
+            if (check == false)
             {
 
                 if (txtSignUpPassword.Text.CompareTo(txtSignUpRepeatPassword.Text) != 0)
@@ -197,7 +197,7 @@ namespace TeamCollaborationApp
                 else
                 {
                     u = new User(txtSignupFullName.Text, txtSignUpEmail.Text, txtSignUpUserName.Text, txtSignUpPassword.Text);
-                   // u.saveUser();
+                    u.saveUser();
                 }
             }
         }
@@ -257,6 +257,11 @@ namespace TeamCollaborationApp
                 txtSignUpRepeatPassword.LineIdleColor = Color.DarkGray;
                 check = false;
             }
+        }
+
+        private void frmlogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

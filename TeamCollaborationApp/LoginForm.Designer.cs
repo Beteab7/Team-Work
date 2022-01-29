@@ -92,10 +92,10 @@ namespace TeamCollaborationApp
             this.bunifuLoginPage.Location = new System.Drawing.Point(328, 0);
             this.bunifuLoginPage.Multiline = true;
             this.bunifuLoginPage.Name = "bunifuLoginPage";
-            this.bunifuLoginPage.Page = this.tabPage2;
-            this.bunifuLoginPage.PageIndex = 1;
-            this.bunifuLoginPage.PageName = "tabPage2";
-            this.bunifuLoginPage.PageTitle = "SignUpPage";
+            this.bunifuLoginPage.Page = this.tabPage1;
+            this.bunifuLoginPage.PageIndex = 0;
+            this.bunifuLoginPage.PageName = "tabPage1";
+            this.bunifuLoginPage.PageTitle = "LoginPage";
             this.bunifuLoginPage.SelectedIndex = 0;
             this.bunifuLoginPage.Size = new System.Drawing.Size(412, 454);
             this.bunifuLoginPage.TabIndex = 1;
@@ -807,6 +807,7 @@ namespace TeamCollaborationApp
             this.Name = "frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team Collaboration";
+            this.Load += new System.EventHandler(this.frmlogin_Load);
             this.bunifuLoginPage.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();

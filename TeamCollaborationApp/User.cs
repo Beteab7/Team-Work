@@ -18,7 +18,7 @@ namespace TeamCollaborationApp
         internal string email;
         internal string username;
         internal string phonenumber;
-        internal byte[] photo;
+       // internal byte[] photo;
         internal string password;
 
         public User()
@@ -48,7 +48,7 @@ namespace TeamCollaborationApp
         public void initalizeUserDetail()
         {
           //This method will specify UserDetail
-           obj.LblUserName = username;
+          //obj.LblUserName = username;
             
         }
 
