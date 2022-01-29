@@ -2116,6 +2116,7 @@ namespace TeamCollaborationApp
             this.userToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.userToolStripMenuItem.Size = new System.Drawing.Size(63, 29);
             this.userToolStripMenuItem.Text = "User";
+            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // profileSettingToolStripMenuItem
             // 
@@ -2123,8 +2124,9 @@ namespace TeamCollaborationApp
             this.profileSettingToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.profileSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("profileSettingToolStripMenuItem.Image")));
             this.profileSettingToolStripMenuItem.Name = "profileSettingToolStripMenuItem";
-            this.profileSettingToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.profileSettingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.profileSettingToolStripMenuItem.Text = "Setting";
+            this.profileSettingToolStripMenuItem.Click += new System.EventHandler(this.profileSettingToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
@@ -2132,8 +2134,9 @@ namespace TeamCollaborationApp
             this.signOutToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.signOutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("signOutToolStripMenuItem.Image")));
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.signOutToolStripMenuItem.Text = "Sign out";
+            this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
             // dateTimePicker2
             // 
@@ -3208,11 +3211,11 @@ namespace TeamCollaborationApp
             this.bunifuButton10.AnimationSpeed = 200;
             this.bunifuButton10.AutoGenerateColors = false;
             this.bunifuButton10.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton10.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuButton10.BackColor1 = System.Drawing.Color.WhiteSmoke;
             this.bunifuButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton10.BackgroundImage")));
             this.bunifuButton10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton10.ButtonText = "Change profile";
-            this.bunifuButton10.ButtonTextMarginLeft = 0;
+            this.bunifuButton10.ButtonTextMarginLeft = -70;
             this.bunifuButton10.ColorContrastOnClick = 45;
             this.bunifuButton10.ColorContrastOnHover = 80;
             this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -3226,7 +3229,7 @@ namespace TeamCollaborationApp
             this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton10.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton10.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuButton10.ForeColor = System.Drawing.Color.DarkOrange;
             this.bunifuButton10.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuButton10.IconMarginLeft = 15;
@@ -3235,11 +3238,11 @@ namespace TeamCollaborationApp
             this.bunifuButton10.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuButton10.IdleBorderRadius = 3;
             this.bunifuButton10.IdleBorderThickness = 1;
-            this.bunifuButton10.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuButton10.IdleFillColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuButton10.IdleIconLeftImage = null;
             this.bunifuButton10.IdleIconRightImage = null;
             this.bunifuButton10.IndicateFocus = true;
-            this.bunifuButton10.Location = new System.Drawing.Point(33, 257);
+            this.bunifuButton10.Location = new System.Drawing.Point(33, 242);
             this.bunifuButton10.Name = "bunifuButton10";
             stateProperties23.BorderColor = System.Drawing.Color.White;
             stateProperties23.BorderRadius = 3;
@@ -3263,7 +3266,7 @@ namespace TeamCollaborationApp
             this.bunifuButton10.Size = new System.Drawing.Size(237, 29);
             this.bunifuButton10.TabIndex = 33;
             this.bunifuButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton10.TextMarginLeft = 0;
+            this.bunifuButton10.TextMarginLeft = -70;
             this.bunifuButton10.UseDefaultRadiusAndThickness = true;
             // 
             // Form1

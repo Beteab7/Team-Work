@@ -354,5 +354,23 @@ namespace TeamCollaborationApp
 
             }
         }
+
+        private void profileSettingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("Edit Profile");
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmlogin Login = new frmlogin();
+            Login.Show();
+            
+        }
+
+        private void userToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

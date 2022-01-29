@@ -458,8 +458,10 @@ The Create a New Project page is broken up into sections that allow you to confi
   <data name="bunifuButton10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAO0AAAAdCAYAAABG3+uWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAySURBVHhe7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAD4UQNrgQABOeQw2QAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVHhe7dWxDYMwAERRlxkjJWVGYYSUjMHMyIjSAeEm
+        UQbwSe+kVxi7/aKYWeiO43ju+74C49m2beqp3qu1vs6LBgxt7smWch6umv89Asax9mRFCyFEC2FEC2FE
+        C2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2G+op1/
+        LoHxLD3Ze7XW9/nx+uMC41laa4+eq5nlrJQPLVLQoey8dCkAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="bunifuButton9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
