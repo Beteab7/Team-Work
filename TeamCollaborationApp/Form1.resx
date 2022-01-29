@@ -323,6 +323,29 @@ The Create a New Project page is broken up into sections that allow you to confi
         5HgbNiyHTucf6VAOCuqAcbYAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKkAAAApCAYAAABOZQn3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAySURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADgUQ1sbQABm8lQUQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bunifuButton3.IdleIconRightImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAmRJREFUWEft
+        l01rE1EYhYMIFcRWUHe6q1YQ/MZ1dJeNWCSQb0J+giD4sQmC4qJUcCFYpeBC9+LGUrtp/Q9SXYiKC6Uu
+        LCq6iPU54UQaJzO5aROC0AOHTM577rnvzNzM3KS28F+hVCpNwGtwqVAoLBeLxRXRx4vwaqVSOWR7/8CE
+        Jwmfh2uBnKOp4x6+caTT6e2E3YUNB3+CMzR0IZ/PH8lms/tEHaNPMukDap/tbXA8rQzH9YZqtbqbkOZZ
+        E/yTz1u1Wm2Xy7HAN8rEtz2meTVocszlMGQymREGvnTAW87wqEvBoIljGqsMjpeU6VJ3MGjGk3+A+y33
+        jFwud4DxH5VFE/csJ4NLd4YBv+F3Ak5Y3jDK5fJpsn4ok+xTluOB8QXUfb9hadMg66Yy4ZylzuAyTdi4
+        Erjg5F3z11hoEeL7Ii/NHLQcBYbrMtHIfUuJkFf010SQ+dD+K5aioLsFN3DeUiJ6aQDfpP3zlqKg+EYm
+        Ghi3lAgHhl6B5u3lJJctRYFhVaa4+9+asBttbwP6qOtfLUVB8ZtM/HR2WmqDA7rS9jbopFxftRQFxdcy
+        Ja7UdXBg0C3gaXrY/leWohj6ImTiyzLRyKylRDgwqAEyH8nLHJcsRdFaqXA4DyIBU+sVPIhH8XNL8dAL
+        CKM2IP1+GTWCX+uY70B13LfXMZyy3B31en0bA555oDadZ10KBmd+TmOd8VSZLoWhw5Zsih3vHpdjwWXe
+        y2Ke9hhN3vuWrIUOm1I9qh8zwUVtv2lyh6hjadSe2CPv5jal60HQcLbl/4JG/v4xYZL38Jf5Dg7uj8kW
+        BodU6g+/Mdq4V1cXZgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuGradientPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -471,7 +494,7 @@ The Create a New Project page is broken up into sections that allow you to confi
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>54</value>
+    <value>67</value>
   </metadata>
   <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>391, 17</value>
@@ -685,7 +708,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         +DcQt0OVDwrAwAAAD1lrxamqG9kAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="stateProperties22.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties24.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAItJREFUOE9j
         GFwgJiamOzo6+jsQ/0fDP4HYGqoMN4Aq5INy4QBqyLPIyEgbqBB2AFIIZaIAkDjQdUZA+klUVJQLVBgT
@@ -710,7 +733,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         FICBAQA+bGI4/IELpQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="stateProperties24.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties26.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAEhJREFUOE9j
         GFwgJiamOzo6+jsQ/8eHocoxAVDyJxDzQblYASEDcEtCwagBQ8IAIKY4IclAuaQDoOYuIP4DsgUfhiof
@@ -750,7 +773,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         L601wRve/8uj8DPILzdYyaSjJtTU1NTU/L8MDPwDnEB51iTkW7MAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="stateProperties26.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties28.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABCFJREFUeF7t
         mktrFEEQx3MRBDEYjM98lgTxKHjwEczmRcghn0DES4gK5tOYk3jwIKKCYnznIepJkBxEMD4RRIz/Wv49
@@ -793,7 +816,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         2RwaavXQdodzGykxfTRdHE3WAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="stateProperties28.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties30.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQFJREFUOE+9
         kk1OAkEUhBvc6uwId9AYT2E4wQTmx81wAb3BLPQKcghPgEqIIbhQt8awhr3RRF3C9zK1c4aeCQmVVPpV
@@ -821,7 +844,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         TkSuQmCC
 </value>
   </data>
-  <data name="stateProperties30.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties32.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAASVJREFUOE/N
         k71Kw3AUxbO4KA7utn48VcjXkCEv4OJQsBV9BKs0IA6ttKigo5W8j1Do0A5mq78TroEkRifBA4d7z7n3
