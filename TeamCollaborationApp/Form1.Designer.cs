@@ -511,8 +511,8 @@ namespace TeamCollaborationApp
             stateProperties3.BorderRadius = 3;
             stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.White;
-            stateProperties3.ForeColor = System.Drawing.Color.DarkOrange;
+            stateProperties3.FillColor = System.Drawing.Color.DarkOrange;
+            stateProperties3.ForeColor = System.Drawing.Color.White;
             stateProperties3.IconLeftImage = null;
             stateProperties3.IconRightImage = null;
             this.bunifuButton7.onHoverState = stateProperties3;
@@ -664,8 +664,8 @@ namespace TeamCollaborationApp
             stateProperties7.BorderRadius = 3;
             stateProperties7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties7.BorderThickness = 1;
-            stateProperties7.FillColor = System.Drawing.Color.White;
-            stateProperties7.ForeColor = System.Drawing.Color.DarkOrange;
+            stateProperties7.FillColor = System.Drawing.Color.DarkOrange;
+            stateProperties7.ForeColor = System.Drawing.Color.White;
             stateProperties7.IconLeftImage = null;
             stateProperties7.IconRightImage = null;
             this.bunifuButton2.onHoverState = stateProperties7;

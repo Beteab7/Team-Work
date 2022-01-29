@@ -132,56 +132,56 @@ namespace TeamCollaborationApp
             
             User u = new User();
 
-            if (txtSignupFullName.Text == " " || txtSignupFullName.Text.Length < 1)
+            if (bunifuTextBox1.Text == " " || bunifuTextBox1.Text.Length < 1)
             {
 
-                txtSignupFullName.LineIdleColor = Color.Red;
+                bunifuTextBox1.BorderColorActive = Color.Red;
                 check = true;
             }
-            if (txtSignUpEmail.Text == " " || txtSignUpEmail.Text.Length < 1)
+            if (bunifuTextBox2.Text == " " || bunifuTextBox2.Text.Length < 1)
             {
-               
-                txtSignUpEmail.LineIdleColor = Color.Red;
+
+                bunifuTextBox2.BorderColorActive = Color.Red;
                 check = true;
             }
-            if (txtSignUpUserName.Text == "" || txtSignUpUserName.Text.Length < 1)
+            if (bunifuTextBox3.Text == "" || bunifuTextBox3.Text.Length < 1)
             {
-                txtSignUpUserName.LineIdleColor = Color.Red;
+                bunifuTextBox3.BorderColorActive = Color.Red;
                 check = true;
             }
-            if (txtSignUpPassword.Text == " " || txtSignUpPassword.Text.Length < 1)
+            if (bunifuTextBox4.Text == " " || bunifuTextBox4.Text.Length < 1)
             {
-                txtSignUpPassword.LineIdleColor = Color.Red;
+                bunifuTextBox4.BorderColorActive = Color.Red;
                 check = true;
             }
-            if (txtSignUpRepeatPassword.Text == " " || txtSignUpRepeatPassword.Text.Length < 1)
+            if (bunifuTextBox5.Text == " " || bunifuTextBox5.Text.Length < 1)
             {
-                txtSignUpRepeatPassword.LineIdleColor = Color.Red;
+                bunifuTextBox5.BorderColorActive = Color.Red;
                 check = true;
             }
-            if (txtSignupFullName.Text != " " && txtSignupFullName.Text.Length > 0)
+            if (bunifuTextBox1.Text != " " && bunifuTextBox1.Text.Length > 0)
             {
-                txtSignupFullName.LineIdleColor = Color.DarkGray;
+                bunifuTextBox1.BorderColorActive = Color.DarkGray;
                 check = false;
             }
-            if (txtSignUpEmail.Text != " " && txtSignUpEmail.Text.Length > 0)
+            if (bunifuTextBox2.Text != " " && bunifuTextBox2.Text.Length > 0)
             {
-                txtSignUpEmail.LineIdleColor = Color.DarkGray;
+                bunifuTextBox2.BorderColorActive = Color.DarkGray;
                 check = false;
             }
-            if (txtSignUpUserName.Text != " " && txtSignUpUserName.Text.Length > 0)
+            if (bunifuTextBox3.Text != " " && bunifuTextBox3.Text.Length > 0)
             {
-                txtSignUpUserName.LineIdleColor = Color.DarkGray;
+                bunifuTextBox3.BorderColorActive = Color.DarkGray;
                 check = false;
             }
-            if (txtSignUpPassword.Text != " " && txtSignUpPassword.Text.Length > 0)
+            if (bunifuTextBox4.Text != " " && bunifuTextBox4.Text.Length > 0)
             {
-                txtSignUpPassword.LineIdleColor = Color.DarkGray;
+                bunifuTextBox4.BorderColorActive = Color.DarkGray;
                 check = false;
             }
-            if (txtSignUpRepeatPassword.Text != " " && txtSignUpRepeatPassword.Text.Length > 0)
+            if (bunifuTextBox5.Text != " " && bunifuTextBox5.Text.Length > 0)
             {
-                txtSignUpRepeatPassword.LineIdleColor = Color.DarkGray;
+                bunifuTextBox5.BorderColorActive = Color.DarkGray;
                 check = false;
             }
 
@@ -192,11 +192,11 @@ namespace TeamCollaborationApp
             if (check == false)
             {
 
-                if (txtSignUpPassword.Text.CompareTo(txtSignUpRepeatPassword.Text) != 0)
+                if (bunifuTextBox4.Text.CompareTo(bunifuTextBox5.Text) != 0)
                     MessageBox.Show("Incorrect Password");
                 else
                 {
-                    u = new User(txtSignupFullName.Text, txtSignUpEmail.Text, txtSignUpUserName.Text, txtSignUpPassword.Text);
+                    u = new User(bunifuTextBox1.Text, bunifuTextBox2.Text, bunifuTextBox3.Text, bunifuTextBox4.Text);
                     u.saveUser();
                 }
             }
@@ -262,6 +262,77 @@ namespace TeamCollaborationApp
         private void frmlogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (bunifuTextBox1.Text == " " || bunifuTextBox1.Text.Length < 1)
+            {
+                bunifuTextBox1.BorderColorActive = Color.Red;
+                check = true;
+            }
+            if (bunifuTextBox1.Text != " " && bunifuTextBox1.Text.Length > 0)
+            {
+                bunifuTextBox1.BorderColorActive = Color.DarkGray;
+                check = false;
+            }
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (bunifuTextBox2.Text == " " || bunifuTextBox2.Text.Length < 1)
+            {
+
+                bunifuTextBox2.BorderColorActive = Color.Red;
+                check = true;
+            }
+            if (bunifuTextBox2.Text != " " && bunifuTextBox2.Text.Length > 0)
+            {
+                bunifuTextBox2.BorderColorActive = Color.DarkGray;
+                check = false;
+            }
+        }
+
+        private void bunifuTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (bunifuTextBox3.Text == "" || bunifuTextBox3.Text.Length < 1)
+            {
+                bunifuTextBox3.BorderColorActive = Color.Red;
+                check = true;
+            }
+            if (bunifuTextBox3.Text != " " && bunifuTextBox3.Text.Length > 0)
+            {
+                bunifuTextBox3.BorderColorActive = Color.DarkGray;
+                check = false;
+            }
+        }
+
+        private void bunifuTextBox4_TextChanged(object sender, EventArgs e)
+        {
+            if (bunifuTextBox4.Text == " " || bunifuTextBox4.Text.Length < 1)
+            {
+                bunifuTextBox4.BorderColorActive = Color.Red;
+                check = true;
+            }
+            if (bunifuTextBox4.Text != " " && bunifuTextBox4.Text.Length > 0)
+            {
+                bunifuTextBox4.BorderColorActive = Color.DarkGray;
+                check = false;
+            }
+        }
+
+        private void bunifuTextBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (bunifuTextBox5.Text == " " || bunifuTextBox5.Text.Length < 1)
+            {
+                bunifuTextBox5.BorderColorActive = Color.Red;
+                check = true;
+            }
+            if (bunifuTextBox5.Text != " " && bunifuTextBox5.Text.Length > 0)
+            {
+                bunifuTextBox5.BorderColorActive = Color.DarkGray;
+                check = false;
+            }
         }
     }
 }
