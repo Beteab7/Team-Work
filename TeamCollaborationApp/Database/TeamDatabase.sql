@@ -18,7 +18,9 @@ CREATE TABLE Project(
 	[Name] varchar(50),
 	dateCreated Date,
 	[Description] varchar(200),
-	ProjectAdmin varchar(22)
+	ProjectAdmin varchar(22),
+	BeginDate Date,
+	EndDate Date
 )
 
 ALTER TABLE Project
@@ -48,7 +50,7 @@ REFERENCES Project(pid);
 
 CREATE TABLE TaskMember(
 	TaskId varchar(22) not null,
-	UserId varchar(22) not null,
+	UserId varchar(22) not null
 )
 
 ALTER TABLE TaskMember
@@ -70,7 +72,8 @@ REFERENCES [User]([uid]);
 
 CREATE TABLE ProjectMember(
 	ProjectId varchar(22) not null,
-	UserId varchar(22) not null
+	UserId varchar(22) not null,
+	DateAdded date
 )
 
 ALTER TABLE ProjectMember
