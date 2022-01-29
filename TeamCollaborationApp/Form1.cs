@@ -226,7 +226,7 @@ namespace TeamCollaborationApp
 
         private void bunifuButton1_Click_1(object sender, EventArgs e)
         {
-            
+            panel12.Visible = true;
            
         }
 
@@ -371,6 +371,21 @@ namespace TeamCollaborationApp
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("Edit Profile");
+        }
+
+        private void bunifuTileButton2_Click(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("Edit Project");
+        }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("Edit Task");
         }
     }
 }
