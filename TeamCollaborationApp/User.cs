@@ -10,7 +10,7 @@ namespace TeamCollaborationApp
     class User
     {
         DAL OBJ = new DAL();
-        Form1 obj = new Form1();
+        Form1 obj;
         internal int id;
         internal string fullname="";
         internal string firstname="";
@@ -80,6 +80,8 @@ namespace TeamCollaborationApp
                 OBJ.GetUserDetails_StoredProcedure(username, this );
                 initalizeUserDetail();
                 {
+                    id = OBJ.fetchUserID(username);
+                    obj = new Form1(id);
                     LoginPage.Hide();
                     obj.Show();
                 }

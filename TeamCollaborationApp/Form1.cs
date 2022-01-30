@@ -20,6 +20,15 @@ namespace TeamCollaborationApp
         static private bool save = false;
         static private bool Passchange = false;
 
+        int currentUserID;
+        int projectID;
+        Project p;
+
+        public Form1(int currentUser)
+        {
+            InitializeComponent();
+            currentUserID = currentUser;
+        }
         private void NewFile()
         {
             try
@@ -114,20 +123,6 @@ namespace TeamCollaborationApp
             }
         }
         
-        public Form1()
-        {
-            InitializeComponent();
-            // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
-            // bunifuFormDock1.SubscribeControlToDragEvents(panel2);
-            for (int i = 0; i < 10; i++)
-            {
-                dgvProject.Rows.Add(new object[]{ 
-                 });
-            }
-        }
-
-       
-
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
@@ -145,6 +140,9 @@ namespace TeamCollaborationApp
             label3.Text = "Project";
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Project");
+
+            p = new Project(currentUserID);
+            dgvProject.DataSource = p.getProject();
         }
 
         private void JournalEvent(object sender, EventArgs e)
@@ -432,7 +430,9 @@ namespace TeamCollaborationApp
 
         private void dgvProject_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            projectID = Convert.ToInt32(dgvProject.CurrentRow.Cells[0].Value);
+            txtProjectNameList.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
+            txtDescListTask.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
         }
 
         private void dgvProject_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -443,6 +443,31 @@ namespace TeamCollaborationApp
         private void dgvProject_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             BunifuPage.SetPage("ListTask");
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            //reload project data grid view
+            p = new Project(currentUserID);
+            dgvProject.DataSource = p.getProject();
+        }
+
+        private void btnSaveProject_Click(object sender, EventArgs e)
+        {
+            //save new project
+            p = new Project(currentUserID, txtProjectName.Text, txtDescription.Text, dateTimeStartProject.Value, dateTimeEndProject.Value);
+            p.InsertProject();
+        }
+
+        private void btnSearchProject_Click(object sender, EventArgs e)
+        {
+            p = new Project(currentUserID);
+            dgvProject.DataSource = p.searchProject(txtProjectSearch.Text);
+        }
+
+        private void btnSaveProjectEdit_Click(object sender, EventArgs e)
+        {
+            dgvProject.DataSource = p.getProject();
         }
     }
 }

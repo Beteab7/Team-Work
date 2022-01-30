@@ -178,6 +178,33 @@ namespace TeamCollaborationApp
             }
             return uid;
         }
+        int id;
+        public int fetchUserID(string username)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+                    con.Open();
+
+                    SqlCommand cmd = new SqlCommand("spFetchUserID", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@userName", username);
+                    cmd.Parameters.Add("@userID", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.Parameters["@userID"].Value = id;
+                    cmd.ExecuteNonQuery();
+
+                    //Does'nt read output data unless the connection is closed
+                    con.Close();
+                    id = Convert.ToInt32(cmd.Parameters["@userID"].Value);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return id;
+        }
 
     }
 }

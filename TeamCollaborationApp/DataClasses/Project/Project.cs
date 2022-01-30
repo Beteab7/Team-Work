@@ -12,12 +12,24 @@ namespace TeamCollaborationApp{
                 
                 //----------------------------------------------------------------//
                 //Constructors
+                public Project(int UserID){
+                        //Fetching Tables
+                        this.UserID = UserID;
+                        pd = new ProjectDAL();
+
+                    }
                 public Project(int UserID, int ID){
+                        
+                        //
+                        
                         this.UserID = UserID;
                         this.ID = ID;
                         pd = new ProjectDAL();
                 }
                 public Project(int ID, int UserID, string Name, string Description, DateTime BeginDate, DateTime EndDate){
+                        
+                        //manipulate existing project
+            
                         this.ID = ID;
                         this.UserID = UserID;
                         this.Name = Name;
@@ -27,6 +39,9 @@ namespace TeamCollaborationApp{
                         pd = new ProjectDAL();
                 }
                 public Project(int UserID, string Name, string Description, DateTime BeginDate, DateTime EndDate){
+                        
+                        //insert new project
+                        
                         this.UserID = UserID;
                         this.Name = Name;
                         this.Description = Description;
