@@ -74,7 +74,7 @@ namespace TeamCollaborationApp
 
 
 
-        public void SignUpUser_StoredProcedure(User u)
+        public void SaveUser_StoredProcedure(User u)
         {
             try
             {

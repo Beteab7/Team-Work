@@ -12,12 +12,12 @@ namespace TeamCollaborationApp
         DAL OBJ = new DAL();
         Form1 obj = new Form1();
         internal int id;
-        internal string fullname;
-        internal string firstname;
-        internal string lastname;
-        internal string email;
-        internal string username;
-        internal string phonenumber;
+        internal string fullname="";
+        internal string firstname="";
+        internal string lastname="";
+        internal string email="";
+        internal string username="";
+        internal string phonenumber="";
        // internal byte[] photo;
         internal string password;
 
@@ -52,8 +52,23 @@ namespace TeamCollaborationApp
             
         }
         public void initalizeUserDetailEditPage(Form1 obj)
-        {  
-           
+        {
+            obj.TxtbEditFirstname = firstname;
+            obj.TxtbEditLastname = lastname;
+            obj.TxtbEditEmail = email;
+            obj.TxtbEditUsername = username;
+            obj.TxtbEditPhone = phonenumber;
+        }
+        public bool checkChange(Form1 obj)
+        {
+            if (obj.TxtbEditFirstname != firstname ||
+                obj.TxtbEditLastname != lastname   ||
+                obj.TxtbEditEmail != email         ||
+                obj.TxtbEditUsername != username   ||
+                obj.TxtbEditPhone != phonenumber   
+                )
+            return true;
+            return false;
         }
 
         public  void authentication(string username , string password,frmlogin LoginPage)
@@ -80,7 +95,7 @@ namespace TeamCollaborationApp
 
         public void saveUser()
         {
-            OBJ.SignUpUser_StoredProcedure(this);
+            OBJ.SaveUser_StoredProcedure(this);
         }
 
     }
