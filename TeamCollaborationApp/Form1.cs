@@ -18,6 +18,7 @@ namespace TeamCollaborationApp
         private SaveFileDialog saveFileDialog;
         private FontDialog fontDialog = new FontDialog();
         static private bool save = false;
+        static private bool Passchange = false;
 
         private void NewFile()
         {
@@ -375,8 +376,15 @@ namespace TeamCollaborationApp
 
         private void bunifuTileButton3_Click(object sender, EventArgs e)
         {
+          
             BunifuPage.SetPage("Edit Profile");
+             
+            User u = new User();
+            u.initalizeUserDetailEditPage(this);
+           
+
         }
+       
 
         private void bunifuTileButton2_Click(object sender, EventArgs e)
         {
@@ -386,6 +394,27 @@ namespace TeamCollaborationApp
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
             BunifuPage.SetPage("Edit Task");
+        }
+
+        private void bunifuButton1_Click_2(object sender, EventArgs e)
+        {
+            if (Passchange == false)
+            {
+                panel17.Visible = true;
+                panel17.Location.X.Equals(305);
+                panel17.Location.Y.Equals(441);
+
+
+                
+                Passchange = true;
+
+            }
+            else
+            {
+                panel17.Visible = false;
+                Passchange = false;
+            }
+            
         }
     }
 }

@@ -51,6 +51,10 @@ namespace TeamCollaborationApp
           //obj.LblUserName = username;
             
         }
+        public void initalizeUserDetailEditPage(Form1 obj)
+        {  
+           
+        }
 
         public  void authentication(string username , string password,frmlogin LoginPage)
         {

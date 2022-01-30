@@ -117,56 +117,56 @@ namespace TeamCollaborationApp
             
             User u = new User();
 
-            if (bunifuTextBox1.Text == " " || bunifuTextBox1.Text.Length < 1)
+            if (txtbSignUpFullName.Text == " " || txtbSignUpFullName.Text.Length < 1)
             {
 
-                bunifuTextBox1.BorderColorIdle = Color.Red;
+                txtbSignUpFullName.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox2.Text == " " || bunifuTextBox2.Text.Length < 1)
+            if (txtbSignUpEmail.Text == " " || txtbSignUpEmail.Text.Length < 1)
             {
 
-                bunifuTextBox2.BorderColorIdle = Color.Red;
+                txtbSignUpEmail.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox3.Text == "" || bunifuTextBox3.Text.Length < 1)
+            if (txtbSignUpUsername.Text == "" || txtbSignUpUsername.Text.Length < 1)
             {
-                bunifuTextBox3.BorderColorIdle = Color.Red;
+                txtbSignUpUsername.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox4.Text == " " || bunifuTextBox4.Text.Length < 1)
+            if (txtbSignUpPassword.Text == " " || txtbSignUpPassword.Text.Length < 1)
             {
-                bunifuTextBox4.BorderColorIdle = Color.Red;
+                txtbSignUpPassword.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox5.Text == " " || bunifuTextBox5.Text.Length < 1)
+            if (txtbSignUpRePassword.Text == " " || txtbSignUpRePassword.Text.Length < 1)
             {
-                bunifuTextBox5.BorderColorIdle = Color.Red;
+                txtbSignUpRePassword.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox1.Text != " " && bunifuTextBox1.Text.Length > 0)
+            if (txtbSignUpFullName.Text != " " && txtbSignUpFullName.Text.Length > 0)
             {
-                bunifuTextBox1.BorderColorIdle = Color.DarkGray;
+                txtbSignUpFullName.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
-            if (bunifuTextBox2.Text != " " && bunifuTextBox2.Text.Length > 0)
+            if (txtbSignUpEmail.Text != " " && txtbSignUpEmail.Text.Length > 0)
             {
-                bunifuTextBox2.BorderColorIdle = Color.DarkGray;
+                txtbSignUpEmail.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
-            if (bunifuTextBox3.Text != " " && bunifuTextBox3.Text.Length > 0)
+            if (txtbSignUpUsername.Text != " " && txtbSignUpUsername.Text.Length > 0)
             {
-                bunifuTextBox3.BorderColorIdle = Color.DarkGray;
+                txtbSignUpUsername.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
-            if (bunifuTextBox4.Text != " " && bunifuTextBox4.Text.Length > 0)
+            if (txtbSignUpPassword.Text != " " && txtbSignUpPassword.Text.Length > 0)
             {
-                bunifuTextBox4.BorderColorIdle = Color.DarkGray;
+                txtbSignUpPassword.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
-            if (bunifuTextBox5.Text != " " && bunifuTextBox5.Text.Length > 0)
+            if (txtbSignUpRePassword.Text != " " && txtbSignUpRePassword.Text.Length > 0)
             {
-                bunifuTextBox5.BorderColorIdle = Color.DarkGray;
+                txtbSignUpRePassword.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
 
@@ -177,11 +177,11 @@ namespace TeamCollaborationApp
             if (check == false)
             {
 
-                if (bunifuTextBox4.Text.CompareTo(bunifuTextBox5.Text) != 0)
+                if (txtbSignUpPassword.Text.CompareTo(txtbSignUpRePassword.Text) != 0)
                     MessageBox.Show("Incorrect Password");
                 else
                 {
-                    u = new User(bunifuTextBox1.Text, bunifuTextBox2.Text, bunifuTextBox3.Text, bunifuTextBox4.Text);
+                    u = new User(txtbSignUpFullName.Text, txtbSignUpEmail.Text, txtbSignUpUsername.Text, txtbSignUpPassword.Text);
                     u.saveUser();
                 }
             }
@@ -194,71 +194,71 @@ namespace TeamCollaborationApp
 
         private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
         {
-            if (bunifuTextBox1.Text == " " || bunifuTextBox1.Text.Length < 1)
+            if (txtbSignUpFullName.Text == " " || txtbSignUpFullName.Text.Length < 1)
             {
-                bunifuTextBox1.BorderColorIdle = Color.Red;
+                txtbSignUpFullName.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox1.Text != " " && bunifuTextBox1.Text.Length > 0)
+            if (txtbSignUpFullName.Text != " " && txtbSignUpFullName.Text.Length > 0)
             {
-                bunifuTextBox1.BorderColorIdle = Color.DarkGray;
+                txtbSignUpFullName.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
         }
 
         private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
         {
-            if (bunifuTextBox2.Text == " " || bunifuTextBox2.Text.Length < 1)
+            if (txtbSignUpEmail.Text == " " || txtbSignUpEmail.Text.Length < 1)
             {
 
-                bunifuTextBox2.BorderColorIdle = Color.Red;
+                txtbSignUpEmail.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox2.Text != " " && bunifuTextBox2.Text.Length > 0)
+            if (txtbSignUpEmail.Text != " " && txtbSignUpEmail.Text.Length > 0)
             {
-                bunifuTextBox2.BorderColorIdle = Color.DarkGray;
+                txtbSignUpEmail.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
         }
 
         private void bunifuTextBox3_TextChanged(object sender, EventArgs e)
         {
-            if (bunifuTextBox3.Text == "" || bunifuTextBox3.Text.Length < 1)
+            if (txtbSignUpUsername.Text == "" || txtbSignUpUsername.Text.Length < 1)
             {
-                bunifuTextBox3.BorderColorIdle = Color.Red;
+                txtbSignUpUsername.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox3.Text != " " && bunifuTextBox3.Text.Length > 0)
+            if (txtbSignUpUsername.Text != " " && txtbSignUpUsername.Text.Length > 0)
             {
-                bunifuTextBox3.BorderColorIdle = Color.DarkGray;
+                txtbSignUpUsername.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
         }
 
         private void bunifuTextBox4_TextChanged(object sender, EventArgs e)
         {
-            if (bunifuTextBox4.Text == " " || bunifuTextBox4.Text.Length < 1)
+            if (txtbSignUpPassword.Text == " " || txtbSignUpPassword.Text.Length < 1)
             {
-                bunifuTextBox4.BorderColorIdle = Color.Red;
+                txtbSignUpPassword.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox4.Text != " " && bunifuTextBox4.Text.Length > 0)
+            if (txtbSignUpPassword.Text != " " && txtbSignUpPassword.Text.Length > 0)
             {
-                bunifuTextBox4.BorderColorIdle = Color.DarkGray;
+                txtbSignUpPassword.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
         }
 
         private void bunifuTextBox5_TextChanged(object sender, EventArgs e)
         {
-            if (bunifuTextBox5.Text == " " || bunifuTextBox5.Text.Length < 1)
+            if (txtbSignUpRePassword.Text == " " || txtbSignUpRePassword.Text.Length < 1)
             {
-                bunifuTextBox5.BorderColorIdle = Color.Red;
+                txtbSignUpRePassword.BorderColorIdle = Color.Red;
                 check = true;
             }
-            if (bunifuTextBox5.Text != " " && bunifuTextBox5.Text.Length > 0)
+            if (txtbSignUpRePassword.Text != " " && txtbSignUpRePassword.Text.Length > 0)
             {
-                bunifuTextBox5.BorderColorIdle = Color.DarkGray;
+                txtbSignUpRePassword.BorderColorIdle = Color.DarkGray;
                 check = false;
             }
         }
