@@ -131,10 +131,6 @@ namespace TeamCollaborationApp
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties67 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties68 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties69 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties70 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
@@ -184,6 +180,10 @@ namespace TeamCollaborationApp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BunifuPage = new Bunifu.UI.WinForms.BunifuPages();
             this.StartPage = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -294,9 +294,6 @@ namespace TeamCollaborationApp
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.cmbVisibilityEdit = new System.Windows.Forms.ComboBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.txtDescriptionProjectEdit = new System.Windows.Forms.RichTextBox();
-            this.dgvProjectEdit = new System.Windows.Forms.DataGridView();
             this.bunifuButton11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -349,6 +346,12 @@ namespace TeamCollaborationApp
             this.dgvTask = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.txtDescriptionProjectEdit = new System.Windows.Forms.RichTextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.dgvProjectEdit = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.BunifuPage.SuspendLayout();
             this.StartPage.SuspendLayout();
@@ -372,8 +375,6 @@ namespace TeamCollaborationApp
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEdit)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.panel15.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -388,6 +389,8 @@ namespace TeamCollaborationApp
             this.menuStrip2.SuspendLayout();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTask)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEdit)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -433,10 +436,10 @@ namespace TeamCollaborationApp
             this.BunifuPage.Location = new System.Drawing.Point(166, 39);
             this.BunifuPage.Multiline = true;
             this.BunifuPage.Name = "BunifuPage";
-            this.BunifuPage.Page = this.tabPage4;
-            this.BunifuPage.PageIndex = 8;
-            this.BunifuPage.PageName = "tabPage4";
-            this.BunifuPage.PageTitle = "Edit Task";
+            this.BunifuPage.Page = this.ProjectPages;
+            this.BunifuPage.PageIndex = 1;
+            this.BunifuPage.PageName = "ProjectPages";
+            this.BunifuPage.PageTitle = "Project";
             this.BunifuPage.SelectedIndex = 0;
             this.BunifuPage.Size = new System.Drawing.Size(822, 491);
             this.BunifuPage.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
@@ -604,6 +607,10 @@ namespace TeamCollaborationApp
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProject.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProject.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProject.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -628,6 +635,9 @@ namespace TeamCollaborationApp
             this.dgvProject.RowHeadersWidth = 51;
             this.dgvProject.Size = new System.Drawing.Size(754, 314);
             this.dgvProject.TabIndex = 13;
+            this.dgvProject.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProject_CellContentClick);
+            this.dgvProject.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProject_CellMouseDoubleClick);
+            this.dgvProject.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProject_RowHeaderMouseDoubleClick);
             // 
             // label11
             // 
@@ -2974,6 +2984,7 @@ namespace TeamCollaborationApp
             // 
             this.tabPage3.AutoScroll = true;
             this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.txtDescriptionProjectEdit);
             this.tabPage3.Controls.Add(this.btnSaveProjectEdit);
             this.tabPage3.Controls.Add(this.btnCancelProjectEdit);
             this.tabPage3.Controls.Add(this.label30);
@@ -3031,7 +3042,7 @@ namespace TeamCollaborationApp
             this.btnSaveProjectEdit.IconMarginLeft = 15;
             this.btnSaveProjectEdit.IconPadding = 5;
             this.btnSaveProjectEdit.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveProjectEdit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSaveProjectEdit.IdleBorderColor = System.Drawing.Color.White;
             this.btnSaveProjectEdit.IdleBorderRadius = 20;
             this.btnSaveProjectEdit.IdleBorderThickness = 1;
             this.btnSaveProjectEdit.IdleFillColor = System.Drawing.Color.DarkOrange;
@@ -3283,79 +3294,6 @@ namespace TeamCollaborationApp
             this.cmbVisibilityEdit.Name = "cmbVisibilityEdit";
             this.cmbVisibilityEdit.Size = new System.Drawing.Size(121, 21);
             this.cmbVisibilityEdit.TabIndex = 35;
-            // 
-            // panel13
-            // 
-            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel13.AutoScroll = true;
-            this.panel13.Controls.Add(this.txtDescriptionProjectEdit);
-            this.panel13.Controls.Add(this.dgvProjectEdit);
-            this.panel13.Location = new System.Drawing.Point(68, 47);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(632, 1957);
-            this.panel13.TabIndex = 21;
-            this.panel13.Visible = false;
-            // 
-            // txtDescriptionProjectEdit
-            // 
-            this.txtDescriptionProjectEdit.Location = new System.Drawing.Point(108, 257);
-            this.txtDescriptionProjectEdit.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDescriptionProjectEdit.Name = "txtDescriptionProjectEdit";
-            this.txtDescriptionProjectEdit.Size = new System.Drawing.Size(377, 116);
-            this.txtDescriptionProjectEdit.TabIndex = 14;
-            this.txtDescriptionProjectEdit.Text = "";
-            // 
-            // dgvProjectEdit
-            // 
-            this.dgvProjectEdit.AllowUserToAddRows = false;
-            this.dgvProjectEdit.AllowUserToDeleteRows = false;
-            this.dgvProjectEdit.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkGray;
-            this.dgvProjectEdit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgvProjectEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProjectEdit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvProjectEdit.BackgroundColor = System.Drawing.Color.White;
-            this.dgvProjectEdit.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvProjectEdit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectEdit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvProjectEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProjectEdit.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvProjectEdit.EnableHeadersVisualStyles = false;
-            this.dgvProjectEdit.GridColor = System.Drawing.Color.White;
-            this.dgvProjectEdit.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectEdit.Name = "dgvProjectEdit";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProjectEdit.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgvProjectEdit.RowHeadersVisible = false;
-            this.dgvProjectEdit.RowHeadersWidth = 51;
-            this.dgvProjectEdit.Size = new System.Drawing.Size(632, 1957);
-            this.dgvProjectEdit.TabIndex = 13;
             // 
             // bunifuButton11
             // 
@@ -4785,6 +4723,95 @@ namespace TeamCollaborationApp
             this.label24.TabIndex = 37;
             this.label24.Text = "Sort by";
             // 
+            // txtDescriptionProjectEdit
+            // 
+            this.txtDescriptionProjectEdit.Location = new System.Drawing.Point(178, 294);
+            this.txtDescriptionProjectEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescriptionProjectEdit.Name = "txtDescriptionProjectEdit";
+            this.txtDescriptionProjectEdit.Size = new System.Drawing.Size(377, 116);
+            this.txtDescriptionProjectEdit.TabIndex = 14;
+            this.txtDescriptionProjectEdit.Text = "";
+            // 
+            // panel13
+            // 
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.AutoScroll = true;
+            this.panel13.AutoSize = true;
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.Controls.Add(this.dgvProjectEdit);
+            this.panel13.Location = new System.Drawing.Point(81, 47);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(632, 105);
+            this.panel13.TabIndex = 21;
+            this.panel13.Visible = false;
+            // 
+            // dgvProjectEdit
+            // 
+            this.dgvProjectEdit.AllowUserToAddRows = false;
+            this.dgvProjectEdit.AllowUserToDeleteRows = false;
+            this.dgvProjectEdit.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkGray;
+            this.dgvProjectEdit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvProjectEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvProjectEdit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProjectEdit.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProjectEdit.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvProjectEdit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectEdit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvProjectEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProjectEdit.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dgvProjectEdit.EnableHeadersVisualStyles = false;
+            this.dgvProjectEdit.GridColor = System.Drawing.Color.White;
+            this.dgvProjectEdit.Location = new System.Drawing.Point(0, 0);
+            this.dgvProjectEdit.Name = "dgvProjectEdit";
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProjectEdit.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.dgvProjectEdit.RowHeadersVisible = false;
+            this.dgvProjectEdit.RowHeadersWidth = 51;
+            this.dgvProjectEdit.Size = new System.Drawing.Size(632, 106);
+            this.dgvProjectEdit.TabIndex = 15;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -4835,8 +4862,6 @@ namespace TeamCollaborationApp
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEdit)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -4855,6 +4880,8 @@ namespace TeamCollaborationApp
             this.menuStrip2.PerformLayout();
             this.panel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTask)).EndInit();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectEdit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4985,8 +5012,6 @@ namespace TeamCollaborationApp
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.ComboBox cmbVisibilityEdit;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.DataGridView dgvProjectEdit;
         private System.Windows.Forms.DataGridView dgvTaskProject;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSaveProjectEdit;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCancelProjectEdit;
@@ -5007,7 +5032,6 @@ namespace TeamCollaborationApp
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtProjectNameSearchTaskEdit;
         private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.RichTextBox txtTaskDescriptionProject;
-        private System.Windows.Forms.RichTextBox txtDescriptionProjectEdit;
         private System.Windows.Forms.RichTextBox txtTaskDescriptionEdit;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.TabPage tabPage5;
@@ -5027,6 +5051,12 @@ namespace TeamCollaborationApp
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.DataGridView dgvTask;
+        private System.Windows.Forms.RichTextBox txtDescriptionProjectEdit;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.DataGridView dgvProjectEdit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
 
         public string TxtbEditFirstname {set { txtbEditFirstname.Text = value; } get { return txtbEditFirstname.Text; } }
         public string TxtbEditLastname { set { txtbEditLastname.Text = value; } get { return txtbEditLastname.Text; } }

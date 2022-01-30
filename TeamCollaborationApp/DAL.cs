@@ -58,7 +58,37 @@ namespace TeamCollaborationApp
                         //string photo = Convert.ToString(cmd.Parameters["@photo"].Value);
                         string password = Convert.ToString(cmd.Parameters["@password"].Value);
 
-                        u.GetUserDetails(id, username, Fname, lname, phone, email, password);
+                        u.GetUserDetails( username, Fname, lname, phone, email, password);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void SaveUser_StoredProcedure(User u)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("spSaveUser", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Firstname", u.firstname);
+                    cmd.Parameters.AddWithValue("@Lastname", u.lastname);
+                    cmd.Parameters.AddWithValue("@Email", u.email);
+                    cmd.Parameters.AddWithValue("@Username", u.username);
+                    cmd.Parameters.AddWithValue("@Phone", u.phonenumber);
+                    cmd.Parameters.AddWithValue("@Password", u.password);
+
+
+                    int rowAffected = cmd.ExecuteNonQuery();
+                    con.Close();
+                    if (rowAffected > 0)
+                        MessageBox.Show("Save succesfully !");
+
                 }
             }
             catch (SqlException ex)
@@ -73,8 +103,7 @@ namespace TeamCollaborationApp
 
 
 
-
-        public void SaveUser_StoredProcedure(User u)
+        public void SaveSignUp_StoredProcedure(User u)
         {
             try
             {

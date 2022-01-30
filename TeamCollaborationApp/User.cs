@@ -35,16 +35,17 @@ namespace TeamCollaborationApp
          
 
         }
-        public void GetUserDetails(int id,string username, string Fname,string lname, string phone, string email , string password )
+        public void GetUserDetails( string username, string Fname,string lname, string phone, string email , string password )
         {
-            this.id = id;
+            //this.id = id;
             this.username = username;
             this.firstname = Fname;
             this.lastname = lname;
             this.phonenumber = phone;
             this.email = email;
             this.password = password;
- }
+            this.fullname = Fname + " " + lname;
+        }
         public void initalizeUserDetail()
         {
           //This method will specify UserDetail
@@ -95,7 +96,7 @@ namespace TeamCollaborationApp
 
         public void saveUser()
         {
-            OBJ.SaveUser_StoredProcedure(this);
+            OBJ.SaveSignUp_StoredProcedure(this);
         }
 
     }

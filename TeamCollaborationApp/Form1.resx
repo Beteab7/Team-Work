@@ -155,6 +155,15 @@ The Create a New Project page is broken up into sections that allow you to confi
         dgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnSearchProject.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACUAAAAjCAYAAAATx8MeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -554,12 +563,11 @@ The Create a New Project page is broken up into sections that allow you to confi
   </data>
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFcAAAAhCAYAAACsszewAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVGhD7dqxDcIwFABRj8IoTMCi1LSMkgWoWCDBJLdB
-        ct2dZFn6v3ty6VFy27bd1nV9zrtONh1f87pBO8YcvI9VXdH0XKDdX25dHLThGkEbrhG04RpBG64RtOEa
-        QRuuEbThGkEbrhG04RpBG64RtOEaQRuuEbThGkEbrhG04RpBG64RtOEaQRuuEbThGkEbrhG04RpBG64R
-        tOEaQRuuEbThGkEbrhG0+1+xhVld0PT8Qru/3PscfI5VnekPO88D2nIa4wfzJACiLu76pAAAAABJRU5E
-        rkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADsAAAAhCAYAAABnaNNOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVFhH7dmxDcMwDAVRjuJRMkEWdZ02o3gBV1lAMiPf
+        FOd/gCCArB5Uqh7XnHMbY+x962rXp68NalUPvvfKWfsOqOtl9UENVhfUYHVBDVYX1GB1QQ1WF9RgdUEN
+        VhfUYHVBDVYX1GB1QQ1WF9RgdUENVhfU9ddzMFPWvh/U9bKvHpz3ytUf2ucN9SlVXan7fWCsIhBSAAAA
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuButton1.IdleIconRightImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -741,14 +749,17 @@ The Create a New Project page is broken up into sections that allow you to confi
   <data name="btnSaveProjectEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHUAAAAdCAYAAACUoyOLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVGhD7ZorU8NAFIWPrERWIiORyP6ESmQkEolrdZJO
-        JZKfgUQikUgkEonaLnc3dybtZgkPQXPTc2a+ibm7It/sI9kFc6LxDQpfYyHPUp5r8s+0733hK1yokr9n
-        V+HGVXiRTj0ZB67GaxS9wkw1/SzSuBCZT2mHZDyEwbbb4FKVDUcalK7BR9oJGS23qi4fKSgo1CCy3qrC
-        fjjl2kQG4pvf4kw1dgmbolwDYgO3wb2q7BJ3VZliYoO4bO6P1vD9kysk5liqUpl6a1xlCog9up0w19OJ
-        UGOtSmX6bX9F5QuJHSh1glDqBKHUCUKpE+RAqmyFewXEHonUsldA7LEvNZzLZYuIKcJPJFUqI3WFmavw
-        niskhtjiXJW2cQ3usoXEBOLvWVV28RXm8Vwu04CMm3hC89WlNClYpg2ICYavtHAatoWr8aDqhiPFJTdO
-        4yZOud+N0DS6xj6mnZHj86vrobmEbbJ8/1zHX4nkqOi5d6FqmNMJ8AktZFBT52FCKgAAAABJRU5ErkJg
-        gg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7Zu/T9tAFMczZmTMmDFjR0bGjLClWxj6R6Ay
+        dOoCVasyIHXIgNSqFajKkAq6IFUZqEBVhw4MSIiooimOLMeNYxMHv8d7x6uqqFcqFvCF95U+Un6cE+k+
+        9t1z7lLQ3LMgYhEAahD3PhBfYRT26DXNLYf73fT/0Nulp3ViRhTdLCSzCueBD0fNEFs1xHdziK/KiKvk
+        WrlduN+5/5vzCIdvBpD4ASS/Homq/4fPAojO3sP3doDrJfuXKHfL2gzi4ds+xN4e+SqJOnuM0KHXyXYW
+        U+uHKfliq4oQdjrkrSwK/w5foSrUMWhY5vlWFE7GzKE85NoOVHJNdvAswlHwRFRehS7fIhdFOoc6yosi
+        DcPHPnmsiFIjtc5VlfUAxQmy9tIYkv5zUUpDL9//ULlsa6w4wsYDmlv9Y1FKUs+DU2xU7I0VN+Ah+CId
+        i1KSOk5ic+9ja6y4A0WUmjnV3khxC4ooValTA0WUqtSpgSJKVerUQBGlKnVqoIhSqn6pFOaS2NpQcYcJ
+        qbz4rWul7jMhldfltqr2hoobNCrIPyKJUpKaxsuwv5JYGytusF1HSPxNUWoKpTIMTgOdVx3m5GOfPM6L
+        0qtAdLYKn5/qSo2DZK2HKQy6O6LyT8hyEaIf3/D1rPVAJaeslxCGnkf+7DsM6Y0KhCc9XbFxBBb68wsv
+        js+JQnsAYNZsPms/1sIpx2TNhVSu0OuF/o4ZiuPeS+geBFxV6TaXnMDLo60a8l5siLqf/jnkXhc+C7hM
+        hlEU0mPNHYfXvc2/JQBqokhzP1IoXAJZPJT2gMJ8gQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnCancelProjectEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

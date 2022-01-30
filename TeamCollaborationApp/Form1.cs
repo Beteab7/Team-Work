@@ -119,11 +119,11 @@ namespace TeamCollaborationApp
             InitializeComponent();
             // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
             // bunifuFormDock1.SubscribeControlToDragEvents(panel2);
-/*            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 dgvProject.Rows.Add(new object[]{ 
                  });
-            }*/
+            }
         }
 
        
@@ -425,8 +425,24 @@ namespace TeamCollaborationApp
 
             if (value == true)
             {
-
+                u.GetUserDetails(txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbEditRePassword.Text);
+                u.saveUser();
             }
+        }
+
+        private void dgvProject_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void dgvProject_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dgvProject_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            BunifuPage.SetPage("ListTask");
         }
     }
 }
