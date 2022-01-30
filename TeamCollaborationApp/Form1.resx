@@ -1109,14 +1109,14 @@ The Create a New Project page is broken up into sections that allow you to confi
   <data name="userToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGhSURBVEhL3ZXNSsNAFIULor5aN4IQU/MHdWNExQfQjcsu
-        RKTgA+hCdKGg76ErFbFY3SsIFcGNWL8bbprpdNLSQhd64KNh5txzJ5N0Uvnfqlar83EcJ3ABbXhX2lEU
-        nYdhGItH7eOJkCV4ge4wgiB4TpLE07LR8n1/hsKmHTQK7uZAajWmXJgP7eIxaGqMW9zqoqNI+GbPT9mO
-        LUGuZczyCD/cyYLG9Yvbm8PwZBVkaHhogs5cXmilaTqrsYUoCBzmDOY27AY03XR5BeZ8jS3ERNmKpMG6
-        3UCaurzKicYWYrBlmXqMuUXCg8YWoujDYczJHnKtVlsT5FrGLE8Pz/M6GluIwU+XeRJksRpbiFU9uswT
-        MrhFDPbtKQ1fYZfV1PN9d1AXD/43sxYGHzIPre81pbhhhQ2jYdbSdPA1lT+HuU00vKUwsYJcJOI1GtyV
-        nkmOo+KapquO0AzmUsJvDH/5UZGLon2joEvTDr+XBG4ztyIQsgNXjNmv9p7GlGvqx3UuiqbzwTEln0NW
-        FrAtxwTd82f8EuSa8SPGlyf+ZP4RVSq/u9pzFX9a3O4AAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGiSURBVEhL3ZXNSsNAFIULor5aN4JUU/MHdWNExQfQjcsu
+        RKTgA+hCdKGg76ErFbFY3SsIlYIbsX433DTT6aSlhS70wEfDzLnnTibppPS/VS6X56MoiuESWvChtMIw
+        vAiCIBKP2scTIcvwCt1h+L7/EsfxkpaNlud5MxQ27KBRcDeHUqsxxcJ8ZBePQUNj3OJWFx1Fwjd7fsZ2
+        bAtyLWOWR/jhThY0rl/c3hyGZ6sgRcMDE3Tu8kIzSZJZjc1Fge8wpzC3aTeg6ZbLKzDnaWwuJopWJA02
+        7AbS1OVVTjU2F4NNy9RjzC0SHjU2F0WfDmNG+pCr1eq6INcyZnl6VCqVtsbmYrDjMk+CLFZjc7GqJ5d5
+        Qga3iMG+PaXhG+yxmlq27w5q4sH/btbC4EPmofW9phTXrbBh1M1amg6+pvLnMLeJhncUxlaQi1i8RoP7
+        wjPJcVTc0HTNEZrCXEL4reEvPioyUXRgFHRp2ub3isAd5lYFQnbhmjH71d7XmGJN/bjORNF0Pjim5HPI
+        yny25YSgB/6MX4JcM37M+MrEn8w/olLpF5rdcwltGfbqAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1453,7 +1453,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACe
-        BwAAAk1TRnQBSQFMAwEBAAGoAQABqAEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        BwAAAk1TRnQBSQFMAwEBAAGwAQABsAEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm

@@ -206,6 +206,7 @@ namespace TeamCollaborationApp
             this.btnSaveProject = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.txtTaskDescriptionProject = new System.Windows.Forms.RichTextBox();
             this.dgvTaskProject = new System.Windows.Forms.DataGridView();
             this.btnAddTaskProject = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label18 = new System.Windows.Forms.Label();
@@ -227,6 +228,7 @@ namespace TeamCollaborationApp
             this.label14 = new System.Windows.Forms.Label();
             this.cmbVisibility = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.dateTimeEndProject = new System.Windows.Forms.DateTimePicker();
             this.dateTimeStartProject = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -281,12 +283,14 @@ namespace TeamCollaborationApp
             this.label31 = new System.Windows.Forms.Label();
             this.cmbVisibilityEdit = new System.Windows.Forms.ComboBox();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.txtDescriptionProjectEdit = new System.Windows.Forms.RichTextBox();
             this.dgvProjectEdit = new System.Windows.Forms.DataGridView();
             this.bunifuButton11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label38 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.txtTaskDescriptionEdit = new System.Windows.Forms.RichTextBox();
             this.btnCancelTaskEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSaveTaskEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAddTaskEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -321,10 +325,6 @@ namespace TeamCollaborationApp
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtDescription = new System.Windows.Forms.RichTextBox();
-            this.txtTaskDescriptionProject = new System.Windows.Forms.RichTextBox();
-            this.txtDescriptionProjectEdit = new System.Windows.Forms.RichTextBox();
-            this.txtTaskDescriptionEdit = new System.Windows.Forms.RichTextBox();
             bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.BunifuPage.SuspendLayout();
             this.StartPage.SuspendLayout();
@@ -376,7 +376,7 @@ namespace TeamCollaborationApp
             bunifuLabel1.ForeColor = System.Drawing.Color.DimGray;
             bunifuLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             bunifuLabel1.Location = new System.Drawing.Point(49, 68);
-            bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             bunifuLabel1.Name = "bunifuLabel1";
             bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             bunifuLabel1.Size = new System.Drawing.Size(1003, 422);
@@ -403,7 +403,7 @@ namespace TeamCollaborationApp
             this.BunifuPage.Controls.Add(this.tabPage3);
             this.BunifuPage.Controls.Add(this.tabPage4);
             this.BunifuPage.Location = new System.Drawing.Point(221, 48);
-            this.BunifuPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BunifuPage.Margin = new System.Windows.Forms.Padding(4);
             this.BunifuPage.Multiline = true;
             this.BunifuPage.Name = "BunifuPage";
             this.BunifuPage.Page = this.tabPage4;
@@ -440,9 +440,9 @@ namespace TeamCollaborationApp
             this.StartPage.Controls.Add(this.label2);
             this.StartPage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartPage.Location = new System.Drawing.Point(4, 4);
-            this.StartPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartPage.Margin = new System.Windows.Forms.Padding(4);
             this.StartPage.Name = "StartPage";
-            this.StartPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartPage.Padding = new System.Windows.Forms.Padding(4);
             this.StartPage.Size = new System.Drawing.Size(1088, 575);
             this.StartPage.TabIndex = 0;
             this.StartPage.Text = "Welcome";
@@ -468,9 +468,9 @@ namespace TeamCollaborationApp
             this.ProjectPages.Controls.Add(this.panel5);
             this.ProjectPages.Controls.Add(this.txtProjectSearch);
             this.ProjectPages.Location = new System.Drawing.Point(4, 4);
-            this.ProjectPages.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProjectPages.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectPages.Name = "ProjectPages";
-            this.ProjectPages.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProjectPages.Padding = new System.Windows.Forms.Padding(4);
             this.ProjectPages.Size = new System.Drawing.Size(1088, 575);
             this.ProjectPages.TabIndex = 1;
             this.ProjectPages.Text = "Project";
@@ -485,7 +485,7 @@ namespace TeamCollaborationApp
             this.panel12.Controls.Add(this.dgvProject);
             this.panel12.Controls.Add(this.label11);
             this.panel12.Location = new System.Drawing.Point(47, 142);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1005, 423);
             this.panel12.TabIndex = 19;
@@ -530,7 +530,7 @@ namespace TeamCollaborationApp
             this.bunifuButton7.IdleIconRightImage = null;
             this.bunifuButton7.IndicateFocus = true;
             this.bunifuButton7.Location = new System.Drawing.Point(4, 4);
-            this.bunifuButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton7.Name = "bunifuButton7";
             stateProperties1.BorderColor = System.Drawing.Color.White;
             stateProperties1.BorderRadius = 15;
@@ -593,7 +593,7 @@ namespace TeamCollaborationApp
             this.dgvProject.EnableHeadersVisualStyles = false;
             this.dgvProject.GridColor = System.Drawing.Color.White;
             this.dgvProject.Location = new System.Drawing.Point(0, 44);
-            this.dgvProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProject.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProject.Name = "dgvProject";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
@@ -660,7 +660,7 @@ namespace TeamCollaborationApp
             this.btnSearchProject.IdleIconRightImage = null;
             this.btnSearchProject.IndicateFocus = false;
             this.btnSearchProject.Location = new System.Drawing.Point(47, 37);
-            this.btnSearchProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchProject.Name = "btnSearchProject";
             stateProperties3.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties3.BorderRadius = 35;
@@ -697,7 +697,7 @@ namespace TeamCollaborationApp
             this.panel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel5.ForeColor = System.Drawing.Color.DarkOrange;
             this.panel5.Location = new System.Drawing.Point(47, 87);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1005, 46);
             this.panel5.TabIndex = 16;
@@ -741,7 +741,7 @@ namespace TeamCollaborationApp
             this.btnAllProjects.IdleIconRightImage = null;
             this.btnAllProjects.IndicateFocus = true;
             this.btnAllProjects.Location = new System.Drawing.Point(4, 4);
-            this.btnAllProjects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAllProjects.Margin = new System.Windows.Forms.Padding(4);
             this.btnAllProjects.Name = "btnAllProjects";
             stateProperties5.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties5.BorderRadius = 15;
@@ -807,7 +807,7 @@ namespace TeamCollaborationApp
             this.btnAddNewProject.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddNewProject.IdleIconRightImage")));
             this.btnAddNewProject.IndicateFocus = true;
             this.btnAddNewProject.Location = new System.Drawing.Point(125, 4);
-            this.btnAddNewProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddNewProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNewProject.Name = "btnAddNewProject";
             stateProperties7.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties7.BorderRadius = 15;
@@ -864,7 +864,7 @@ namespace TeamCollaborationApp
             this.txtProjectSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProjectSearch.Lines = new string[0];
             this.txtProjectSearch.Location = new System.Drawing.Point(104, 37);
-            this.txtProjectSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProjectSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtProjectSearch.MaxLength = 32767;
             this.txtProjectSearch.MinimumSize = new System.Drawing.Size(133, 43);
             this.txtProjectSearch.Modified = false;
@@ -916,9 +916,9 @@ namespace TeamCollaborationApp
             this.JournalPage.Controls.Add(this.richTextBox1);
             this.JournalPage.Controls.Add(this.menuStrip1);
             this.JournalPage.Location = new System.Drawing.Point(4, 4);
-            this.JournalPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.JournalPage.Margin = new System.Windows.Forms.Padding(4);
             this.JournalPage.Name = "JournalPage";
-            this.JournalPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.JournalPage.Padding = new System.Windows.Forms.Padding(4);
             this.JournalPage.Size = new System.Drawing.Size(1088, 575);
             this.JournalPage.TabIndex = 2;
             this.JournalPage.Text = "Journal";
@@ -931,7 +931,7 @@ namespace TeamCollaborationApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(19, 37);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(1061, 534);
             this.richTextBox1.TabIndex = 3;
@@ -1028,9 +1028,9 @@ namespace TeamCollaborationApp
             // ReferencePage
             // 
             this.ReferencePage.Location = new System.Drawing.Point(4, 4);
-            this.ReferencePage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ReferencePage.Margin = new System.Windows.Forms.Padding(4);
             this.ReferencePage.Name = "ReferencePage";
-            this.ReferencePage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ReferencePage.Padding = new System.Windows.Forms.Padding(4);
             this.ReferencePage.Size = new System.Drawing.Size(1088, 575);
             this.ReferencePage.TabIndex = 3;
             this.ReferencePage.Text = "Reference";
@@ -1044,9 +1044,9 @@ namespace TeamCollaborationApp
             this.SettingPage.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingPage.ForeColor = System.Drawing.Color.White;
             this.SettingPage.Location = new System.Drawing.Point(4, 4);
-            this.SettingPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SettingPage.Margin = new System.Windows.Forms.Padding(4);
             this.SettingPage.Name = "SettingPage";
-            this.SettingPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SettingPage.Padding = new System.Windows.Forms.Padding(4);
             this.SettingPage.Size = new System.Drawing.Size(1088, 575);
             this.SettingPage.TabIndex = 4;
             this.SettingPage.Text = "Setting";
@@ -1058,7 +1058,7 @@ namespace TeamCollaborationApp
             this.panel6.Controls.Add(this.bunifuTileButton2);
             this.panel6.Controls.Add(this.bunifuTileButton1);
             this.panel6.Location = new System.Drawing.Point(13, 26);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1068, 153);
             this.panel6.TabIndex = 1;
@@ -1143,9 +1143,9 @@ namespace TeamCollaborationApp
             this.tabPage1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.Color.DimGray;
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1088, 575);
             this.tabPage1.TabIndex = 5;
             this.tabPage1.Text = "ProjectCreation";
@@ -1188,7 +1188,7 @@ namespace TeamCollaborationApp
             this.btnSaveProject.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnSaveProject.IdleIconRightImage")));
             this.btnSaveProject.IndicateFocus = true;
             this.btnSaveProject.Location = new System.Drawing.Point(249, 1552);
-            this.btnSaveProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveProject.Name = "btnSaveProject";
             stateProperties13.BorderColor = System.Drawing.Color.White;
             stateProperties13.BorderRadius = 15;
@@ -1218,7 +1218,7 @@ namespace TeamCollaborationApp
             // panel9
             // 
             this.panel9.Location = new System.Drawing.Point(4, 1660);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1077, 23);
             this.panel9.TabIndex = 25;
@@ -1238,10 +1238,18 @@ namespace TeamCollaborationApp
             this.panel8.Controls.Add(this.cmbTaskPriorityProject);
             this.panel8.Controls.Add(this.label1);
             this.panel8.Location = new System.Drawing.Point(40, 714);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(991, 513);
             this.panel8.TabIndex = 24;
+            // 
+            // txtTaskDescriptionProject
+            // 
+            this.txtTaskDescriptionProject.Location = new System.Drawing.Point(209, 166);
+            this.txtTaskDescriptionProject.Name = "txtTaskDescriptionProject";
+            this.txtTaskDescriptionProject.Size = new System.Drawing.Size(393, 145);
+            this.txtTaskDescriptionProject.TabIndex = 27;
+            this.txtTaskDescriptionProject.Text = "";
             // 
             // dgvTaskProject
             // 
@@ -1279,7 +1287,7 @@ namespace TeamCollaborationApp
             this.dgvTaskProject.EnableHeadersVisualStyles = false;
             this.dgvTaskProject.GridColor = System.Drawing.Color.White;
             this.dgvTaskProject.Location = new System.Drawing.Point(693, 116);
-            this.dgvTaskProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTaskProject.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTaskProject.Name = "dgvTaskProject";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
@@ -1332,7 +1340,7 @@ namespace TeamCollaborationApp
             this.btnAddTaskProject.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddTaskProject.IdleIconRightImage")));
             this.btnAddTaskProject.IndicateFocus = true;
             this.btnAddTaskProject.Location = new System.Drawing.Point(693, 71);
-            this.btnAddTaskProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddTaskProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddTaskProject.Name = "btnAddTaskProject";
             stateProperties15.BorderColor = System.Drawing.Color.White;
             stateProperties15.BorderRadius = 15;
@@ -1376,7 +1384,7 @@ namespace TeamCollaborationApp
             this.dateTimeTaskDeadlineProject.CalendarForeColor = System.Drawing.Color.DimGray;
             this.dateTimeTaskDeadlineProject.CalendarTitleForeColor = System.Drawing.Color.DimGray;
             this.dateTimeTaskDeadlineProject.Location = new System.Drawing.Point(209, 428);
-            this.dateTimeTaskDeadlineProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeTaskDeadlineProject.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeTaskDeadlineProject.Name = "dateTimeTaskDeadlineProject";
             this.dateTimeTaskDeadlineProject.Size = new System.Drawing.Size(333, 29);
             this.dateTimeTaskDeadlineProject.TabIndex = 23;
@@ -1398,7 +1406,7 @@ namespace TeamCollaborationApp
             this.txtTaskNameProject.BackColor = System.Drawing.Color.White;
             this.txtTaskNameProject.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtTaskNameProject.Location = new System.Drawing.Point(209, 79);
-            this.txtTaskNameProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaskNameProject.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaskNameProject.Name = "txtTaskNameProject";
             this.txtTaskNameProject.Size = new System.Drawing.Size(393, 29);
             this.txtTaskNameProject.TabIndex = 16;
@@ -1436,7 +1444,7 @@ namespace TeamCollaborationApp
             "Normal",
             "Low"});
             this.cmbTaskPriorityProject.Location = new System.Drawing.Point(209, 343);
-            this.cmbTaskPriorityProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTaskPriorityProject.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTaskPriorityProject.Name = "cmbTaskPriorityProject";
             this.cmbTaskPriorityProject.Size = new System.Drawing.Size(160, 29);
             this.cmbTaskPriorityProject.TabIndex = 20;
@@ -1468,7 +1476,7 @@ namespace TeamCollaborationApp
             this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel3.Location = new System.Drawing.Point(40, 1253);
-            this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(991, 278);
@@ -1512,7 +1520,7 @@ namespace TeamCollaborationApp
             this.btnAddMemberProject.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddMemberProject.IdleIconRightImage")));
             this.btnAddMemberProject.IndicateFocus = true;
             this.btnAddMemberProject.Location = new System.Drawing.Point(209, 233);
-            this.btnAddMemberProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddMemberProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddMemberProject.Name = "btnAddMemberProject";
             stateProperties17.BorderColor = System.Drawing.Color.White;
             stateProperties17.BorderRadius = 3;
@@ -1575,7 +1583,7 @@ namespace TeamCollaborationApp
             this.dgvMembersProject.EnableHeadersVisualStyles = false;
             this.dgvMembersProject.GridColor = System.Drawing.Color.White;
             this.dgvMembersProject.Location = new System.Drawing.Point(212, 79);
-            this.dgvMembersProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvMembersProject.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMembersProject.Name = "dgvMembersProject";
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
@@ -1642,7 +1650,7 @@ namespace TeamCollaborationApp
             this.btnSearchMembersProject.IdleIconRightImage = null;
             this.btnSearchMembersProject.IndicateFocus = false;
             this.btnSearchMembersProject.Location = new System.Drawing.Point(527, 28);
-            this.btnSearchMembersProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchMembersProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchMembersProject.Name = "btnSearchMembersProject";
             stateProperties19.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties19.BorderRadius = 35;
@@ -1696,7 +1704,7 @@ namespace TeamCollaborationApp
             this.txtSearchMembersProject.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchMembersProject.Lines = new string[0];
             this.txtSearchMembersProject.Location = new System.Drawing.Point(209, 28);
-            this.txtSearchMembersProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchMembersProject.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchMembersProject.MaxLength = 32767;
             this.txtSearchMembersProject.MinimumSize = new System.Drawing.Size(133, 43);
             this.txtSearchMembersProject.Modified = false;
@@ -1754,7 +1762,7 @@ namespace TeamCollaborationApp
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(40, 569);
-            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(991, 116);
@@ -1792,7 +1800,7 @@ namespace TeamCollaborationApp
             "Public ",
             "Private"});
             this.cmbVisibility.Location = new System.Drawing.Point(209, 58);
-            this.cmbVisibility.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbVisibility.Margin = new System.Windows.Forms.Padding(4);
             this.cmbVisibility.Name = "cmbVisibility";
             this.cmbVisibility.Size = new System.Drawing.Size(160, 29);
             this.cmbVisibility.TabIndex = 13;
@@ -1817,18 +1825,26 @@ namespace TeamCollaborationApp
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(40, 71);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(991, 465);
             this.bunifuGradientPanel1.TabIndex = 21;
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(212, 230);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(443, 129);
+            this.txtDescription.TabIndex = 27;
+            this.txtDescription.Text = "";
             // 
             // dateTimeEndProject
             // 
             this.dateTimeEndProject.CalendarForeColor = System.Drawing.Color.DimGray;
             this.dateTimeEndProject.CalendarTitleForeColor = System.Drawing.Color.DimGray;
             this.dateTimeEndProject.Location = new System.Drawing.Point(587, 144);
-            this.dateTimeEndProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeEndProject.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeEndProject.Name = "dateTimeEndProject";
             this.dateTimeEndProject.Size = new System.Drawing.Size(303, 29);
             this.dateTimeEndProject.TabIndex = 26;
@@ -1838,7 +1854,7 @@ namespace TeamCollaborationApp
             this.dateTimeStartProject.CalendarForeColor = System.Drawing.Color.DimGray;
             this.dateTimeStartProject.CalendarTitleForeColor = System.Drawing.Color.DimGray;
             this.dateTimeStartProject.Location = new System.Drawing.Point(212, 144);
-            this.dateTimeStartProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeStartProject.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeStartProject.Name = "dateTimeStartProject";
             this.dateTimeStartProject.Size = new System.Drawing.Size(308, 29);
             this.dateTimeStartProject.TabIndex = 25;
@@ -1875,7 +1891,7 @@ namespace TeamCollaborationApp
             this.txtProjectName.BorderColor = System.Drawing.Color.DimGray;
             this.txtProjectName.ForeColor = System.Drawing.Color.DimGray;
             this.txtProjectName.Location = new System.Drawing.Point(209, 66);
-            this.txtProjectName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProjectName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(393, 29);
             this.txtProjectName.TabIndex = 4;
@@ -1901,7 +1917,7 @@ namespace TeamCollaborationApp
             "Yellow",
             "Blue"});
             this.cmbProjectColor.Location = new System.Drawing.Point(212, 393);
-            this.cmbProjectColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbProjectColor.Margin = new System.Windows.Forms.Padding(4);
             this.cmbProjectColor.Name = "cmbProjectColor";
             this.cmbProjectColor.Size = new System.Drawing.Size(160, 29);
             this.cmbProjectColor.TabIndex = 16;
@@ -1981,9 +1997,9 @@ namespace TeamCollaborationApp
             this.tabPage2.Controls.Add(this.lblFullName);
             this.tabPage2.Controls.Add(this.panel10);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1088, 575);
             this.tabPage2.TabIndex = 6;
             this.tabPage2.Text = "Edit Profile";
@@ -2027,7 +2043,7 @@ namespace TeamCollaborationApp
             this.bunifuButton10.IdleIconRightImage = null;
             this.bunifuButton10.IndicateFocus = true;
             this.bunifuButton10.Location = new System.Drawing.Point(44, 298);
-            this.bunifuButton10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton10.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton10.Name = "bunifuButton10";
             stateProperties25.BorderColor = System.Drawing.Color.White;
             stateProperties25.BorderRadius = 3;
@@ -2059,7 +2075,7 @@ namespace TeamCollaborationApp
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.DimGray;
             this.textBox1.Location = new System.Drawing.Point(76, 260);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(284, 15);
             this.textBox1.TabIndex = 32;
@@ -2102,7 +2118,7 @@ namespace TeamCollaborationApp
             this.bunifuButton9.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton9.IdleIconRightImage")));
             this.bunifuButton9.IndicateFocus = true;
             this.bunifuButton9.Location = new System.Drawing.Point(715, 705);
-            this.bunifuButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton9.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton9.Name = "bunifuButton9";
             stateProperties27.BorderColor = System.Drawing.Color.White;
             stateProperties27.BorderRadius = 3;
@@ -2167,7 +2183,7 @@ namespace TeamCollaborationApp
             this.bunifuButton8.IdleIconRightImage = null;
             this.bunifuButton8.IndicateFocus = true;
             this.bunifuButton8.Location = new System.Drawing.Point(407, 705);
-            this.bunifuButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton8.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton8.Name = "bunifuButton8";
             stateProperties29.BorderColor = System.Drawing.Color.White;
             stateProperties29.BorderRadius = 20;
@@ -2222,7 +2238,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox10.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox10.Lines = new string[0];
             this.bunifuTextBox10.Location = new System.Drawing.Point(407, 620);
-            this.bunifuTextBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox10.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox10.MaxLength = 32767;
             this.bunifuTextBox10.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox10.Modified = false;
@@ -2296,7 +2312,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox9.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox9.Lines = new string[0];
             this.bunifuTextBox9.Location = new System.Drawing.Point(407, 570);
-            this.bunifuTextBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox9.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox9.MaxLength = 32767;
             this.bunifuTextBox9.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox9.Modified = false;
@@ -2345,7 +2361,7 @@ namespace TeamCollaborationApp
             // panel11
             // 
             this.panel11.Location = new System.Drawing.Point(9, 804);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1060, 172);
             this.panel11.TabIndex = 24;
@@ -2378,7 +2394,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox8.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox8.Lines = new string[0];
             this.bunifuTextBox8.Location = new System.Drawing.Point(407, 519);
-            this.bunifuTextBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox8.MaxLength = 32767;
             this.bunifuTextBox8.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox8.Modified = false;
@@ -2444,7 +2460,7 @@ namespace TeamCollaborationApp
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.DarkOrange;
             this.bunifuLabel3.Location = new System.Drawing.Point(388, 21);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(201, 43);
@@ -2481,7 +2497,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox7.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox7.Lines = new string[0];
             this.bunifuTextBox7.Location = new System.Drawing.Point(407, 437);
-            this.bunifuTextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox7.MaxLength = 32767;
             this.bunifuTextBox7.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox7.Modified = false;
@@ -2579,7 +2595,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox6.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox6.Lines = new string[0];
             this.bunifuTextBox6.Location = new System.Drawing.Point(407, 352);
-            this.bunifuTextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox6.MaxLength = 32767;
             this.bunifuTextBox6.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox6.Modified = false;
@@ -2665,7 +2681,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox5.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox5.Lines = new string[0];
             this.bunifuTextBox5.Location = new System.Drawing.Point(407, 268);
-            this.bunifuTextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox5.MaxLength = 32767;
             this.bunifuTextBox5.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox5.Modified = false;
@@ -2751,7 +2767,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox4.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox4.Lines = new string[0];
             this.bunifuTextBox4.Location = new System.Drawing.Point(407, 182);
-            this.bunifuTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox4.MaxLength = 32767;
             this.bunifuTextBox4.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox4.Modified = false;
@@ -2825,7 +2841,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox3.Lines = new string[0];
             this.bunifuTextBox3.Location = new System.Drawing.Point(407, 101);
-            this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox3.MaxLength = 32767;
             this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox3.Modified = false;
@@ -2900,7 +2916,7 @@ namespace TeamCollaborationApp
             this.panel10.Controls.Add(this.bunifuLabel2);
             this.panel10.Controls.Add(this.bunifuPictureBox2);
             this.panel10.Location = new System.Drawing.Point(44, 58);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(316, 194);
             this.panel10.TabIndex = 0;
@@ -2913,7 +2929,7 @@ namespace TeamCollaborationApp
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.DarkOrange;
             this.bunifuLabel2.Location = new System.Drawing.Point(48, 144);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(201, 43);
@@ -2930,7 +2946,7 @@ namespace TeamCollaborationApp
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
             this.bunifuPictureBox2.IsCircle = true;
             this.bunifuPictureBox2.Location = new System.Drawing.Point(83, 20);
-            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(133, 133);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2963,9 +2979,9 @@ namespace TeamCollaborationApp
             this.tabPage3.Controls.Add(this.bunifuTextBox11);
             this.tabPage3.ForeColor = System.Drawing.Color.DimGray;
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(1088, 575);
             this.tabPage3.TabIndex = 7;
             this.tabPage3.Text = "Edit Project";
@@ -3008,7 +3024,7 @@ namespace TeamCollaborationApp
             this.btnSaveProjectEdit.IdleIconRightImage = null;
             this.btnSaveProjectEdit.IndicateFocus = true;
             this.btnSaveProjectEdit.Location = new System.Drawing.Point(304, 762);
-            this.btnSaveProjectEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveProjectEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveProjectEdit.Name = "btnSaveProjectEdit";
             stateProperties63.BorderColor = System.Drawing.Color.White;
             stateProperties63.BorderRadius = 20;
@@ -3073,7 +3089,7 @@ namespace TeamCollaborationApp
             this.btnCancelProjectEdit.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnCancelProjectEdit.IdleIconRightImage")));
             this.btnCancelProjectEdit.IndicateFocus = true;
             this.btnCancelProjectEdit.Location = new System.Drawing.Point(717, 762);
-            this.btnCancelProjectEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelProjectEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelProjectEdit.Name = "btnCancelProjectEdit";
             stateProperties65.BorderColor = System.Drawing.Color.White;
             stateProperties65.BorderRadius = 15;
@@ -3129,7 +3145,7 @@ namespace TeamCollaborationApp
             // panel14
             // 
             this.panel14.Location = new System.Drawing.Point(9, 852);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1072, 14);
             this.panel14.TabIndex = 40;
@@ -3139,7 +3155,7 @@ namespace TeamCollaborationApp
             this.dateTimeEndProjectEdit.CalendarForeColor = System.Drawing.Color.DimGray;
             this.dateTimeEndProjectEdit.CalendarTitleForeColor = System.Drawing.Color.DimGray;
             this.dateTimeEndProjectEdit.Location = new System.Drawing.Point(609, 297);
-            this.dateTimeEndProjectEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeEndProjectEdit.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeEndProjectEdit.Name = "dateTimeEndProjectEdit";
             this.dateTimeEndProjectEdit.Size = new System.Drawing.Size(303, 22);
             this.dateTimeEndProjectEdit.TabIndex = 39;
@@ -3149,7 +3165,7 @@ namespace TeamCollaborationApp
             this.dateTimeStartProjectEdit.CalendarForeColor = System.Drawing.Color.DimGray;
             this.dateTimeStartProjectEdit.CalendarTitleForeColor = System.Drawing.Color.DimGray;
             this.dateTimeStartProjectEdit.Location = new System.Drawing.Point(235, 297);
-            this.dateTimeStartProjectEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeStartProjectEdit.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeStartProjectEdit.Name = "dateTimeStartProjectEdit";
             this.dateTimeStartProjectEdit.Size = new System.Drawing.Size(308, 22);
             this.dateTimeStartProjectEdit.TabIndex = 38;
@@ -3173,7 +3189,7 @@ namespace TeamCollaborationApp
             this.txtProjectNameEdit.BorderColor = System.Drawing.Color.DimGray;
             this.txtProjectNameEdit.ForeColor = System.Drawing.Color.DimGray;
             this.txtProjectNameEdit.Location = new System.Drawing.Point(235, 226);
-            this.txtProjectNameEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProjectNameEdit.Margin = new System.Windows.Forms.Padding(4);
             this.txtProjectNameEdit.Name = "txtProjectNameEdit";
             this.txtProjectNameEdit.Size = new System.Drawing.Size(393, 22);
             this.txtProjectNameEdit.TabIndex = 28;
@@ -3200,7 +3216,7 @@ namespace TeamCollaborationApp
             "Yellow",
             "Blue"});
             this.cmbProjectColorEdit.Location = new System.Drawing.Point(237, 550);
-            this.cmbProjectColorEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbProjectColorEdit.Margin = new System.Windows.Forms.Padding(4);
             this.cmbProjectColorEdit.Name = "cmbProjectColorEdit";
             this.cmbProjectColorEdit.Size = new System.Drawing.Size(160, 24);
             this.cmbProjectColorEdit.TabIndex = 37;
@@ -3264,7 +3280,7 @@ namespace TeamCollaborationApp
             "Public ",
             "Private"});
             this.cmbVisibilityEdit.Location = new System.Drawing.Point(237, 662);
-            this.cmbVisibilityEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbVisibilityEdit.Margin = new System.Windows.Forms.Padding(4);
             this.cmbVisibilityEdit.Name = "cmbVisibilityEdit";
             this.cmbVisibilityEdit.Size = new System.Drawing.Size(160, 24);
             this.cmbVisibilityEdit.TabIndex = 35;
@@ -3278,11 +3294,19 @@ namespace TeamCollaborationApp
             this.panel13.Controls.Add(this.txtDescriptionProjectEdit);
             this.panel13.Controls.Add(this.dgvProjectEdit);
             this.panel13.Location = new System.Drawing.Point(91, 58);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1237, 562);
+            this.panel13.Size = new System.Drawing.Size(1230, 853);
             this.panel13.TabIndex = 21;
             this.panel13.Visible = false;
+            // 
+            // txtDescriptionProjectEdit
+            // 
+            this.txtDescriptionProjectEdit.Location = new System.Drawing.Point(144, 316);
+            this.txtDescriptionProjectEdit.Name = "txtDescriptionProjectEdit";
+            this.txtDescriptionProjectEdit.Size = new System.Drawing.Size(501, 142);
+            this.txtDescriptionProjectEdit.TabIndex = 14;
+            this.txtDescriptionProjectEdit.Text = "";
             // 
             // dgvProjectEdit
             // 
@@ -3320,7 +3344,7 @@ namespace TeamCollaborationApp
             this.dgvProjectEdit.EnableHeadersVisualStyles = false;
             this.dgvProjectEdit.GridColor = System.Drawing.Color.White;
             this.dgvProjectEdit.Location = new System.Drawing.Point(0, 0);
-            this.dgvProjectEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProjectEdit.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProjectEdit.Name = "dgvProjectEdit";
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
@@ -3332,7 +3356,7 @@ namespace TeamCollaborationApp
             this.dgvProjectEdit.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvProjectEdit.RowHeadersVisible = false;
             this.dgvProjectEdit.RowHeadersWidth = 51;
-            this.dgvProjectEdit.Size = new System.Drawing.Size(1237, 562);
+            this.dgvProjectEdit.Size = new System.Drawing.Size(1230, 853);
             this.dgvProjectEdit.TabIndex = 13;
             // 
             // bunifuButton11
@@ -3373,7 +3397,7 @@ namespace TeamCollaborationApp
             this.bunifuButton11.IdleIconRightImage = null;
             this.bunifuButton11.IndicateFocus = false;
             this.bunifuButton11.Location = new System.Drawing.Point(33, 7);
-            this.bunifuButton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton11.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton11.Name = "bunifuButton11";
             stateProperties67.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties67.BorderRadius = 35;
@@ -3428,7 +3452,7 @@ namespace TeamCollaborationApp
             this.bunifuTextBox11.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox11.Lines = new string[0];
             this.bunifuTextBox11.Location = new System.Drawing.Point(91, 7);
-            this.bunifuTextBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextBox11.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox11.MaxLength = 32767;
             this.bunifuTextBox11.MinimumSize = new System.Drawing.Size(133, 43);
             this.bunifuTextBox11.Modified = false;
@@ -3483,9 +3507,9 @@ namespace TeamCollaborationApp
             this.tabPage4.Controls.Add(this.btnProjectNameSearchTaskEdit);
             this.tabPage4.Controls.Add(this.txtProjectNameSearchTaskEdit);
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage4.Size = new System.Drawing.Size(1088, 575);
             this.tabPage4.TabIndex = 8;
             this.tabPage4.Text = "Edit Task";
@@ -3519,10 +3543,18 @@ namespace TeamCollaborationApp
             this.panel15.Controls.Add(this.cmbPriorityEdit);
             this.panel15.Controls.Add(this.label37);
             this.panel15.Location = new System.Drawing.Point(75, 266);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(947, 545);
             this.panel15.TabIndex = 25;
+            // 
+            // txtTaskDescriptionEdit
+            // 
+            this.txtTaskDescriptionEdit.Location = new System.Drawing.Point(209, 165);
+            this.txtTaskDescriptionEdit.Name = "txtTaskDescriptionEdit";
+            this.txtTaskDescriptionEdit.Size = new System.Drawing.Size(515, 156);
+            this.txtTaskDescriptionEdit.TabIndex = 34;
+            this.txtTaskDescriptionEdit.Text = "";
             // 
             // btnCancelTaskEdit
             // 
@@ -3562,7 +3594,7 @@ namespace TeamCollaborationApp
             this.btnCancelTaskEdit.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnCancelTaskEdit.IdleIconRightImage")));
             this.btnCancelTaskEdit.IndicateFocus = true;
             this.btnCancelTaskEdit.Location = new System.Drawing.Point(448, 495);
-            this.btnCancelTaskEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelTaskEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelTaskEdit.Name = "btnCancelTaskEdit";
             stateProperties73.BorderColor = System.Drawing.Color.White;
             stateProperties73.BorderRadius = 3;
@@ -3627,7 +3659,7 @@ namespace TeamCollaborationApp
             this.btnSaveTaskEdit.IdleIconRightImage = null;
             this.btnSaveTaskEdit.IndicateFocus = true;
             this.btnSaveTaskEdit.Location = new System.Drawing.Point(228, 496);
-            this.btnSaveTaskEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveTaskEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveTaskEdit.Name = "btnSaveTaskEdit";
             stateProperties75.BorderColor = System.Drawing.Color.White;
             stateProperties75.BorderRadius = 20;
@@ -3692,7 +3724,7 @@ namespace TeamCollaborationApp
             this.btnAddTaskEdit.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddTaskEdit.IdleIconRightImage")));
             this.btnAddTaskEdit.IndicateFocus = true;
             this.btnAddTaskEdit.Location = new System.Drawing.Point(684, 14);
-            this.btnAddTaskEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddTaskEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddTaskEdit.Name = "btnAddTaskEdit";
             stateProperties77.BorderColor = System.Drawing.Color.White;
             stateProperties77.BorderRadius = 15;
@@ -3736,7 +3768,7 @@ namespace TeamCollaborationApp
             this.dateTimeDeadlineEdit.CalendarForeColor = System.Drawing.Color.DimGray;
             this.dateTimeDeadlineEdit.CalendarTitleForeColor = System.Drawing.Color.DimGray;
             this.dateTimeDeadlineEdit.Location = new System.Drawing.Point(209, 428);
-            this.dateTimeDeadlineEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeDeadlineEdit.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeDeadlineEdit.Name = "dateTimeDeadlineEdit";
             this.dateTimeDeadlineEdit.Size = new System.Drawing.Size(333, 22);
             this.dateTimeDeadlineEdit.TabIndex = 23;
@@ -3758,7 +3790,7 @@ namespace TeamCollaborationApp
             this.txtTaskNameEdit.BackColor = System.Drawing.Color.White;
             this.txtTaskNameEdit.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtTaskNameEdit.Location = new System.Drawing.Point(209, 79);
-            this.txtTaskNameEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaskNameEdit.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaskNameEdit.Name = "txtTaskNameEdit";
             this.txtTaskNameEdit.Size = new System.Drawing.Size(393, 22);
             this.txtTaskNameEdit.TabIndex = 16;
@@ -3796,7 +3828,7 @@ namespace TeamCollaborationApp
             "Normal",
             "Low"});
             this.cmbPriorityEdit.Location = new System.Drawing.Point(209, 343);
-            this.cmbPriorityEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPriorityEdit.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPriorityEdit.Name = "cmbPriorityEdit";
             this.cmbPriorityEdit.Size = new System.Drawing.Size(160, 24);
             this.cmbPriorityEdit.TabIndex = 20;
@@ -3850,7 +3882,7 @@ namespace TeamCollaborationApp
             this.dgvTask.EnableHeadersVisualStyles = false;
             this.dgvTask.GridColor = System.Drawing.Color.White;
             this.dgvTask.Location = new System.Drawing.Point(73, 121);
-            this.dgvTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTask.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTask.Name = "dgvTask";
             dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
@@ -3862,7 +3894,7 @@ namespace TeamCollaborationApp
             this.dgvTask.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvTask.RowHeadersVisible = false;
             this.dgvTask.RowHeadersWidth = 51;
-            this.dgvTask.Size = new System.Drawing.Size(920, 515);
+            this.dgvTask.Size = new System.Drawing.Size(899, 751);
             this.dgvTask.TabIndex = 23;
             // 
             // btnProjectNameSearchTaskEdit
@@ -3903,7 +3935,7 @@ namespace TeamCollaborationApp
             this.btnProjectNameSearchTaskEdit.IdleIconRightImage = null;
             this.btnProjectNameSearchTaskEdit.IndicateFocus = false;
             this.btnProjectNameSearchTaskEdit.Location = new System.Drawing.Point(19, 23);
-            this.btnProjectNameSearchTaskEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProjectNameSearchTaskEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnProjectNameSearchTaskEdit.Name = "btnProjectNameSearchTaskEdit";
             stateProperties79.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties79.BorderRadius = 35;
@@ -3958,7 +3990,7 @@ namespace TeamCollaborationApp
             this.txtProjectNameSearchTaskEdit.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProjectNameSearchTaskEdit.Lines = new string[0];
             this.txtProjectNameSearchTaskEdit.Location = new System.Drawing.Point(75, 23);
-            this.txtProjectNameSearchTaskEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProjectNameSearchTaskEdit.Margin = new System.Windows.Forms.Padding(4);
             this.txtProjectNameSearchTaskEdit.MaxLength = 32767;
             this.txtProjectNameSearchTaskEdit.MinimumSize = new System.Drawing.Size(133, 43);
             this.txtProjectNameSearchTaskEdit.Modified = false;
@@ -4053,7 +4085,7 @@ namespace TeamCollaborationApp
             this.shadowPanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.shadowPanelMenu.ForeColor = System.Drawing.Color.DarkGreen;
             this.shadowPanelMenu.Location = new System.Drawing.Point(0, 0);
-            this.shadowPanelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.shadowPanelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.shadowPanelMenu.Name = "shadowPanelMenu";
             this.shadowPanelMenu.PanelColor = System.Drawing.Color.Empty;
             this.shadowPanelMenu.ShadowDept = 2;
@@ -4068,7 +4100,7 @@ namespace TeamCollaborationApp
             this.panel3.Controls.Add(this.btnSetting);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(219, 652);
             this.panel3.TabIndex = 0;
@@ -4079,7 +4111,7 @@ namespace TeamCollaborationApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.bunifuPictureBox1);
             this.panel1.Location = new System.Drawing.Point(4, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 182);
             this.panel1.TabIndex = 0;
@@ -4092,7 +4124,7 @@ namespace TeamCollaborationApp
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(56, 42);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(99, 99);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -4111,7 +4143,7 @@ namespace TeamCollaborationApp
             this.panel2.Controls.Add(this.btnProject);
             this.panel2.Controls.Add(this.btnStart);
             this.panel2.Location = new System.Drawing.Point(0, 218);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(219, 366);
             this.panel2.TabIndex = 8;
@@ -4121,7 +4153,7 @@ namespace TeamCollaborationApp
             this.indicator.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.indicator.BackColor = System.Drawing.Color.DarkOrange;
             this.indicator.Location = new System.Drawing.Point(4, 4);
-            this.indicator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.indicator.Margin = new System.Windows.Forms.Padding(4);
             this.indicator.Name = "indicator";
             this.indicator.Size = new System.Drawing.Size(4, 49);
             this.indicator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -4169,7 +4201,7 @@ namespace TeamCollaborationApp
             this.btnReference.IdleIconRightImage = null;
             this.btnReference.IndicateFocus = false;
             this.btnReference.Location = new System.Drawing.Point(0, 153);
-            this.btnReference.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReference.Margin = new System.Windows.Forms.Padding(4);
             this.btnReference.Name = "btnReference";
             stateProperties85.BorderColor = System.Drawing.Color.White;
             stateProperties85.BorderRadius = 3;
@@ -4236,7 +4268,7 @@ namespace TeamCollaborationApp
             this.btnJournal.IdleIconRightImage = null;
             this.btnJournal.IndicateFocus = true;
             this.btnJournal.Location = new System.Drawing.Point(0, 102);
-            this.btnJournal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnJournal.Margin = new System.Windows.Forms.Padding(4);
             this.btnJournal.Name = "btnJournal";
             stateProperties87.BorderColor = System.Drawing.Color.White;
             stateProperties87.BorderRadius = 3;
@@ -4303,7 +4335,7 @@ namespace TeamCollaborationApp
             this.btnProject.IdleIconRightImage = null;
             this.btnProject.IndicateFocus = true;
             this.btnProject.Location = new System.Drawing.Point(0, 51);
-            this.btnProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProject.Margin = new System.Windows.Forms.Padding(4);
             this.btnProject.Name = "btnProject";
             stateProperties89.BorderColor = System.Drawing.Color.White;
             stateProperties89.BorderRadius = 3;
@@ -4371,7 +4403,7 @@ namespace TeamCollaborationApp
             this.btnStart.IdleIconRightImage = null;
             this.btnStart.IndicateFocus = true;
             this.btnStart.Location = new System.Drawing.Point(0, 0);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             stateProperties91.BorderColor = System.Drawing.Color.White;
             stateProperties91.BorderRadius = 3;
@@ -4439,7 +4471,7 @@ namespace TeamCollaborationApp
             this.btnSetting.IdleIconRightImage = null;
             this.btnSetting.IndicateFocus = true;
             this.btnSetting.Location = new System.Drawing.Point(0, 601);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetting.Name = "btnSetting";
             stateProperties93.BorderColor = System.Drawing.Color.White;
             stateProperties93.BorderRadius = 3;
@@ -4469,7 +4501,7 @@ namespace TeamCollaborationApp
             // panel4
             // 
             this.panel4.Location = new System.Drawing.Point(236, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1072, 46);
             this.panel4.TabIndex = 5;
@@ -4499,7 +4531,7 @@ namespace TeamCollaborationApp
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.menuStrip2);
             this.panel7.Location = new System.Drawing.Point(236, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1076, 46);
             this.panel7.TabIndex = 7;
@@ -4557,38 +4589,6 @@ namespace TeamCollaborationApp
             this.signOutToolStripMenuItem.Text = "Sign out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
-            // txtDescription
-            // 
-            this.txtDescription.Location = new System.Drawing.Point(212, 230);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(443, 129);
-            this.txtDescription.TabIndex = 27;
-            this.txtDescription.Text = "";
-            // 
-            // txtTaskDescriptionProject
-            // 
-            this.txtTaskDescriptionProject.Location = new System.Drawing.Point(209, 166);
-            this.txtTaskDescriptionProject.Name = "txtTaskDescriptionProject";
-            this.txtTaskDescriptionProject.Size = new System.Drawing.Size(393, 145);
-            this.txtTaskDescriptionProject.TabIndex = 27;
-            this.txtTaskDescriptionProject.Text = "";
-            // 
-            // txtDescriptionProjectEdit
-            // 
-            this.txtDescriptionProjectEdit.Location = new System.Drawing.Point(144, 316);
-            this.txtDescriptionProjectEdit.Name = "txtDescriptionProjectEdit";
-            this.txtDescriptionProjectEdit.Size = new System.Drawing.Size(501, 142);
-            this.txtDescriptionProjectEdit.TabIndex = 14;
-            this.txtDescriptionProjectEdit.Text = "";
-            // 
-            // txtTaskDescriptionEdit
-            // 
-            this.txtTaskDescriptionEdit.Location = new System.Drawing.Point(209, 165);
-            this.txtTaskDescriptionEdit.Name = "txtTaskDescriptionEdit";
-            this.txtTaskDescriptionEdit.Size = new System.Drawing.Size(515, 156);
-            this.txtTaskDescriptionEdit.TabIndex = 34;
-            this.txtTaskDescriptionEdit.Text = "";
-            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -4603,7 +4603,7 @@ namespace TeamCollaborationApp
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip2;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
