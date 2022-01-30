@@ -16,11 +16,11 @@ END
 ---------------------------------------------------------
 
 GO
-CREATE FUNCTION SearchName(
+ALTER FUNCTION SearchName(
 @querry VARCHAR(50))
 RETURNS TABLE
 AS
 RETURN 
-	SELECT dbo.GetFullName([uid]) as [Full Name]
+	SELECT [uid], dbo.GetFullName([uid]) as [Full Name]
 	FROM [User]
 	WHERE Fname like @querry+'%' or Lname like @querry+'%' 

@@ -146,3 +146,12 @@ C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.
 C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
 C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
 C:\Users\hp\Documents\github\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\TeamCollaborationApp.pdb
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\esube\Documents\GitHub\Team-Work\TeamCollaborationApp\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml

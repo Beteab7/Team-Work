@@ -110,6 +110,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL.cs" />
+    <Compile Include="DataClasses\Project Member\ProjectMember.cs" />
+    <Compile Include="DataClasses\Project Member\ProjectMemberDAL.cs" />
+    <Compile Include="DataClasses\Project\Project.cs" />
+    <Compile Include="DataClasses\Project\ProjectDAL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,19 +1,23 @@
 using System;
 using System.Data;
-namespace TTa{
+namespace TeamCollaborationApp{
         class Project{
-                public string ID;
-                public string UserID;
+                public int ID;
+                public int UserID;
                 public string Name;
                 public string Description;
                 public DateTime BeginDate;
                 public DateTime EndDate;
                 ProjectDAL pd;
-                public Project(string UserID){
+                
+                //----------------------------------------------------------------//
+                //Constructors
+                public Project(int UserID, int ID){
                         this.UserID = UserID;
+                        this.ID = ID;
                         pd = new ProjectDAL();
                 }
-                public Project(string ID, string UserID, string Name, string Description, DateTime BeginDate, DateTime EndDate){
+                public Project(int ID, int UserID, string Name, string Description, DateTime BeginDate, DateTime EndDate){
                         this.ID = ID;
                         this.UserID = UserID;
                         this.Name = Name;
@@ -22,7 +26,7 @@ namespace TTa{
                         this.EndDate = EndDate;
                         pd = new ProjectDAL();
                 }
-                public Project(string UserID, string Name, string Description, DateTime BeginDate, DateTime EndDate){
+                public Project(int UserID, string Name, string Description, DateTime BeginDate, DateTime EndDate){
                         this.UserID = UserID;
                         this.Name = Name;
                         this.Description = Description;
@@ -30,34 +34,23 @@ namespace TTa{
                         this.EndDate = EndDate;
                         pd = new ProjectDAL();
                 }
+
+                //----------------------------------------------------------------//
+                //Methods
                 public void InsertProject(){
                         pd.InsertProject(this);
                 }
                 public DataTable getProject(){
                         return pd.getProject(UserID);
                 }
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public void ShowTable(DataTable table) {
-        foreach (DataColumn col in table.Columns) {
-            Console.Write("{0,-14}", col.ColumnName);
-        }
-        Console.WriteLine();
-
-        foreach (DataRow row in table.Rows) {
-            foreach (DataColumn col in table.Columns) {
-                if (col.DataType.Equals(typeof(DateTime)))
-                Console.Write("{0,-14:d}", row[col]);
-                else if (col.DataType.Equals(typeof(Decimal)))
-                Console.Write("{0,-14:C}", row[col]);
-                else
-                Console.Write("{0,-14}", row[col]);
-            }
-            Console.WriteLine();
-        }
-        Console.WriteLine();
-        }
+                public void DeleteProject(){
+                        pd.DeleteProject(UserID,ID);
+                }
+                public void UpdateProject(){
+                        pd.UpdateProject(this);
+                }
+                public DataTable searchProject(string nameQuery){
+                        return pd.searchProject(UserID, nameQuery);
+                }
         }
 }

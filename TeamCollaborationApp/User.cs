@@ -11,7 +11,7 @@ namespace TeamCollaborationApp
     {
         DAL OBJ = new DAL();
         Form1 obj = new Form1();
-        internal string id;
+        internal int id;
         internal string fullname;
         internal string firstname;
         internal string lastname;
@@ -35,7 +35,7 @@ namespace TeamCollaborationApp
          
 
         }
-        public void GetUserDetails(string id,string username, string Fname,string lname, string phone, string email , string password )
+        public void GetUserDetails(int id,string username, string Fname,string lname, string phone, string email , string password )
         {
             this.id = id;
             this.username = username;

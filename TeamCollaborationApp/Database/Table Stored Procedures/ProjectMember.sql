@@ -4,9 +4,9 @@
 
 	--Project Member Stored Procedures
 --------------------------------------------------------------
-CREATE PROC spInsertProjectMember(
-	@ProjectId varchar(22),
-	@UserId varchar(22))
+alter PROC spInsertProjectMember(
+	@ProjectId int,
+	@UserId int)
 AS
 BEGIN
 	INSERT INTO ProjectMember
@@ -16,9 +16,9 @@ END
 --------------------------------------------------------------
 
 GO
-CREATE PROC spDeleteProjectMemeber(
-	@ProjectId varchar(22),
-	@UserId varchar(22))
+alter PROC spDeleteProjectMember(
+	@ProjectId int,
+	@UserId int)
 AS
 BEGIN
 	DELETE FROM ProjectMember
@@ -28,24 +28,11 @@ END
 --------------------------------------------------------------
 
 GO
-CREATE PROC spGetRecentProjectMembers(
-	@ProjectId varchar(22))
+alter PROC spGetRecentProjectMembers(
+	@ProjectId int)
 AS
 BEGIN
-	SELECT dbo.GetFullName(UserID)
-	FROM ProjectMember
-	WHERE ProjectId = @ProjectId
-	ORDER BY DateAdded ASC
-END
-
---------------------------------------------------------------
-
-GO
-CREATE PROC spGetOldProjectMembers(
-	@ProjectId varchar(22))
-AS
-BEGIN
-	SELECT dbo.GetFullName(UserID)
+	SELECT UserID, dbo.GetFullName(UserID) as [Full Name]
 	FROM ProjectMember
 	WHERE ProjectId = @ProjectId
 	ORDER BY DateAdded DESC
@@ -54,13 +41,26 @@ END
 --------------------------------------------------------------
 
 GO
-CREATE PROC spSearchProjectMember(
-	@ProjectId varchar(22),
-	@querry varchar(50))
+alter PROC spGetOldProjectMembers(
+	@ProjectId int)
 AS
 BEGIN
-	SELECT [Full Name]
-	FROM ProjectMember, dbo.SearchName(@querry)
+	SELECT UserID, dbo.GetFullName(UserID) as [Full Name]
+	FROM ProjectMember
+	WHERE ProjectId = @ProjectId
+	ORDER BY DateAdded ASC
+END
+
+--------------------------------------------------------------
+
+GO
+alter PROC spSearchProjectMember(
+	@ProjectId int,
+	@query varchar(50))
+AS
+BEGIN
+	SELECT DISTINCT [uid], [Full Name]
+	FROM ProjectMember, dbo.SearchName(@query)
 	WHERE ProjectId=@ProjectId
 END
 

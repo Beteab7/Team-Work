@@ -1,6 +1,6 @@
-create PROCEDURE spUserInfoRetrival
+alter PROCEDURE spUserInfoRetrival
 @username varchar(50),
-@userid varchar(22) output,
+@userid int output,
 @firstname varchar(100) output,
 @lastname varchar(50) output,
 @phone varchar(20) output,

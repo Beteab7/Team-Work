@@ -118,11 +118,11 @@ namespace TeamCollaborationApp
             InitializeComponent();
             // bunifuFormDock1.SubscribeControlToDragEvents(panel1);
             // bunifuFormDock1.SubscribeControlToDragEvents(panel2);
-            for (int i = 0; i < 10; i++)
+/*            for (int i = 0; i < 10; i++)
             {
-                grid.Rows.Add(new object[]{ 
+                dgvProject.Rows.Add(new object[]{ 
                  });
-            }
+            }*/
         }
 
        

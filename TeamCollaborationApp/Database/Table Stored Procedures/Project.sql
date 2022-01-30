@@ -1,37 +1,39 @@
 GO
 Alter PROC	spInsertProject(
-	@userID varchar(22),
+	@userID int,
 	@Name varchar(50),
 	@Description varchar(200),
 	@BeginDate Date,
 	@EndDate Date,
-	@ProjectID varchar(22) OUTPUT
+	@ProjectID int OUTPUT
 )
 AS
 BEGIN
 	INSERT INTO Project
 	VALUES (@Name,GETDATE(),@Description,@userID,@BeginDate,@EndDate)
-	select @ProjectID = SCOPE_IDENTITY()
+
+	SELECT @ProjectID = SCOPE_IDENTITY()
 END
 
 ---------------------------------------------------------
 
 GO
-CREATE PROC spGetProject(
-	@userID varchar(22))
+alter PROC spGetProject(
+	@userID	int)
 AS
 BEGIN
 	SELECT DISTINCT pid as [Project ID], [Name], [Description], BeginDate, EndDate
 	FROM Project, ProjectMember
 	WHERE (UserId=@userID AND pid=ProjectId) OR (ProjectAdmin=@userID)
+	ORDER BY [NAME]
 END
 
 ---------------------------------------------------------
 
 GO
-CREATE PROC spDeleteProject(
-	@userID varchar(22),
-	@projectID varchar(22))
+alter PROC spDeleteProject(
+	@userID int,
+	@projectID int)
 AS
 BEGIN
 	DELETE FROM Project
@@ -41,9 +43,9 @@ END
 ---------------------------------------------------------
 
 GO
-CREATE PROC	spUpdateProject(
-	@projectID varchar(22),
-	@userID varchar(22),
+alter PROC	spUpdateProject(
+	@projectID int,
+	@userID int,
 	@Name varchar(50),
 	@Description varchar(200),
 	@BeginDate Date,
@@ -58,8 +60,8 @@ END
 ---------------------------------------------------------
 
 GO
-CREATE PROC spSearchProject(
-	@userID varchar(22),
+alter PROC spSearchProject(
+	@userID int,
 	@Name varchar(50)
 )
 AS

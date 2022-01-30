@@ -16,8 +16,8 @@ namespace TeamCollaborationApp
     class DAL
     {
         bool value = false;
-        
-        string constr = "Server = HP-NOTEBOOK; database = Team; uid = Lab; Pwd = 123; ";
+
+        string constr = "Server = (local); database = Team; Integrated Security=True;";
 
         public void GetUserDetails_StoredProcedure(string username,User u )
         {
@@ -50,7 +50,7 @@ namespace TeamCollaborationApp
                     con.Open();
                     cmd.ExecuteNonQuery();
 
-                        string id = Convert.ToString(cmd.Parameters["@userid"].Value );
+                        int id = Convert.ToInt32(cmd.Parameters["@userid"].Value );
                         string Fname = Convert.ToString(cmd.Parameters["@firstname"].Value);
                         string lname = Convert.ToString(cmd.Parameters["@lastname"].Value);
                         string phone = Convert.ToString(cmd.Parameters["@phone"].Value);
@@ -125,7 +125,30 @@ namespace TeamCollaborationApp
             }
             return value;
         }
+        public int getLoggedInUserID()
+        {
+            int uid = 0;
+            try
+            {
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("spFetchUserID", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@userID", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.Parameters["@userID"].Value = uid;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
 
-       
+                    uid = Convert.ToInt32(cmd.Parameters["@userID"].Value);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return uid;
+        }
+
     }
 }

@@ -89,5 +89,7 @@ REFERENCES [User]([uid])
 
 --------------------------------------------------------------
 
-
-
+CREATE TABLE UserLoggedIn(
+	UserID int primary key,
+	loginTime dateTime2
+	)
