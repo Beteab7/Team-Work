@@ -182,7 +182,7 @@ namespace TeamCollaborationApp
                 else
                 {
                     u = new User(txtbSignUpFullName.Text, txtbSignUpEmail.Text, txtbSignUpUsername.Text, txtbSignUpPassword.Text);
-                    u.saveUser();
+                    u.saveUser("signup");
                 }
             }
         }

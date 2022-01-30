@@ -10,95 +10,127 @@ namespace TeamCollaborationApp
     class User
     {
         DAL OBJ = new DAL();
-        Form1 obj;
-        internal int id;
-        internal string fullname="";
-        internal string firstname="";
-        internal string lastname="";
-        internal string email="";
-        internal string username="";
-        internal string phonenumber="";
-       // internal byte[] photo;
-        internal string password;
+        Form1 obj = new Form1();
+        internal static string id;
+        internal static string fullname = "";
+        internal static string firstname = "";
+        internal static string lastname = "";
+        internal static string email = "";
+        internal static string username = "";
+        internal static string phonenumber = "";
+        // internal byte[] photo;
+        internal static string password = "";
 
         public User()
         {
 
         }
-        public User(string fullname, string email, string username, string password)
+        public User(string a, string b, string c, string d)
         {
 
-            this.fullname = fullname;
-            this.email = email;
-            this.username = username;
-            this.password = password;
-         
+            fullname = a;
+            email = b;
+            username = c;
+            password = d;
+
 
         }
-        public void GetUserDetails( string username, string Fname,string lname, string phone, string email , string password )
+        public bool CheckNewPasswordValidity(string newpassword, string repeatPassword)
         {
-            //this.id = id;
-            this.username = username;
-            this.firstname = Fname;
-            this.lastname = lname;
-            this.phonenumber = phone;
-            this.email = email;
-            this.password = password;
-            this.fullname = Fname + " " + lname;
+            if (newpassword != repeatPassword)
+                return false;
+            return true;
+        }
+        public bool checkOldPasswordValidity(string oldPassword)
+        {
+            if (oldPassword != password)
+                return false;
+            return true;
+        }
+        public void changePassword(string newPassword)
+        {
+            OBJ.ChangePassword_StoredProcedure(newPassword);
+        }
+        public void GetUserDetails(string a, string b, string c, string d, string e, string f, string g)
+        {
+            id = a;
+            username = b;
+            firstname = c;
+            lastname = d;
+            phonenumber = e;
+            email = f;
+            password = g;
+            fullname = c + " " + d;
+
+
+        }
+
+        
+        public void GetUserDetails(string a, string b, string c, string d, string e, string f)
+        {
+            id = a;
+            username = b;
+            firstname = c;
+            lastname = d;
+            phonenumber = f;
+            email = e;
+
+            fullname = c + " " + d;
+
+
         }
         public void initalizeUserDetail()
         {
-          //This method will specify UserDetail
-          //obj.LblUserName = username;
             
+            obj.UserToolStripMenuItem = username;
         }
         public void initalizeUserDetailEditPage(Form1 obj)
         {
+
             obj.TxtbEditFirstname = firstname;
+
             obj.TxtbEditLastname = lastname;
             obj.TxtbEditEmail = email;
             obj.TxtbEditUsername = username;
             obj.TxtbEditPhone = phonenumber;
+            obj.TxtbEditPageId = id;
+            obj.BunifuLabel2 = username;
         }
-        public bool checkChange(Form1 obj)
+        public bool checkChange()
         {
+           
             if (obj.TxtbEditFirstname != firstname ||
-                obj.TxtbEditLastname != lastname   ||
-                obj.TxtbEditEmail != email         ||
-                obj.TxtbEditUsername != username   ||
-                obj.TxtbEditPhone != phonenumber   
+                obj.TxtbEditLastname != lastname ||
+                obj.TxtbEditEmail != email ||
+                obj.TxtbEditUsername != username ||
+                obj.TxtbEditPhone != phonenumber
                 )
-            return true;
+                return true;
             return false;
         }
 
-        public  void authentication(string username , string password,frmlogin LoginPage)
+        public void authentication(string username, string password, frmlogin LoginPage)
         {
             bool value = OBJ.Authentication_StoredProcedure(username, password);
             if (value == true)
             {
-                OBJ.GetUserDetails_StoredProcedure(username, this );
+                OBJ.GetUserDetails_StoredProcedure(username, this);
                 initalizeUserDetail();
                 {
-                    id = OBJ.fetchUserID(username);
-                    obj = new Form1(id);
                     LoginPage.Hide();
                     obj.Show();
                 }
             }
             else
                 MessageBox.Show("Invalid Username or Password");
-
-
-
-            
-
         }
-        
-
-        public void saveUser()
+        public void saveUser(string par)
         {
-            OBJ.SaveSignUp_StoredProcedure(this);
+            
+            if (par == "signup")
+                OBJ.SaveSignUp_StoredProcedure();
+            else if (par == "editUser")
+                OBJ.SaveUser_StoredProcedure();
         }
 
     }

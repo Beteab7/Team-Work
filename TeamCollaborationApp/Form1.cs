@@ -24,6 +24,12 @@ namespace TeamCollaborationApp
         int projectID;
         Project p;
 
+        public Form1()
+        {
+            InitializeComponent();
+
+
+        }
         public Form1(int currentUser)
         {
             InitializeComponent();
@@ -353,10 +359,16 @@ namespace TeamCollaborationApp
 
             }
         }
-
-        private void profileSettingToolStripMenuItem_Click(object sender, EventArgs e)
+        public void Editprofile()
         {
             BunifuPage.SetPage("Edit Profile");
+
+            User u = new User();
+            u.initalizeUserDetailEditPage(this);
+        }
+        private void profileSettingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editprofile();
         }
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -374,11 +386,7 @@ namespace TeamCollaborationApp
 
         private void bunifuTileButton3_Click(object sender, EventArgs e)
         {
-          
-            BunifuPage.SetPage("Edit Profile");
-             
-            User u = new User();
-            u.initalizeUserDetailEditPage(this);
+            Editprofile();
            
 
         }
@@ -418,13 +426,13 @@ namespace TeamCollaborationApp
         private void bunifuButton8_Click(object sender, EventArgs e)
         {
             User u = new User();
-            bool value =  u.checkChange(this);
+            bool value =  u.checkChange();
 
 
             if (value == true)
             {
-                u.GetUserDetails(txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbEditRePassword.Text);
-                u.saveUser();
+                u.GetUserDetails(txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
+                u.saveUser("editUser");
             }
         }
 
@@ -468,6 +476,65 @@ namespace TeamCollaborationApp
         private void btnSaveProjectEdit_Click(object sender, EventArgs e)
         {
             dgvProject.DataSource = p.getProject();
+        }
+
+        private void bunifuButton12_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage("UserInfo");
+        }
+
+        private void bunifuButton10_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage("ChangePassword");
+        }
+
+        private void bunifuButton17_Click(object sender, EventArgs e)
+        {
+
+            User u = new User();
+
+            if (u.checkOldPasswordValidity(txtbOldPassword.Text))
+            {
+                if (u.CheckNewPasswordValidity(txtbNewPassword.Text, txtbRePassword.Text))
+                    u.changePassword(txtbNewPassword.Text);
+                else
+                    MessageBox.Show("Password not the same!!");
+
+            }
+            else
+                MessageBox.Show("Incorrect Password");
+        }
+
+        private void bunifuButton15_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void bunifuButton8_Click_1(object sender, EventArgs e)
+        {
+            User u = new User();
+            bool value = u.checkChange( );
+
+
+            if (value == true)
+            {
+                u.GetUserDetails(txtbEditPageId.Text, txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
+                u.saveUser("editUser");
+            }
+        }
+
+        private void bunifuButton9_Click(object sender, EventArgs e)
+        {
+            User u = new User();
+            bool value = u.checkChange();
+
+
+            if (value == true)
+            {
+                u.initalizeUserDetailEditPage(this);
+            }
+            else
+                MessageBox.Show("No change have been made!!");
         }
     }
 }

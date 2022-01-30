@@ -19,12 +19,13 @@ namespace TeamCollaborationApp
 
         string constr = "Server = (local); database = Team; Integrated Security=True;";
 
-        public void GetUserDetails_StoredProcedure(string username,User u )
+        public void GetUserDetails_StoredProcedure(string username, User u)
         {
             try
             {
                 using (SqlConnection con = new SqlConnection(constr))
                 {
+
                     SqlCommand cmd = new SqlCommand("spUserInfoRetrival", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = con;
@@ -32,7 +33,7 @@ namespace TeamCollaborationApp
                     cmd.CommandText = "spUserInfoRetrival";
 
                     cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.Add("@userid", SqlDbType.VarChar, 50);
+                    cmd.Parameters.Add("@userid", SqlDbType.VarChar, 22);
                     cmd.Parameters["@userid"].Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("@firstname", SqlDbType.VarChar, 100);
                     cmd.Parameters["@firstname"].Direction = ParameterDirection.Output;
@@ -43,14 +44,16 @@ namespace TeamCollaborationApp
                     cmd.Parameters.Add("@email", SqlDbType.VarChar, 30);
                     cmd.Parameters["@email"].Direction = ParameterDirection.Output;
                     //cmd.Parameters.Add("@photo", SqlDbType.Image);
-                   // cmd.Parameters["@photo"].Direction = ParameterDirection.Output;
+                    // cmd.Parameters["@photo"].Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("@password", SqlDbType.VarChar, 30);
                     cmd.Parameters["@password"].Direction = ParameterDirection.Output;
 
-                    con.Open();
-                    cmd.ExecuteNonQuery();
+                    try
+                    {
+                        con.Open();
+                        int i = cmd.ExecuteNonQuery();
 
-                        int id = Convert.ToInt32(cmd.Parameters["@userid"].Value );
+                        string id = Convert.ToString(cmd.Parameters["@userid"].Value);
                         string Fname = Convert.ToString(cmd.Parameters["@firstname"].Value);
                         string lname = Convert.ToString(cmd.Parameters["@lastname"].Value);
                         string phone = Convert.ToString(cmd.Parameters["@phone"].Value);
@@ -58,7 +61,20 @@ namespace TeamCollaborationApp
                         //string photo = Convert.ToString(cmd.Parameters["@photo"].Value);
                         string password = Convert.ToString(cmd.Parameters["@password"].Value);
 
-                        u.GetUserDetails( username, Fname, lname, phone, email, password);
+                        u.GetUserDetails(id, username, Fname, lname, phone, email, password);
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.Message);
+                    }
+                    finally
+                    {
+
+                        con.Close();
+                    }
+
+
+
                 }
             }
             catch (SqlException ex)
@@ -67,8 +83,30 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void SaveUser_StoredProcedure(User u)
+        public void ChangePassword_StoredProcedure(string newPassword)
         {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("spChangePassword", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@id", User.id);
+                    cmd.Parameters.AddWithValue("@Password", newPassword);
+                    int rowAffected = Convert.ToInt32(cmd.ExecuteScalar());
+
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void SaveUser_StoredProcedure()
+        {
+            
             try
             {
                 using (SqlConnection con = new SqlConnection(constr))
@@ -76,12 +114,13 @@ namespace TeamCollaborationApp
                     con.Open();
                     SqlCommand cmd = new SqlCommand("spSaveUser", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Firstname", u.firstname);
-                    cmd.Parameters.AddWithValue("@Lastname", u.lastname);
-                    cmd.Parameters.AddWithValue("@Email", u.email);
-                    cmd.Parameters.AddWithValue("@Username", u.username);
-                    cmd.Parameters.AddWithValue("@Phone", u.phonenumber);
-                    cmd.Parameters.AddWithValue("@Password", u.password);
+                    cmd.Parameters.AddWithValue("@Id", User.id);
+                    cmd.Parameters.AddWithValue("@Firstname", User.firstname);
+                    cmd.Parameters.AddWithValue("@Lastname", User.lastname);
+                    cmd.Parameters.AddWithValue("@Email", User.email);
+                    cmd.Parameters.AddWithValue("@Username", User.username);
+                    cmd.Parameters.AddWithValue("@Phone", User.phonenumber);
+
 
 
                     int rowAffected = cmd.ExecuteNonQuery();
@@ -103,7 +142,7 @@ namespace TeamCollaborationApp
 
 
 
-        public void SaveSignUp_StoredProcedure(User u)
+        public void SaveSignUp_StoredProcedure()
         {
             try
             {
@@ -112,11 +151,11 @@ namespace TeamCollaborationApp
                     con.Open();
                     SqlCommand cmd = new SqlCommand("spSignUpUser", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Fullname", u.fullname);
-                    cmd.Parameters.AddWithValue("@Email", u.email);
-                    cmd.Parameters.AddWithValue("@Username", u.username);
-                    cmd.Parameters.AddWithValue("@Password", u.password);
-             
+                    cmd.Parameters.AddWithValue("@Fullname", User.fullname);
+                    cmd.Parameters.AddWithValue("@Email", User.email);
+                    cmd.Parameters.AddWithValue("@Username", User.username);
+                    cmd.Parameters.AddWithValue("@Password", User.password);
+
 
                     int rowAffected = cmd.ExecuteNonQuery();
                     con.Close();
@@ -131,18 +170,18 @@ namespace TeamCollaborationApp
             }
         }
 
-        public bool Authentication_StoredProcedure( string username , string password)
+        public bool Authentication_StoredProcedure(string username, string password)
         {
             try
             {
                 using (SqlConnection con = new SqlConnection(constr))
                 {
-                     
+
                     con.Open();
                     SqlCommand cmd = new SqlCommand("spAuthenticationUser", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Username",username);
-                    cmd.Parameters.AddWithValue("@Password",password);
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password);
                     int rowAffected = Convert.ToInt32(cmd.ExecuteScalar());
                     if (rowAffected == 1)
                         value = true;
