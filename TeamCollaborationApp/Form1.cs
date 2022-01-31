@@ -431,16 +431,23 @@ namespace TeamCollaborationApp
 
             if (value == true)
             {
-                u.GetUserDetails(txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
+                u.GetUserDetails(Convert.ToInt32(txtbEditUsername.Text), txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
                 u.saveUser("editUser");
             }
         }
 
         private void dgvProject_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            //next tab- task list
             projectID = Convert.ToInt32(dgvProject.CurrentRow.Cells[0].Value);
             txtProjectNameList.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
             txtDescListTask.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
+
+            //edit tab, found in settings
+            txtProjectNameEdit.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
+            txtDescriptionProjectEdit.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
+            dateTimeStartProjectEdit.Value = Convert.ToDateTime(dgvProject.CurrentRow.Cells[3].Value);
+            dateTimeEndProjectEdit.Value = Convert.ToDateTime(dgvProject.CurrentRow.Cells[4].Value);
         }
 
         private void dgvProject_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -518,7 +525,7 @@ namespace TeamCollaborationApp
 
             if (value == true)
             {
-                u.GetUserDetails(txtbEditPageId.Text, txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
+                u.GetUserDetails(Convert.ToInt32(txtbEditPageId.Text), txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
                 u.saveUser("editUser");
             }
             else
@@ -537,6 +544,27 @@ namespace TeamCollaborationApp
             }
             else
                 MessageBox.Show("No change have been made!!");
+        }
+
+        private void btnSaveProjectEdit_Click_1(object sender, EventArgs e)
+        {
+            //save on project edit tab
+            p = new Project(projectID, currentUserID, txtProjectNameEdit.Text, txtDescriptionProjectEdit.Text, dateTimeStartProjectEdit.Value, dateTimeEndProjectEdit.Value);
+            p.UpdateProject();
+            BunifuPage.SetPage("Project");
+        }
+
+        private void btnCancelProjectEdit_Click(object sender, EventArgs e)
+        {
+            //cancel on project edit tab
+            BunifuPage.SetPage("Project");
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            p = new Project(projectID, currentUserID, txtProjectNameEdit.Text, txtDescriptionProjectEdit.Text, dateTimeStartProjectEdit.Value, dateTimeEndProjectEdit.Value);
+            p.DeleteProject();
+            BunifuPage.SetPage("Project");
         }
     }
 }

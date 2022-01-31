@@ -53,7 +53,7 @@ namespace TeamCollaborationApp
                         con.Open();
                         int i = cmd.ExecuteNonQuery();
 
-                        string id = Convert.ToString(cmd.Parameters["@userid"].Value);
+                        int id = Convert.ToInt32(cmd.Parameters["@userid"].Value);
                         string Fname = Convert.ToString(cmd.Parameters["@firstname"].Value);
                         string lname = Convert.ToString(cmd.Parameters["@lastname"].Value);
                         string phone = Convert.ToString(cmd.Parameters["@phone"].Value);
@@ -243,6 +243,30 @@ namespace TeamCollaborationApp
                 MessageBox.Show(e.Message);
             }
             return id;
+        }
+        public DataTable getUsers()
+        {
+            DataTable dt = null;
+            try
+            {
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+                    con.Open();
+                    using (SqlDataAdapter da = new SqlDataAdapter())
+                    {
+                        da.SelectCommand = new SqlCommand("spGetUsers", con);
+                        da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                        DataSet ds = new DataSet();
+                        da.Fill(ds, "dtProjects");
+                        dt = ds.Tables[0];
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return dt;
         }
 
     }

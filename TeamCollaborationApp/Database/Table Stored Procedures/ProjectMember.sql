@@ -66,3 +66,14 @@ END
 
 --------------------------------------------------------------
 
+GO
+CREATE PROC spNonMember(
+	@ProjectID INT,
+	@userID INT
+)
+AS
+BEGIN
+	SELECT DISTINCT [uid], dbo.GetFullName([uid])
+	FROM [USER], ProjectMember
+	WHERE [uid] != UserId and ProjectId = @ProjectID and [uid] != @userID
+END

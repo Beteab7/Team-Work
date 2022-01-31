@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace TeamCollaborationApp
     {
         DAL OBJ = new DAL();
         Form1 obj;
-        internal static string id;
+        internal static int id;
         internal static string fullname = "";
         internal static string firstname = "";
         internal static string lastname = "";
@@ -51,7 +52,7 @@ namespace TeamCollaborationApp
         {
             OBJ.ChangePassword_StoredProcedure(newPassword);
         }
-        public void GetUserDetails(string a, string b, string c, string d, string e, string f, string g)
+        public void GetUserDetails(int a, string b, string c, string d, string e, string f, string g)
         {
             id = a;
             username = b;
@@ -66,7 +67,7 @@ namespace TeamCollaborationApp
         }
 
         
-        public void GetUserDetails(string a, string b, string c, string d, string e, string f)
+        public void GetUserDetails(int a, string b, string c, string d, string e, string f)
         {
             id = a;
             username = b;
@@ -93,7 +94,7 @@ namespace TeamCollaborationApp
             obj.TxtbEditEmail = email;
             obj.TxtbEditUsername = username;
             obj.TxtbEditPhone = phonenumber;
-            obj.TxtbEditPageId = id;
+            obj.TxtbEditPageId = Convert.ToString(id);
             obj.BunifuLabel2 = username;
         }
         public bool checkChange(Form1 obj)
@@ -111,16 +112,18 @@ namespace TeamCollaborationApp
 
         public void authentication(string username, string password, frmlogin LoginPage)
         {
-            obj = new Form1();
+
             bool value = OBJ.Authentication_StoredProcedure(username, password);
             if (value == true)
             {
                 OBJ.GetUserDetails_StoredProcedure(username, this);
-                initalizeUserDetail();
                 {
+                    id = OBJ.fetchUserID(username);
+                    obj = new Form1(id);
                     LoginPage.Hide();
                     obj.Show();
                 }
+                initalizeUserDetail();
             }
             else
                 MessageBox.Show("Invalid Username or Password");
@@ -132,6 +135,10 @@ namespace TeamCollaborationApp
                 OBJ.SaveSignUp_StoredProcedure();
             else if (par == "editUser")
                 OBJ.SaveUser_StoredProcedure();
+        }
+        public DataTable getUsers()
+        {
+            return OBJ.getUsers();
         }
 
     }
