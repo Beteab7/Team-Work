@@ -3264,10 +3264,12 @@ namespace TeamCollaborationApp
             // 
             // txtbEditPageId
             // 
+            this.txtbEditPageId.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtbEditPageId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbEditPageId.ForeColor = System.Drawing.Color.DimGray;
             this.txtbEditPageId.Location = new System.Drawing.Point(57, 211);
             this.txtbEditPageId.Name = "txtbEditPageId";
+            this.txtbEditPageId.ReadOnly = true;
             this.txtbEditPageId.Size = new System.Drawing.Size(213, 13);
             this.txtbEditPageId.TabIndex = 32;
             // 
@@ -3681,7 +3683,7 @@ namespace TeamCollaborationApp
             this.panel13.Controls.Add(this.dgvProjectEdit);
             this.panel13.Location = new System.Drawing.Point(81, 47);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(835, 1737);
+            this.panel13.Size = new System.Drawing.Size(835, 1975);
             this.panel13.TabIndex = 21;
             this.panel13.Visible = false;
             // 
@@ -3732,7 +3734,7 @@ namespace TeamCollaborationApp
             this.dgvProjectEdit.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvProjectEdit.RowHeadersVisible = false;
             this.dgvProjectEdit.RowHeadersWidth = 51;
-            this.dgvProjectEdit.Size = new System.Drawing.Size(835, 1738);
+            this.dgvProjectEdit.Size = new System.Drawing.Size(835, 1976);
             this.dgvProjectEdit.TabIndex = 15;
             // 
             // bunifuButton11

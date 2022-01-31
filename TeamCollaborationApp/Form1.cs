@@ -426,7 +426,7 @@ namespace TeamCollaborationApp
         private void bunifuButton8_Click(object sender, EventArgs e)
         {
             User u = new User();
-            bool value =  u.checkChange();
+            bool value =  u.checkChange(this);
 
 
             if (value == true)
@@ -513,7 +513,7 @@ namespace TeamCollaborationApp
         private void bunifuButton8_Click_1(object sender, EventArgs e)
         {
             User u = new User();
-            bool value = u.checkChange( );
+            bool value = u.checkChange( this);
 
 
             if (value == true)
@@ -526,7 +526,7 @@ namespace TeamCollaborationApp
         private void bunifuButton9_Click(object sender, EventArgs e)
         {
             User u = new User();
-            bool value = u.checkChange();
+            bool value = u.checkChange(this);
 
 
             if (value == true)

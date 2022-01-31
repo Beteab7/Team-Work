@@ -10,7 +10,7 @@ namespace TeamCollaborationApp
     class User
     {
         DAL OBJ = new DAL();
-        Form1 obj = new Form1();
+        Form1 obj;
         internal static string id;
         internal static string fullname = "";
         internal static string firstname = "";
@@ -96,7 +96,7 @@ namespace TeamCollaborationApp
             obj.TxtbEditPageId = id;
             obj.BunifuLabel2 = username;
         }
-        public bool checkChange()
+        public bool checkChange(Form1 obj)
         {
            
             if (obj.TxtbEditFirstname != firstname ||
@@ -111,6 +111,7 @@ namespace TeamCollaborationApp
 
         public void authentication(string username, string password, frmlogin LoginPage)
         {
+            obj = new Form1();
             bool value = OBJ.Authentication_StoredProcedure(username, password);
             if (value == true)
             {
