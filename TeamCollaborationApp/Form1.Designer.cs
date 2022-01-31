@@ -2005,10 +2005,10 @@ namespace TeamCollaborationApp
             this.bunifuPages1.Location = new System.Drawing.Point(291, 47);
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabPage7;
-            this.bunifuPages1.PageIndex = 0;
-            this.bunifuPages1.PageName = "tabPage7";
-            this.bunifuPages1.PageTitle = "UserInfo";
+            this.bunifuPages1.Page = this.ChangePassword;
+            this.bunifuPages1.PageIndex = 1;
+            this.bunifuPages1.PageName = "ChangePassword";
+            this.bunifuPages1.PageTitle = "ChangePassword";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(505, 596);
             this.bunifuPages1.TabIndex = 35;
@@ -2192,9 +2192,9 @@ namespace TeamCollaborationApp
             this.txtbEditPhone.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbEditPhone.BackColor = System.Drawing.Color.Transparent;
             this.txtbEditPhone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbEditPhone.BackgroundImage")));
-            this.txtbEditPhone.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbEditPhone.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbEditPhone.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbEditPhone.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtbEditPhone.BorderColorHover = System.Drawing.Color.DarkOrange;
             this.txtbEditPhone.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbEditPhone.BorderRadius = 1;
             this.txtbEditPhone.BorderThickness = 1;
@@ -2216,7 +2216,7 @@ namespace TeamCollaborationApp
             this.txtbEditPhone.Modified = false;
             this.txtbEditPhone.Multiline = false;
             this.txtbEditPhone.Name = "txtbEditPhone";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties29.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties29.FillColor = System.Drawing.Color.Empty;
             stateProperties29.ForeColor = System.Drawing.Color.Empty;
             stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2226,7 +2226,7 @@ namespace TeamCollaborationApp
             stateProperties30.ForeColor = System.Drawing.Color.Empty;
             stateProperties30.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbEditPhone.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties31.FillColor = System.Drawing.Color.Empty;
             stateProperties31.ForeColor = System.Drawing.Color.Empty;
             stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2276,9 +2276,9 @@ namespace TeamCollaborationApp
             this.txtbEditUsername.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbEditUsername.BackColor = System.Drawing.Color.Transparent;
             this.txtbEditUsername.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbEditUsername.BackgroundImage")));
-            this.txtbEditUsername.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbEditUsername.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbEditUsername.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbEditUsername.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtbEditUsername.BorderColorHover = System.Drawing.Color.DarkOrange;
             this.txtbEditUsername.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbEditUsername.BorderRadius = 1;
             this.txtbEditUsername.BorderThickness = 1;
@@ -2300,7 +2300,7 @@ namespace TeamCollaborationApp
             this.txtbEditUsername.Modified = false;
             this.txtbEditUsername.Multiline = false;
             this.txtbEditUsername.Name = "txtbEditUsername";
-            stateProperties33.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties33.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties33.FillColor = System.Drawing.Color.Empty;
             stateProperties33.ForeColor = System.Drawing.Color.Empty;
             stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2310,7 +2310,7 @@ namespace TeamCollaborationApp
             stateProperties34.ForeColor = System.Drawing.Color.Empty;
             stateProperties34.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbEditUsername.OnDisabledState = stateProperties34;
-            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties35.FillColor = System.Drawing.Color.Empty;
             stateProperties35.ForeColor = System.Drawing.Color.Empty;
             stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2360,9 +2360,9 @@ namespace TeamCollaborationApp
             this.txtbEditEmail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbEditEmail.BackColor = System.Drawing.Color.Transparent;
             this.txtbEditEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbEditEmail.BackgroundImage")));
-            this.txtbEditEmail.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbEditEmail.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbEditEmail.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbEditEmail.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtbEditEmail.BorderColorHover = System.Drawing.Color.DarkOrange;
             this.txtbEditEmail.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbEditEmail.BorderRadius = 1;
             this.txtbEditEmail.BorderThickness = 1;
@@ -2384,7 +2384,7 @@ namespace TeamCollaborationApp
             this.txtbEditEmail.Modified = false;
             this.txtbEditEmail.Multiline = false;
             this.txtbEditEmail.Name = "txtbEditEmail";
-            stateProperties37.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties37.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties37.FillColor = System.Drawing.Color.Empty;
             stateProperties37.ForeColor = System.Drawing.Color.Empty;
             stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2394,7 +2394,7 @@ namespace TeamCollaborationApp
             stateProperties38.ForeColor = System.Drawing.Color.Empty;
             stateProperties38.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbEditEmail.OnDisabledState = stateProperties38;
-            stateProperties39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties39.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties39.FillColor = System.Drawing.Color.Empty;
             stateProperties39.ForeColor = System.Drawing.Color.Empty;
             stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2444,9 +2444,9 @@ namespace TeamCollaborationApp
             this.txtbEditLastname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbEditLastname.BackColor = System.Drawing.Color.Transparent;
             this.txtbEditLastname.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbEditLastname.BackgroundImage")));
-            this.txtbEditLastname.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbEditLastname.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbEditLastname.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbEditLastname.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtbEditLastname.BorderColorHover = System.Drawing.Color.DarkOrange;
             this.txtbEditLastname.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbEditLastname.BorderRadius = 1;
             this.txtbEditLastname.BorderThickness = 1;
@@ -2468,7 +2468,7 @@ namespace TeamCollaborationApp
             this.txtbEditLastname.Modified = false;
             this.txtbEditLastname.Multiline = false;
             this.txtbEditLastname.Name = "txtbEditLastname";
-            stateProperties41.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties41.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties41.FillColor = System.Drawing.Color.Empty;
             stateProperties41.ForeColor = System.Drawing.Color.Empty;
             stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2478,7 +2478,7 @@ namespace TeamCollaborationApp
             stateProperties42.ForeColor = System.Drawing.Color.Empty;
             stateProperties42.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbEditLastname.OnDisabledState = stateProperties42;
-            stateProperties43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties43.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties43.FillColor = System.Drawing.Color.Empty;
             stateProperties43.ForeColor = System.Drawing.Color.Empty;
             stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2517,10 +2517,10 @@ namespace TeamCollaborationApp
             this.txtbEditFirstname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbEditFirstname.BackColor = System.Drawing.Color.Transparent;
             this.txtbEditFirstname.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbEditFirstname.BackgroundImage")));
-            this.txtbEditFirstname.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbEditFirstname.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbEditFirstname.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbEditFirstname.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtbEditFirstname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.txtbEditFirstname.BorderColorHover = System.Drawing.Color.DarkOrange;
+            this.txtbEditFirstname.BorderColorIdle = System.Drawing.Color.LightGray;
             this.txtbEditFirstname.BorderRadius = 1;
             this.txtbEditFirstname.BorderThickness = 1;
             this.txtbEditFirstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -2542,7 +2542,7 @@ namespace TeamCollaborationApp
             this.txtbEditFirstname.Modified = false;
             this.txtbEditFirstname.Multiline = false;
             this.txtbEditFirstname.Name = "txtbEditFirstname";
-            stateProperties45.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties45.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties45.FillColor = System.Drawing.Color.Empty;
             stateProperties45.ForeColor = System.Drawing.Color.Empty;
             stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2552,12 +2552,12 @@ namespace TeamCollaborationApp
             stateProperties46.ForeColor = System.Drawing.Color.Empty;
             stateProperties46.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbEditFirstname.OnDisabledState = stateProperties46;
-            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties47.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties47.FillColor = System.Drawing.Color.Empty;
             stateProperties47.ForeColor = System.Drawing.Color.Empty;
             stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtbEditFirstname.OnHoverState = stateProperties47;
-            stateProperties48.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            stateProperties48.BorderColor = System.Drawing.Color.LightGray;
             stateProperties48.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             stateProperties48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2850,9 +2850,9 @@ namespace TeamCollaborationApp
             this.txtbRePassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbRePassword.BackColor = System.Drawing.Color.Transparent;
             this.txtbRePassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbRePassword.BackgroundImage")));
-            this.txtbRePassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbRePassword.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbRePassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbRePassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtbRePassword.BorderColorHover = System.Drawing.Color.DarkOrange;
             this.txtbRePassword.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbRePassword.BorderRadius = 1;
             this.txtbRePassword.BorderThickness = 1;
@@ -2874,7 +2874,7 @@ namespace TeamCollaborationApp
             this.txtbRePassword.Modified = false;
             this.txtbRePassword.Multiline = false;
             this.txtbRePassword.Name = "txtbRePassword";
-            stateProperties55.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties55.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties55.FillColor = System.Drawing.Color.Empty;
             stateProperties55.ForeColor = System.Drawing.Color.Empty;
             stateProperties55.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2884,7 +2884,7 @@ namespace TeamCollaborationApp
             stateProperties56.ForeColor = System.Drawing.Color.Empty;
             stateProperties56.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbRePassword.OnDisabledState = stateProperties56;
-            stateProperties57.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties57.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties57.FillColor = System.Drawing.Color.Empty;
             stateProperties57.ForeColor = System.Drawing.Color.Empty;
             stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2923,9 +2923,9 @@ namespace TeamCollaborationApp
             this.txtbNewPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbNewPassword.BackColor = System.Drawing.Color.Transparent;
             this.txtbNewPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbNewPassword.BackgroundImage")));
-            this.txtbNewPassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbNewPassword.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbNewPassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbNewPassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtbNewPassword.BorderColorHover = System.Drawing.Color.DarkOrange;
             this.txtbNewPassword.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbNewPassword.BorderRadius = 1;
             this.txtbNewPassword.BorderThickness = 1;
@@ -2947,7 +2947,7 @@ namespace TeamCollaborationApp
             this.txtbNewPassword.Modified = false;
             this.txtbNewPassword.Multiline = false;
             this.txtbNewPassword.Name = "txtbNewPassword";
-            stateProperties59.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties59.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties59.FillColor = System.Drawing.Color.Empty;
             stateProperties59.ForeColor = System.Drawing.Color.Empty;
             stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2957,7 +2957,7 @@ namespace TeamCollaborationApp
             stateProperties60.ForeColor = System.Drawing.Color.Empty;
             stateProperties60.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbNewPassword.OnDisabledState = stateProperties60;
-            stateProperties61.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties61.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties61.FillColor = System.Drawing.Color.Empty;
             stateProperties61.ForeColor = System.Drawing.Color.Empty;
             stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -2996,10 +2996,10 @@ namespace TeamCollaborationApp
             this.txtbOldPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtbOldPassword.BackColor = System.Drawing.Color.Transparent;
             this.txtbOldPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtbOldPassword.BackgroundImage")));
-            this.txtbOldPassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtbOldPassword.BorderColorActive = System.Drawing.Color.DarkOrange;
             this.txtbOldPassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtbOldPassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtbOldPassword.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.txtbOldPassword.BorderColorHover = System.Drawing.Color.DarkOrange;
+            this.txtbOldPassword.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtbOldPassword.BorderRadius = 1;
             this.txtbOldPassword.BorderThickness = 1;
             this.txtbOldPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -3021,7 +3021,7 @@ namespace TeamCollaborationApp
             this.txtbOldPassword.Modified = false;
             this.txtbOldPassword.Multiline = false;
             this.txtbOldPassword.Name = "txtbOldPassword";
-            stateProperties63.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties63.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties63.FillColor = System.Drawing.Color.Empty;
             stateProperties63.ForeColor = System.Drawing.Color.Empty;
             stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -3031,12 +3031,12 @@ namespace TeamCollaborationApp
             stateProperties64.ForeColor = System.Drawing.Color.Empty;
             stateProperties64.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbOldPassword.OnDisabledState = stateProperties64;
-            stateProperties65.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties65.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties65.FillColor = System.Drawing.Color.Empty;
             stateProperties65.ForeColor = System.Drawing.Color.Empty;
             stateProperties65.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtbOldPassword.OnHoverState = stateProperties65;
-            stateProperties66.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            stateProperties66.BorderColor = System.Drawing.Color.Silver;
             stateProperties66.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             stateProperties66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             stateProperties66.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -3207,7 +3207,7 @@ namespace TeamCollaborationApp
             this.bunifuButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton10.BackgroundImage")));
             this.bunifuButton10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton10.ButtonText = "Change password";
-            this.bunifuButton10.ButtonTextMarginLeft = -70;
+            this.bunifuButton10.ButtonTextMarginLeft = -60;
             this.bunifuButton10.ColorContrastOnClick = 45;
             this.bunifuButton10.ColorContrastOnHover = 80;
             this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -3227,8 +3227,8 @@ namespace TeamCollaborationApp
             this.bunifuButton10.IconMarginLeft = 15;
             this.bunifuButton10.IconPadding = 5;
             this.bunifuButton10.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuButton10.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.bunifuButton10.IdleBorderRadius = 3;
+            this.bunifuButton10.IdleBorderColor = System.Drawing.Color.DarkOrange;
+            this.bunifuButton10.IdleBorderRadius = 15;
             this.bunifuButton10.IdleBorderThickness = 1;
             this.bunifuButton10.IdleFillColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuButton10.IdleIconLeftImage = null;
@@ -3237,7 +3237,7 @@ namespace TeamCollaborationApp
             this.bunifuButton10.Location = new System.Drawing.Point(33, 242);
             this.bunifuButton10.Name = "bunifuButton10";
             stateProperties71.BorderColor = System.Drawing.Color.White;
-            stateProperties71.BorderRadius = 3;
+            stateProperties71.BorderRadius = 15;
             stateProperties71.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties71.BorderThickness = 1;
             stateProperties71.FillColor = System.Drawing.Color.White;
@@ -3246,7 +3246,7 @@ namespace TeamCollaborationApp
             stateProperties71.IconRightImage = null;
             this.bunifuButton10.onHoverState = stateProperties71;
             stateProperties72.BorderColor = System.Drawing.Color.White;
-            stateProperties72.BorderRadius = 3;
+            stateProperties72.BorderRadius = 15;
             stateProperties72.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties72.BorderThickness = 1;
             stateProperties72.FillColor = System.Drawing.Color.White;
@@ -3258,7 +3258,7 @@ namespace TeamCollaborationApp
             this.bunifuButton10.Size = new System.Drawing.Size(237, 29);
             this.bunifuButton10.TabIndex = 33;
             this.bunifuButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton10.TextMarginLeft = -70;
+            this.bunifuButton10.TextMarginLeft = -60;
             this.bunifuButton10.UseDefaultRadiusAndThickness = true;
             this.bunifuButton10.Click += new System.EventHandler(this.bunifuButton10_Click);
             // 

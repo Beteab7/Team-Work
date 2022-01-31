@@ -521,6 +521,8 @@ namespace TeamCollaborationApp
                 u.GetUserDetails(txtbEditPageId.Text, txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
                 u.saveUser("editUser");
             }
+            else
+                MessageBox.Show("No Change has been made");
         }
 
         private void bunifuButton9_Click(object sender, EventArgs e)

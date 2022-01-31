@@ -595,10 +595,10 @@ The Create a New Project page is broken up into sections that allow you to confi
   <data name="txtbEditFirstname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVwAAAAjCAYAAADYFbKMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC6SURBVHhe7dSxDQIxAARBV4JESLeQ0BxlkP8jS07I3xvN
-        SJdcATsACD3ex+f2PE8zM7t+s7Ert2PMA4A9ZmNXbgUXYCfBBYgILkBEcAEiggsQEVyAiOACRAQXICK4
-        ABHBBYgILkBEcAEiggsQEVyAiOACRAQXICK4ABHBBYgILkBEcAEiggsQEVyAiOACRAQXICK4ABHBBYgI
-        LkBEcAEiggsQEVyAyF9w76/jOw8zM7t+s7ErtwDsN8YPZUfh4uEzSpQAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVHhe7dSxDQMhAARB+m8PEX0ZX4AtJCLHZqMZ6ZIr
+        YAcAobXWM+f8mJnZ/7cbe3I7xj4AuGM39uRWcAFuElyAiOACRAQXICK4ABHBBYgILkBEcAEiggsQEVyA
+        iOACRAQXICK4ABHBBYgILkBEcAEiggsQEVyAiOACRAQXICK4ABHBBYgILkBEcAEiggsQEVyAiOACRAQX
+        ICK4ABHBBYj8Bvfdh5mZXdl7cgvAfWN8Ae6UOs0vX+8SAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuButton12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -673,10 +673,10 @@ The Create a New Project page is broken up into sections that allow you to confi
   <data name="txtbOldPassword.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVwAAAAjCAYAAADYFbKMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC6SURBVHhe7dSxDQIxAARBV4JESLeQ0BxlkP8jS07I3xvN
-        SJdcATsACD3ex+f2PE8zM7t+s7Ert2PMA4A9ZmNXbgUXYCfBBYgILkBEcAEiggsQEVyAiOACRAQXICK4
-        ABHBBYgILkBEcAEiggsQEVyAiOACRAQXICK4ABHBBYgILkBEcAEiggsQEVyAiOACRAQXICK4ABHBBYgI
-        LkBEcAEiggsQEVyAyF9w76/jOw8zM7t+s7ErtwDsN8YPZUfh4uEzSpQAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVHhe7dSxDcMwAANB7T+VDI2RMTJADAFq0ttf3QFs
+        OMAPAEJrrc+c82dmZs9vN/bkdox9APCO3diTW8EFeJPgAkQEFyAiuAARwQWICC5ARHABIoILEBFcgIjg
+        AkQEFyAiuAARwQWICC5ARHABIoILEBFcgIjgAkQEFyAiuAARwQWICC5ARHABIoILEBFcgIjgAkQEFyAi
+        uAARwQWICC5A5C+413V992FmZs9vN/bkFoD3jXED1WqS6CUezIgAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="bunifuButton13.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -748,10 +748,17 @@ The Create a New Project page is broken up into sections that allow you to confi
   <data name="bunifuButton10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAO0AAAAdCAYAAABG3+uWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVHhe7dWxDYMwAERRlxkjJWVGYYSUjMHMyIjSAeEm
-        UQbwSe+kVxi7/aKYWeiO43ju+74C49m2beqp3qu1vs6LBgxt7smWch6umv89Asax9mRFCyFEC2FEC2FE
-        C2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2FEC2G+op1/
-        LoHxLD3Ze7XW9/nx+uMC41laa4+eq5nlrJQPLVLQoey8dCkAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAItSURBVHhe7dw/axRBGMfxKQQFTbwkCkEELfUd6DvQVmvF
+        RrSwSGGhhWjreXrubXKSQtBCEGKRJuAftLCIYGEsxEYIpIiKMZ4S78/e3cy4T24sjgzpvLmR7w8+kGIm
+        3Y/ZnWMfRQj5D2Kvq122pM6Zyu6qTseX8r8tgH9P+qaT0Yfmlrpoy6rgKrl9zG11TE9PrLTnT29kizdt
+        69NTW6/XAQyA9C17m9jOwtl63sNvpqhOuGr6000KV/X9o7Xm6pL3HwIYnMbasu0+Ol7T1QN3XUX7s3nC
+        5oX1bQYQTvfJyR8mGTnjqtqLvMOadOxL4+tH7yYA4TRqn62e2f/dFtWkq2x+yhbVVPvZhZZvA4Dw5H5J
+        LoZdZfPSzozNZe9mvYsBhCcXVHKz7CqrlE4Ly82VN97FAMKTR2RT3tlwlc3faUvKuxDA8JCeuspSWiAG
+        lBaIDKUFIkNpgchQWiAylBaIDKUFIkNpgchQWiAylBaITF9pTWVkjc/ygCH2a92aOzs6rrLywcD4q9aH
+        x/7FAIKTD3rkwx5X2c3H4yvZi6mObzGA8GRulAx8c5XNS1tWh3V1siZHsG8DgLBkFJSMhHKV7cVU9pzv
+        zJ/66dsAIJz2y8sbOt1XclXtj7zbZs8v/ebEBYZD9vpaU987uChz3FxNt8ame2/o2UPrMn6GaRbA4MkI
+        49b7B71H4umJyraF/RtbUkdkbpTcVslvQwAGRyejq/lT78KWd1hCSIxR6g+vv3wbJq9PUwAAAABJRU5E
+        rkJggg==
 </value>
   </data>
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
