@@ -13,6 +13,8 @@ namespace TeamCollaborationApp
         DAL OBJ = new DAL();
         Form1 obj;
         internal static int id;
+        public int Id { get { return id; } }
+
         internal static string fullname = "";
         internal static string firstname = "";
         internal static string lastname = "";
@@ -26,6 +28,7 @@ namespace TeamCollaborationApp
         {
 
         }
+       
         public User(string a, string b, string c, string d)
         {
 
@@ -118,8 +121,8 @@ namespace TeamCollaborationApp
             {
                 OBJ.GetUserDetails_StoredProcedure(username, this);
                 {
-                    id = OBJ.fetchUserID(username);
-                    obj = new Form1(id);
+                  
+                    obj = new Form1();
                     LoginPage.Hide();
                     obj.Show();
                 }

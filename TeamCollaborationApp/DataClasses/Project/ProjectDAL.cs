@@ -1,6 +1,8 @@
 using System;
 using System.Data.SqlClient;
 using System.Data;
+ 
+
 
 namespace TeamCollaborationApp{
    class ProjectDAL{
@@ -8,7 +10,6 @@ namespace TeamCollaborationApp{
         public void InsertProject(Project p){
             using (SqlConnection con = new SqlConnection(constr)){
                 con.Open();
-
                 SqlCommand cmd =new SqlCommand("spInsertProject", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@userID", p.UserID);

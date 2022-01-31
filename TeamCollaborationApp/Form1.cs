@@ -19,22 +19,19 @@ namespace TeamCollaborationApp
         private FontDialog fontDialog = new FontDialog();
         static private bool save = false;
         static private bool Passchange = false;
-
+        
         int currentUserID;
         int projectID;
         Project p;
-
+        
         public Form1()
         {
             InitializeComponent();
-
+            User u = new User();
+            currentUserID = u.Id;
 
         }
-        public Form1(int currentUser)
-        {
-            InitializeComponent();
-            currentUserID = currentUser;
-        }
+       
         private void NewFile()
         {
             try
@@ -143,9 +140,11 @@ namespace TeamCollaborationApp
 
         private void ProjectEvent(object sender, EventArgs e)
         {
+            User u = new User();
             label3.Text = "Project";
             indicator.Top = ((Control)sender).Top;
             BunifuPage.SetPage("Project");
+            
 
             p = new Project(currentUserID);
             dgvProject.DataSource = p.getProject();
@@ -402,39 +401,9 @@ namespace TeamCollaborationApp
             BunifuPage.SetPage("Edit Task");
         }
 
-        private void bunifuButton1_Click_2(object sender, EventArgs e)
-        {
-            if (Passchange == false)
-            {
-                panel17.Visible = true;
-                panel17.Location.X.Equals(305);
-                panel17.Location.Y.Equals(441);
+         
 
-
-                
-                Passchange = true;
-
-            }
-            else
-            {
-                panel17.Visible = false;
-                Passchange = false;
-            }
-            
-        }
-
-        private void bunifuButton8_Click(object sender, EventArgs e)
-        {
-            User u = new User();
-            bool value =  u.checkChange(this);
-
-
-            if (value == true)
-            {
-                u.GetUserDetails(Convert.ToInt32(txtbEditUsername.Text), txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
-                u.saveUser("editUser");
-            }
-        }
+    
 
         private void dgvProject_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -525,7 +494,7 @@ namespace TeamCollaborationApp
 
             if (value == true)
             {
-                u.GetUserDetails(Convert.ToInt32(txtbEditPageId.Text), txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text, txtbNewPassword.Text);
+                u.GetUserDetails(Convert.ToInt32(txtbEditPageId.Text), txtbEditUsername.Text, txtbEditFirstname.Text, txtbEditLastname.Text, txtbEditPhone.Text, txtbEditEmail.Text );
                 u.saveUser("editUser");
             }
             else
