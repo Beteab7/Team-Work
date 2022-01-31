@@ -1,4 +1,4 @@
-ALTER PROCEDURE spAuthenticationUser
+Create PROCEDURE spAuthenticationUser
 @username varchar(50),
 @password varchar(50)
 AS
