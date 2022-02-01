@@ -23,6 +23,7 @@ namespace TeamCollaborationApp
         int currentUserID;
         int projectID;
         Project p;
+        Task t;
         
         public Form1()
         {
@@ -534,6 +535,106 @@ namespace TeamCollaborationApp
             p = new Project(projectID, currentUserID, txtProjectNameEdit.Text, txtDescriptionProjectEdit.Text, dateTimeStartProjectEdit.Value, dateTimeEndProjectEdit.Value);
             p.DeleteProject();
             BunifuPage.SetPage("Project");
+        }
+
+        private void txtProjectNameList_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveTaskEdit_Click(object sender, EventArgs e)
+        {
+            t = new Task();
+            t.Name = txtTaskNameEdit.Text;
+            t.Description = txtTaskDescriptionEdit.Text;
+            t.Priority = cmbPriorityEdit.SelectedIndex + 1;
+            t.DeadLine = Convert.ToDateTime(dateTimeDeadlineEdit.Text);
+            TaskDAL op = new TaskDAL();
+            try
+            {
+                MessageBox.Show("Name: " + t.Name);
+                MessageBox.Show("Description: " + t.Description);
+                MessageBox.Show("Priority: " + t.Priority);
+                MessageBox.Show("Dead Line: " + t.DeadLine);
+                op.updateTask(t);
+                btnSaveTaskEdit.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void createTask_Click(object sender, EventArgs e)
+        {
+            t = new Task();
+            t.Name = richTextBox3.Text;
+            t.Description = richTextBox2.Text;
+            t.Completion = false;
+            t.DeadLine = Convert.ToDateTime(dateTimePicker1.Text);
+            t.Priority = comboBox2.SelectedIndex + 1;
+            t.ProjectId = projectID;
+            TaskDAL op = new TaskDAL();
+            if (op.taskIsValid(t))
+            {
+                try
+                {
+
+                    op.saveTask(t);
+                    richTextBox3.Text = "";
+                    richTextBox2.Text = "";
+                    BunifuPage.SetPage("ListTask");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+                MessageBox.Show("Please enter a valid input");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TaskDAL op = new TaskDAL();
+            for (int i = 0; i < (personsToGetAssigned.SelectedCells.Count); i++)
+            {
+                string fullName = personsToGetAssigned.SelectedCells[i].EditedFormattedValue.ToString();
+                string firstName = fullName.Split(' ')[0];
+                int id = Convert.ToInt32(op.getUserId(firstName).Rows[0][0]);
+                t.Id = Convert.ToInt32(op.getTaskId(t.Name).Rows[0][0]);
+                op.assignTaskToUser(t.Id, id);
+            }
+        }
+
+        private void btnCancelTaskEdit_Click(object sender, EventArgs e)
+        {
+             txtTaskNameEdit.Text = "";
+             txtTaskDescriptionEdit.Text = "";
+             t.Priority = cmbPriorityEdit.SelectedIndex + 1;
+             dateTimeDeadlineEdit.Text = Convert.ToString(DateTime.Now);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TaskDAL tsk = new TaskDAL();
+            dataGridView1.DataSource = tsk.getTasks();
+            BunifuPage.SetPage("ListTask");
+        }
+      
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TaskDAL tsk = new TaskDAL();
+            dataGridView1.DataSource = tsk.getTasks();
+            BunifuPage.SetPage("ListTask");
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            TaskDAL tsk = new TaskDAL();
+            dataGridView1.DataSource = tsk.getTasks();
+            BunifuPage.SetPage("ListTask");
         }
     }
 }

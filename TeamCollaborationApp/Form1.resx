@@ -1057,139 +1057,6 @@ The Create a New Project page is broken up into sections that allow you to confi
         gg==
 </value>
   </data>
-  <data name="btnAddTaskEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAK4AAAAeCAYAAAC1xiWbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIHSURBVHhe7dw/S1tRGMfxMwgKKjEmlRYqOJa+AqFvoIOz
-        dCnUQSh0cRF0UhxTNfVer7EOLZkyCDq0gkstdsgkxEHIICgWivivsRgbIfg8PU/yCIriGM8pvw8cEM4l
-        05fDuYd7NAD/DR4zLTxp3lDQOkdRomD/ZgyMRg1pjsJYlt6bt5w2HZrl/WjK9FKU3KOvr854I8388zsD
-        NJQ0t5lhWh04ty0eUsq81DzvRmHnKH16XuKTov4CwAMr7zPlXpRo/ukHzfSm2kor0QI4iJb6ftNM+2vN
-        tU72tBTG9/nPrj4G4JiLEtNc1zGnzGPN1q62KTNE395d6CMAbrLvXHJgoNnacKP4Im991lkAR9mXNjlx
-        0GxtuLPxHT4o6CyAo2S7kG7+q9naPa6cnwH4wLaq2SJc8AjCBS8hXPASwgUvIVzwEsIFLyFc8BLCBS8h
-        XPASwgUvIVzw0vVwKWg/wre44LxqhWm6qarZytdhyTXeXtZZAEcdFFi+ZNRsa1uFEVofruo0gJvkAmUY
-        y2q2Nty06aHMk5IsxQCukjuRcjdSs62joG2Qv/Sf6jMATqEfI2cUPZrUXG+Sve7l2lAZKy+45DI/UaGP
-        3Xm51Kup3sZhbJwWek5qd9BwnQceivxvj2Kuvj2YTQT3RnvFvqw9kwuUtbtocsaLgdHgQUHsF0WJlVt7
-        WgB/GfMPw9IHqbSWKQEAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnAddTaskEdit.IdleIconRightImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAmRJREFUWEft
-        l01rE1EYhYMIFcRWUHe6q1YQ/MZ1dJeNWCSQb0J+giD4sQmC4qJUcCFYpeBC9+LGUrtp/Q9SXYiKC6Uu
-        LCq6iPU54UQaJzO5aROC0AOHTM577rnvzNzM3KS28F+hVCpNwGtwqVAoLBeLxRXRx4vwaqVSOWR7/8CE
-        Jwmfh2uBnKOp4x6+caTT6e2E3YUNB3+CMzR0IZ/PH8lms/tEHaNPMukDap/tbXA8rQzH9YZqtbqbkOZZ
-        E/yTz1u1Wm2Xy7HAN8rEtz2meTVocszlMGQymREGvnTAW87wqEvBoIljGqsMjpeU6VJ3MGjGk3+A+y33
-        jFwud4DxH5VFE/csJ4NLd4YBv+F3Ak5Y3jDK5fJpsn4ok+xTluOB8QXUfb9hadMg66Yy4ZylzuAyTdi4
-        Erjg5F3z11hoEeL7Ii/NHLQcBYbrMtHIfUuJkFf010SQ+dD+K5aioLsFN3DeUiJ6aQDfpP3zlqKg+EYm
-        Ghi3lAgHhl6B5u3lJJctRYFhVaa4+9+asBttbwP6qOtfLUVB8ZtM/HR2WmqDA7rS9jbopFxftRQFxdcy
-        Ja7UdXBg0C3gaXrY/leWohj6ImTiyzLRyKylRDgwqAEyH8nLHJcsRdFaqXA4DyIBU+sVPIhH8XNL8dAL
-        CKM2IP1+GTWCX+uY70B13LfXMZyy3B31en0bA555oDadZ10KBmd+TmOd8VSZLoWhw5Zsih3vHpdjwWXe
-        y2Ke9hhN3vuWrIUOm1I9qh8zwUVtv2lyh6hjadSe2CPv5jal60HQcLbl/4JG/v4xYZL38Jf5Dg7uj8kW
-        BodU6g+/Mdq4V1cXZgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnProjectNameSearchTaskEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACUAAAAjCAYAAAATx8MeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL1SURBVFhH3Vg9aFNRFM7YMWPGjB0zdszYsWMdBMeCCC10
-        aBGki0NBUCymUKhSQUR0qFJQKaRDsEKrRGmhQ6WINf1L68vLS16ahHeu37k5mrbe/DV5T/SDj/xw7znf
-        O/ece+59of8KSql+cILKToLcbBrfFX9SyVrA1ykiGpCh/gLOIuyUynaW8rs2rU1X1cqoUs/idS6PKLU6
-        pSi7aVG5YFPp5DnmxcRE7wCjYUThPmhrp3NRpe7g71acjSj1+ppS1nZOxEXEZHfgZYBBy0vdLKl7fWbn
-        7RDi+KEQ5ati+nKg4tEYHaazaiZsdtQp8VD05dUPcjIJcdEZqHgw720uWF1FpwHp3a08hL0UV+2B3ONJ
-        +jRrmwz2it7KuMsPLi6bA8kY976vZv2I0EXqpWyVY7rkiwfHPcuhVuQcs3dO4LdfJPwJLNuclxyrGg34
-        xcUhhYJKioTzgNooks+XxG5FvdGaOoDe3HijM0zynegE3KJESh3cEvQObJrkNzm3Tu0CVissciCId22E
-        0DghINL2og0dwyKJo+QkvNRksAl+kdyGkEIiSSe5UkvD5sFB8cmAliGSRBQfO0yDgyKfPACRJKKwXxgH
-        B8XHMS1DJCGnKsWkPieZBgfFF4OowNyGSNKRGlJf3+aMgwMifZw5RfWNiiQtqo8qbneHuC6JVuNAR1Qk
-        1UDu0XsOoWmC70Q+kXuyI1LqQOgGaTf1VzZQ2niUp5JzQ6ScB3frwKuwUZR+AWsa45uHcbJf5AJDoYkE
-        M8jZu+19uBuIMG/5ukuFvafiujnI2X/jLV2pmAz1jHxccTLrXPnitjn0FlE8/OybMBZkf9uCn/pRpR1o
-        YYhYr281eslqEepM0Fno69b+uqW7uMFJ2+SGi6TmHGp7yZoBRuIQt6Ur5WG/2WkjQgylHxT4pQjsNK+y
-        y4CN0qmV4ZZAG/NF3QG4u58VwaI5Z9amq/rNDL+hqbjjYsI/QFwUHWCEWxNvfPj9G1p07X3VBNj4Pvdv
-        IRT6CZH1qRBD+oDUAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnProjectNameSearchTaskEdit.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA3NJREFUaEPt
-        mclrFEEUxhPFDfUkLle3qP+BGBExKAS9xjBrxiEMIoqgd5lAFMWDnvUgeNCLGxGNxFNEMKAIiiCi4jkB
-        F+LFSeLye/F1qKl04qS7qpOR+eCjmX7V3/deV1V3dU1TAw0sQBQKhQ2ZTKYrnU5f5TiUzWZHOH5RDsNn
-        8Arn86lUar1etnBAYvtJ8DGcgL9r5AQFD3BsU5n5AwVs0WTCEp0L+9HZpLLJgiJSJPDdSigOR9E8rPLJ
-        AMNySCIB38Je5sDufD7fAtcoW+Qcd/4sfGddE/AXPKM2foFRr2Fs8gWsebzLvIIvLY2APdrMDzDosgyF
-        FXiMcPPfVrWjXC4v4toTcEy1pkivZbSZW3R2dm7GwJ4Tw9zVXdokMmTIoSOPalN7NJfLbdQm7oDwQ9OI
-        O/aD404NxwZarVB6d8qD4vo07AYI7jUNlEUNOwM3p2T7SG9pOD4o5IFl8FRDrtGM9pDp5axXZCmB4Lgp
-        Dls17Bz0yh7La6yjo2OthqODO9JtCvP7lYa8AZ83lucRDUUHQtdNUXhOQ96AxwXL85qGooO7UfXS4pG4
-        T0PegKcsQqc8GW7PNRQdCH02RWWpoSFvYF5uNz0pbERD0YFQ1VuXibdKQ95QLBZXm56woqHoQGTeC5GX
-        r4aiA6GqoYXoVg15A0Npm+npZGj9T5O96vGLyXkNeQMeF01PGP/xi4i9dH+vIW/A45PlmdVQdIQtUXwO
-        L/QPmF7QzRJFQFfbi8YhTs/5Q6oGNMt8ML3wdreUR2zaMp5z3Rp2BnSP2j5Ol/ECRKs+rGBFCtRwbKDX
-        BqveWU57I8AMn7pfYewNNhKWx+03Q1fo51NXgHjY5sM4iRwnHGnzgWtPioalKXzNJF+hTd0DgyS2gybJ
-        xB/wWgwJzLhBR+wDx0scD8oqtlAoLBcyTHZw/hDJXeb4MWj/LyZRjOst09l4v729fZlauwfFONnERuMR
-        7AuLBfTeMwJMZMPgNpy2YzgLK1x3K3hPkORizt2w2tgcZIiunDT1CUzWYWb/0fNTWfVHD4lPW3ZIMcRu
-        0iasiICDtPP+TRQbpVJpCcnesZK32SgmcdRYzJO6KYb5djekAJONYhKHrAxItt9K3mZamy9szNYzPLJP
-        abP6QFgxdVdEAObCUgq4p4Wc1tP1CZkz9ExOfzbQQHJoavoDWjhig+1sRS8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="stateProperties95.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA3NJREFUaEPt
-        mclrFEEUxhPFDfUkLle3qP+BGBExKAS9xjBrxiEMIoqgd5lAFMWDnvUgeNCLGxGNxFNEMKAIiiCi4jkB
-        F+LFSeLye/F1qKl04qS7qpOR+eCjmX7V3/deV1V3dU1TAw0sQBQKhQ2ZTKYrnU5f5TiUzWZHOH5RDsNn
-        8Arn86lUar1etnBAYvtJ8DGcgL9r5AQFD3BsU5n5AwVs0WTCEp0L+9HZpLLJgiJSJPDdSigOR9E8rPLJ
-        AMNySCIB38Je5sDufD7fAtcoW+Qcd/4sfGddE/AXPKM2foFRr2Fs8gWsebzLvIIvLY2APdrMDzDosgyF
-        FXiMcPPfVrWjXC4v4toTcEy1pkivZbSZW3R2dm7GwJ4Tw9zVXdokMmTIoSOPalN7NJfLbdQm7oDwQ9OI
-        O/aD404NxwZarVB6d8qD4vo07AYI7jUNlEUNOwM3p2T7SG9pOD4o5IFl8FRDrtGM9pDp5axXZCmB4Lgp
-        Dls17Bz0yh7La6yjo2OthqODO9JtCvP7lYa8AZ83lucRDUUHQtdNUXhOQ96AxwXL85qGooO7UfXS4pG4
-        T0PegKcsQqc8GW7PNRQdCH02RWWpoSFvYF5uNz0pbERD0YFQ1VuXibdKQ95QLBZXm56woqHoQGTeC5GX
-        r4aiA6GqoYXoVg15A0Npm+npZGj9T5O96vGLyXkNeQMeF01PGP/xi4i9dH+vIW/A45PlmdVQdIQtUXwO
-        L/QPmF7QzRJFQFfbi8YhTs/5Q6oGNMt8ML3wdreUR2zaMp5z3Rp2BnSP2j5Ol/ECRKs+rGBFCtRwbKDX
-        BqveWU57I8AMn7pfYewNNhKWx+03Q1fo51NXgHjY5sM4iRwnHGnzgWtPioalKXzNJF+hTd0DgyS2gybJ
-        xB/wWgwJzLhBR+wDx0scD8oqtlAoLBcyTHZw/hDJXeb4MWj/LyZRjOst09l4v729fZlauwfFONnERuMR
-        7AuLBfTeMwJMZMPgNpy2YzgLK1x3K3hPkORizt2w2tgcZIiunDT1CUzWYWb/0fNTWfVHD4lPW3ZIMcRu
-        0iasiICDtPP+TRQbpVJpCcnesZK32SgmcdRYzJO6KYb5djekAJONYhKHrAxItt9K3mZamy9szNYzPLJP
-        abP6QFgxdVdEAObCUgq4p4Wc1tP1CZkz9ExOfzbQQHJoavoDWjhig+1sRS8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="stateProperties96.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA3NJREFUaEPt
-        mclrFEEUxhPFDfUkLle3qP+BGBExKAS9xjBrxiEMIoqgd5lAFMWDnvUgeNCLGxGNxFNEMKAIiiCi4jkB
-        F+LFSeLye/F1qKl04qS7qpOR+eCjmX7V3/deV1V3dU1TAw0sQBQKhQ2ZTKYrnU5f5TiUzWZHOH5RDsNn
-        8Arn86lUar1etnBAYvtJ8DGcgL9r5AQFD3BsU5n5AwVs0WTCEp0L+9HZpLLJgiJSJPDdSigOR9E8rPLJ
-        AMNySCIB38Je5sDufD7fAtcoW+Qcd/4sfGddE/AXPKM2foFRr2Fs8gWsebzLvIIvLY2APdrMDzDosgyF
-        FXiMcPPfVrWjXC4v4toTcEy1pkivZbSZW3R2dm7GwJ4Tw9zVXdokMmTIoSOPalN7NJfLbdQm7oDwQ9OI
-        O/aD404NxwZarVB6d8qD4vo07AYI7jUNlEUNOwM3p2T7SG9pOD4o5IFl8FRDrtGM9pDp5axXZCmB4Lgp
-        Dls17Bz0yh7La6yjo2OthqODO9JtCvP7lYa8AZ83lucRDUUHQtdNUXhOQ96AxwXL85qGooO7UfXS4pG4
-        T0PegKcsQqc8GW7PNRQdCH02RWWpoSFvYF5uNz0pbERD0YFQ1VuXibdKQ95QLBZXm56woqHoQGTeC5GX
-        r4aiA6GqoYXoVg15A0Npm+npZGj9T5O96vGLyXkNeQMeF01PGP/xi4i9dH+vIW/A45PlmdVQdIQtUXwO
-        L/QPmF7QzRJFQFfbi8YhTs/5Q6oGNMt8ML3wdreUR2zaMp5z3Rp2BnSP2j5Ol/ECRKs+rGBFCtRwbKDX
-        BqveWU57I8AMn7pfYewNNhKWx+03Q1fo51NXgHjY5sM4iRwnHGnzgWtPioalKXzNJF+hTd0DgyS2gybJ
-        xB/wWgwJzLhBR+wDx0scD8oqtlAoLBcyTHZw/hDJXeb4MWj/LyZRjOst09l4v729fZlauwfFONnERuMR
-        7AuLBfTeMwJMZMPgNpy2YzgLK1x3K3hPkORizt2w2tgcZIiunDT1CUzWYWb/0fNTWfVHD4lPW3ZIMcRu
-        0iasiICDtPP+TRQbpVJpCcnesZK32SgmcdRYzJO6KYb5djekAJONYhKHrAxItt9K3mZamy9szNYzPLJP
-        abP6QFgxdVdEAObCUgq4p4Wc1tP1CZkz9ExOfzbQQHJoavoDWjhig+1sRS8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="txtProjectNameSearchTaskEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAoUAAAAjCAYAAADi83AOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPeSURBVHhe7d1BaBxVHMfxd4yG2CZZ2yz1UOgl9GLBg4KX
-        XgQPRXr0oIinKqIoWGhPLaKHZle3nezuhFIrxUIOAYMHaaA2oQcbtMpWbMmh0EDAlhDrdmpsisv8/503
-        +YcajGkSbZvMfD/wg4RhZ/b44+2893cAAADAmmnZ9SY5IEF7XWrdDZ/kfyWEEEIIIY8mCx1M+jed0pI7
-        LJ+6F6yqPVza53r8QyXomJGBbZGc39/SHyuqU2PzAQAAwKOz0MEuharfHVI5ubMpR5+MpNY5lPS2XVbh
-        /j9acZul2h0kTTRKHxpN2jcBAADAujJ7Q/XyF6ondtyycthjle6/8cuQUu1sxhc+mtPWnD0NAAAA615S
-        Dv2inhzreN2q3dpItfCBnHp2Ru827c4AAADYUFpzKl/t+V3CYt0q3upIuOXz+JvXmqwOAgAAbHxy4fBt
-        GSh+bVVvZaS/66Cc3RfZPQAAAJAB8fdH7viFP6t8y9OS2x2ffn6GFUIAAIDsSX9KftA7humRM/Utv/EO
-        IQAAQEb5dwyPb7+pZddrFfCfpNZ1PP6h3LKPAAAAIIuuDqtUC6NWARfTitsuYZGNJQAAADmQHnS91ASU
-        9HBDf9AhAAAAsm9qLB2TZ1XwPj8SJT0BGwAAANnn3y0MOmb95Dqrg0kh9FNLTu5kdwkAAECOyPArkZTc
-        q1YJk1IYtNfj8Y/ZYAIAAJAn6Ri8ziGrhM5p2alODNpVAAAA5ML1cfU90CqhlcKpMbsKAACAXIgmlyiF
-        V4ftKgAAAHJhurG4FMrRJ0b1UmhXAQAAkAvXzqgET/1ilTBdKdyrQy/dsssAAADIATn3zl3pc+9bJUxK
-        4SHXJpW2OaaZAAAA5IfUC3/4qXZWCedJrTDulxABAACQA9MNlWrnNauC90mfe1kGX+QAawAAgByQM2/c
-        lmPt71oVXEyqhVF2IQMAAGTcv60SLtA+t0tP7GDDCQAAQJb5DcZlt9cq4NIk7PkkPvcexRAAACCD4p+C
-        O0nfG7TqtzwJt47EV07/ZZ8FAABAFkyNqYTFi/7kGat9y0uPqKk//TPFEAAAICN8IRx4ZkIrbrNVvpVJ
-        i2G4dUTO7ovsVgAAANiA5n8yLl5cdSH8O+nvOihfPtfU6+N2WwAAAGwI0WS6qcS/Q7jin4yXoyW3W6pd
-        E+lOlZsT9hQAAACsS0kZlG/fnpWgY+aBu4zXwt9Ugk2/+pEoMvLmn+kElOmGPR0AAACPhV+08+8Mnt/f
-        koFtkS+D8lnbh1bhHh4/I09K7i0/Gs8ffJiURSWEEEIIIY8n6aJdrbuR/H0gSa9VNgAAAGA1nLsHL6W9
-        7BRCIFoAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -1467,7 +1334,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         +DcQt0OVDwrAwAAAD1lrxamqG9kAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="stateProperties104.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties96.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAItJREFUOE9j
         GFwgJiamOzo6+jsQ/0fDP4HYGqoMN4Aq5INy4QBqyLPIyEgbqBB2AFIIZaIAkDjQdUZA+klUVJQLVBgT
@@ -1492,7 +1359,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         FICBAQA+bGI4/IELpQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="stateProperties106.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties98.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAEhJREFUOE9j
         GFwgJiamOzo6+jsQ/8eHocoxAVDyJxDzQblYASEDcEtCwagBQ8IAIKY4IclAuaQDoOYuIP4DsgUfhiof
@@ -1532,7 +1399,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         L601wRve/8uj8DPILzdYyaSjJtTU1NTU/L8MDPwDnEB51iTkW7MAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="stateProperties108.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties100.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABCFJREFUeF7t
         mktrFEEQx3MRBDEYjM98lgTxKHjwEczmRcghn0DES4gK5tOYk3jwIKKCYnznIepJkBxEMD4RRIz/Wv49
@@ -1575,7 +1442,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         2RwaavXQdodzGykxfTRdHE3WAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="stateProperties110.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties102.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQFJREFUOE+9
         kk1OAkEUhBvc6uwId9AYT2E4wQTmx81wAb3BLPQKcghPgEqIIbhQt8awhr3RRF3C9zK1c4aeCQmVVPpV
@@ -1603,7 +1470,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         TkSuQmCC
 </value>
   </data>
-  <data name="stateProperties112.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="stateProperties104.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAASVJREFUOE/N
         k71Kw3AUxbO4KA7utn48VcjXkCEv4OJQsBV9BKs0IA6ttKigo5W8j1Do0A5mq78TroEkRifBA4d7z7n3
@@ -1622,7 +1489,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACe
-        BwAAAk1TRnQBSQFMAwEBAAFAAQEBQAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        BwAAAk1TRnQBSQFMAwEBAAFIAQEBSAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
