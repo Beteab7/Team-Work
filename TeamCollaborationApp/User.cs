@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace TeamCollaborationApp
 {
-    class User
+    public class User
     {
         DAL OBJ = new DAL();
         Form1 obj;
@@ -122,7 +122,7 @@ namespace TeamCollaborationApp
                 OBJ.GetUserDetails_StoredProcedure(username, this);
                 {
                   
-                    obj = new Form1();
+                    obj = new Form1(this);
                     LoginPage.Hide();
                     obj.Show();
                 }

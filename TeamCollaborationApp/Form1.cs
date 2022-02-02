@@ -24,11 +24,11 @@ namespace TeamCollaborationApp
         int projectID;
         Project p;
         Task t;
-        
-        public Form1()
+        User u;
+        public Form1(User user)
         {
             InitializeComponent();
-            User u = new User();
+            u = user;
             currentUserID = u.Id;
 
         }
