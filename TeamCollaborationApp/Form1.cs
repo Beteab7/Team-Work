@@ -19,6 +19,7 @@ namespace TeamCollaborationApp
         private FontDialog fontDialog = new FontDialog();
         static private bool save = false;
         static private bool Passchange = false;
+        int ProjectResultSet;
         
         int currentUserID;
         int projectID;
@@ -435,6 +436,11 @@ namespace TeamCollaborationApp
             //reload project data grid view
             p = new Project(currentUserID);
             dgvProject.DataSource = p.getProject();
+            ProjectResultSet = p.getProject().Rows.Count;
+            if (ProjectResultSet > 0)
+                 label11.Text = Convert.ToString(ProjectResultSet) + " Results ";
+            
+
         }
 
         private void btnSaveProject_Click(object sender, EventArgs e)
@@ -635,6 +641,67 @@ namespace TeamCollaborationApp
             TaskDAL tsk = new TaskDAL();
             dataGridView1.DataSource = tsk.getTasks();
             BunifuPage.SetPage("ListTask");
+        }
+
+        private void cmbProjectColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton19_Click(object sender, EventArgs e)
+        {
+            TaskDAL tsk = new TaskDAL();
+            dataGridView1.DataSource = tsk.getTasks();
+            BunifuPage.SetPage("ListTask");
+        }
+
+        private void bunifuButton20_Click(object sender, EventArgs e)
+        {
+            TaskDAL tsk = new TaskDAL();
+            dataGridView1.DataSource = tsk.getTasks();
+            BunifuPage.SetPage("ListTask");
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            TaskDAL tsk = new TaskDAL();
+            dataGridView1.DataSource = tsk.getTasks();
+            BunifuPage.SetPage("ListTask");
+        }
+
+        private void bunifuButton3_Click_2(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("AddTask");
+        }
+
+        private void bunifuButton24_Click(object sender, EventArgs e)
+        {
+            t = new Task();
+            t.Name = richTextBox3.Text;
+            t.Description = richTextBox2.Text;
+            t.Completion = false;
+            t.DeadLine = Convert.ToDateTime(dateTimePicker1.Text);
+            t.Priority = comboBox2.SelectedIndex + 1;
+            t.ProjectId = projectID;
+            TaskDAL op = new TaskDAL();
+            if (op.taskIsValid(t))
+            {
+                try
+                {
+
+                    op.saveTask(t);
+                    richTextBox3.Text = "";
+                    richTextBox2.Text = "";
+                    BunifuPage.SetPage("ListTask");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+                MessageBox.Show("Please enter a valid input");
         }
     }
 }
