@@ -19,6 +19,28 @@ namespace TeamCollaborationApp
 
         string constr = "Server = (local); database = Team; Integrated Security=True;";
 
+
+        public DataTable getLog(int userID)
+        {
+            string constr = "Server = (local); database = Team; Integrated Security=True;";
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                con.Open();
+                using (SqlDataAdapter da = new SqlDataAdapter())
+                {
+                    da.SelectCommand = new SqlCommand("spGetLog", con);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    da.SelectCommand.Parameters.AddWithValue("@userID", userID);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "dtProjects");
+                    DataTable dt = ds.Tables[0];
+                    return dt;
+                }
+            }
+        }
+
+
+
         public void GetUserDetails_StoredProcedure(string username, User u)
         {
             try

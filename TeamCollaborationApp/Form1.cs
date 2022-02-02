@@ -163,9 +163,12 @@ namespace TeamCollaborationApp
 
         private void ReferenceEvent(object sender, EventArgs e)
         {
-            label3.Text = "Reference";
+            label3.Text = "Log";
             indicator.Top = ((Control)sender).Top;
-            BunifuPage.SetPage("Reference");
+            BunifuPage.SetPage("Log");
+
+            u = new User( );
+            dgvLab.DataSource = u.getLog();
 
         }
 
@@ -421,19 +424,9 @@ namespace TeamCollaborationApp
             txtDescriptionProjectEdit.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
             dateTimeStartProjectEdit.Value = Convert.ToDateTime(dgvProject.CurrentRow.Cells[3].Value);
             dateTimeEndProjectEdit.Value = Convert.ToDateTime(dgvProject.CurrentRow.Cells[4].Value);
-        }
-
-        private void dgvProject_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void dgvProject_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            
-            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
+ 
 
         private void bunifuButton7_Click(object sender, EventArgs e)
         {

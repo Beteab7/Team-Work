@@ -15,7 +15,7 @@ GO
 	into the task table takes all the necessary
 	values and performs an insert statement.
 */
-ALTER PROC spInsertTask
+create PROC spInsertTask
 	(
 	-- [!!] id is omitted since it's an auto incrementing property.
 	@name VARCHAR(50),
@@ -50,7 +50,7 @@ GO
 	from the database. 
 	Performs select all statement.
 */
-ALTER PROC spFetchTasks
+create PROC spFetchTasks
 AS
 BEGIN
 	SELECT * FROM Task;
@@ -60,7 +60,7 @@ END
 
 GO
 -- Fetch all the tasks ordered by their priority
-ALTER PROC spFetchTasksOrderedByPriority
+create PROC spFetchTasksOrderedByPriority
 AS
 BEGIN
 	SELECT * FROM TASK ORDER BY TASK.Priority;
@@ -69,7 +69,7 @@ END
 -----------------------------------------------------
 
 GO
-ALTER PROC spFetchTasksOrderedByName
+create PROC spFetchTasksOrderedByName
 AS
 BEGIN
 --	Fetch all the tasks ordered by their name.
@@ -79,7 +79,7 @@ END
 -----------------------------------------------------
 
 GO
-ALTER PROC spFetchSingleTaskById
+create PROC spFetchSingleTaskById
  @taskId INT
 AS
 BEGIN
@@ -91,7 +91,7 @@ END;
 -----------------------------------------------------
 
 GO
-ALTER PROC spFetchTasksByProject
+create PROC spFetchTasksByProject
 (@projectID INT)
 AS
 BEGIN
@@ -115,7 +115,7 @@ BEGIN
 END
 select * from task;
 GO
-ALTER PROC spUpdateTaskName
+create PROC spUpdateTaskName
 	(@taskId INT, @name VARCHAR(50))
 AS
 BEGIN
@@ -126,7 +126,7 @@ END
 
 -----------------------------------------------------
 GO
-ALTER PROC spUpdateTaskDescription
+create PROC spUpdateTaskDescription
 	(@taskId INT, @description VARCHAR(200))
 AS
 BEGIN
@@ -136,7 +136,7 @@ BEGIN
 END
 -----------------------------------------------------
 GO
-ALTER PROC spUpdateTaskPriority
+create PROC spUpdateTaskPriority
 	(@taskId INT, @priority int)
 AS
 BEGIN
@@ -147,7 +147,7 @@ END
 
 ----------------------------------------------------
 GO
-ALTER PROC spUpdateTaskCompletion
+create PROC spUpdateTaskCompletion
 	(@taskId INT, @completion bit)
 AS
 BEGIN
@@ -158,7 +158,7 @@ END
 
 -----------------------------------------------------
 GO
-ALTER PROC spUpdateTask
+create PROC spUpdateTask
 	(
 	@id INT,
 	@name VARCHAR(50),
@@ -186,7 +186,7 @@ END
 /*                BELOW ARE STORED PROCEDURES FOR DELETE OPERATIONS             */
 ----------------------------------------------------------------------------------
 GO
-ALTER PROC spDeleteTask
+create PROC spDeleteTask
 	(@taskId INT)
 AS
 BEGIN
@@ -207,7 +207,7 @@ END
 --------------------------------------------------------------------------------
 
 GO
-ALTER PROC spInsertTaskAndMember 
+create PROC spInsertTaskAndMember 
 	(@TaskId INT, @UserId INT)
 AS
 BEGIN
@@ -235,7 +235,7 @@ END
 	row.
 */
 
-ALTER PROC spFetchTasksAndUsers
+create PROC spFetchTasksAndUsers
 AS
 BEGIN
 	SELECT 
@@ -269,7 +269,7 @@ GO
 	a single task base on a given task id or
 	user id
 */
-ALTER PROC spFetchTaskAndUserById
+create PROC spFetchTaskAndUserById
  (@id INT)
 AS
 BEGIN
@@ -308,7 +308,7 @@ END
 --------------------------------------------------------------------------------
 
 GO
-ALTER PROC spUpdateUserTask
+create PROC spUpdateUserTask
 	@userId INT, @taskId INT
 AS
 BEGIN
@@ -322,7 +322,7 @@ END
 --------------------------------------------------------------------------------
 
 GO
-ALTER PROC spDeleteTaskMemberUser
+create PROC spDeleteTaskMemberUser
 	@userId INT
 AS
 BEGIN
@@ -333,7 +333,7 @@ END
 ------------------------------------------
 
 GO
-ALTER PROC spDeleteTaskMemberTask
+create PROC spDeleteTaskMemberTask
 	@taskId INT
 AS
 BEGIN
@@ -356,7 +356,7 @@ begin
 	ProjectMember.ProjectId = @projectId
 end
 
-
+go
 create proc spSelectUserId
 	(@fname varchar(50))
 as

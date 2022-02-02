@@ -11,6 +11,7 @@ namespace TeamCollaborationApp
     public class User
     {
         DAL OBJ = new DAL();
+
         Form1 obj;
         internal static int id;
         public int Id { get { return id; } }
@@ -142,6 +143,14 @@ namespace TeamCollaborationApp
         public DataTable getUsers()
         {
             return OBJ.getUsers();
+        }
+
+     
+
+
+        public DataTable getLog()
+        {
+            return OBJ.getLog(Id);
         }
 
     }
