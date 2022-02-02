@@ -540,10 +540,10 @@ namespace TeamCollaborationApp
             this.BunifuPage.Location = new System.Drawing.Point(166, 39);
             this.BunifuPage.Multiline = true;
             this.BunifuPage.Name = "BunifuPage";
-            this.BunifuPage.Page = this.tabPage6;
-            this.BunifuPage.PageIndex = 11;
-            this.BunifuPage.PageName = "tabPage6";
-            this.BunifuPage.PageTitle = "AddTaskMember";
+            this.BunifuPage.Page = this.tabPage5;
+            this.BunifuPage.PageIndex = 9;
+            this.BunifuPage.PageName = "tabPage5";
+            this.BunifuPage.PageTitle = "ListTask";
             this.BunifuPage.SelectedIndex = 0;
             this.BunifuPage.Size = new System.Drawing.Size(822, 491);
             this.BunifuPage.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
@@ -4554,6 +4554,7 @@ namespace TeamCollaborationApp
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextMarginLeft = 0;
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click_2);
             // 
             // label40
             // 

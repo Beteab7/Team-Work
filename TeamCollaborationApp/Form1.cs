@@ -411,10 +411,12 @@ namespace TeamCollaborationApp
         private void dgvProject_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //next tab- task list
+            TaskDAL op = new TaskDAL();
             projectID = Convert.ToInt32(dgvProject.CurrentRow.Cells[0].Value);
             txtProjectNameList.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
             txtDescListTask.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
-
+            
+            dataGridView1.DataSource = op.FetchTaskByProject(projectID);
             //edit tab, found in settings
             txtProjectNameEdit.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
             txtDescriptionProjectEdit.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
@@ -429,6 +431,8 @@ namespace TeamCollaborationApp
 
         private void dgvProject_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            TaskDAL op = new TaskDAL();
+            dataGridView1.DataSource = op.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
@@ -599,6 +603,7 @@ namespace TeamCollaborationApp
                     op.saveTask(t);
                     richTextBox3.Text = "";
                     richTextBox2.Text = "";
+                    dataGridView1.DataSource = op.FetchTaskByProject(projectID);
                     BunifuPage.SetPage("ListTask");
                 }
                 catch (Exception ex)
@@ -634,21 +639,21 @@ namespace TeamCollaborationApp
         private void button1_Click(object sender, EventArgs e)
         {
             TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.getTasks();
+            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
       
         private void button2_Click(object sender, EventArgs e)
         {
             TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.getTasks();
+            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
         private void back_Click(object sender, EventArgs e)
         {
             TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.getTasks();
+            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
@@ -660,14 +665,14 @@ namespace TeamCollaborationApp
         private void bunifuButton19_Click(object sender, EventArgs e)
         {
             TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.getTasks();
+            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
         private void bunifuButton20_Click(object sender, EventArgs e)
         {
             TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.getTasks();
+            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
@@ -703,6 +708,7 @@ namespace TeamCollaborationApp
                     op.saveTask(t);
                     richTextBox3.Text = "";
                     richTextBox2.Text = "";
+                    dataGridView1.DataSource = op.FetchTaskByProject(projectID);
                     BunifuPage.SetPage("ListTask");
                 }catch(Exception ex)
                 {
@@ -739,6 +745,7 @@ namespace TeamCollaborationApp
             TaskDAL ts = new TaskDAL();
             try{
                 ts.deleteTask(t.Id);
+                dataGridView1.DataSource = ts.FetchTaskByProject(projectID);
                 BunifuPage.SetPage("ListTask");
              }catch(Exception ex)
             {
@@ -773,6 +780,11 @@ namespace TeamCollaborationApp
         private void button3_Click(object sender, EventArgs e)
         {
             BunifuPage.SetPage("Edit Task");
+        }
+
+        private void bunifuButton2_Click_2(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("Project");
         }
     }
 }
