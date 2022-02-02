@@ -83,6 +83,7 @@ namespace TeamCollaborationApp
             DataRow[] dr = table.Select();
             foreach (DataRow row in dr)
             {
+                this.id = Convert.ToInt32(row["tid"].ToString());
                 this.name = row["Name"].ToString();
                 this.description = row["Description"].ToString();
                 this.priority = Convert.ToInt32(row["Priority"].ToString());

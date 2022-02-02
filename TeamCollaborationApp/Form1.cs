@@ -23,6 +23,7 @@ namespace TeamCollaborationApp
         
         int currentUserID;
         int projectID;
+        int taskId;
         Project p;
         Task t;
         User u;
@@ -550,25 +551,32 @@ namespace TeamCollaborationApp
 
         private void btnSaveTaskEdit_Click(object sender, EventArgs e)
         {
+            int id = t.Id;
             t = new Task();
+            t.Id = id;
             t.Name = txtTaskNameEdit.Text;
             t.Description = txtTaskDescriptionEdit.Text;
             t.Priority = cmbPriorityEdit.SelectedIndex + 1;
+            t.Completion = tskStat.Checked;
+            t.ProjectId = projectID;
             t.DeadLine = Convert.ToDateTime(dateTimeDeadlineEdit.Text);
             TaskDAL op = new TaskDAL();
-            try
+            int cd = op.taskIsValid(t);
+            if (cd != 0)
+                op.showErrorMessage(cd);
+            else
             {
-                MessageBox.Show("Name: " + t.Name);
-                MessageBox.Show("Description: " + t.Description);
-                MessageBox.Show("Priority: " + t.Priority);
-                MessageBox.Show("Dead Line: " + t.DeadLine);
-                op.updateTask(t);
-                btnSaveTaskEdit.Enabled = false;
+                try
+                {
+                    op.updateTask(t);
+                    btnSaveTaskEdit.Enabled = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void createTask_Click(object sender, EventArgs e)
@@ -581,26 +589,26 @@ namespace TeamCollaborationApp
             t.Priority = comboBox2.SelectedIndex + 1;
             t.ProjectId = projectID;
             TaskDAL op = new TaskDAL();
-            if (op.taskIsValid(t))
+            int cd = op.taskIsValid(t);
+            if (cd != 0)
+                op.showErrorMessage(cd);
+            else
             {
                 try
                 {
-
                     op.saveTask(t);
                     richTextBox3.Text = "";
                     richTextBox2.Text = "";
                     BunifuPage.SetPage("ListTask");
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
-            else
-                MessageBox.Show("Please enter a valid input");
-        }
 
+        }
+        /*
         private void button3_Click(object sender, EventArgs e)
         {
             TaskDAL op = new TaskDAL();
@@ -613,6 +621,7 @@ namespace TeamCollaborationApp
                 op.assignTaskToUser(t.Id, id);
             }
         }
+        */
 
         private void btnCancelTaskEdit_Click(object sender, EventArgs e)
         {
@@ -666,7 +675,7 @@ namespace TeamCollaborationApp
         {
             TaskDAL tsk = new TaskDAL();
             dataGridView1.DataSource = tsk.getTasks();
-            BunifuPage.SetPage("ListTask");
+            BunifuPage.SetPage("Edit Task");
         }
 
         private void bunifuButton3_Click_2(object sender, EventArgs e)
@@ -684,24 +693,86 @@ namespace TeamCollaborationApp
             t.Priority = comboBox2.SelectedIndex + 1;
             t.ProjectId = projectID;
             TaskDAL op = new TaskDAL();
-            if (op.taskIsValid(t))
+            int cd = op.taskIsValid(t);
+            if (cd != 0)
+                op.showErrorMessage(cd);
+            else
             {
                 try
                 {
-
                     op.saveTask(t);
                     richTextBox3.Text = "";
                     richTextBox2.Text = "";
                     BunifuPage.SetPage("ListTask");
-
-                }
-                catch (Exception ex)
+                }catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }           
+
+        }
+
+        private void dataGridView1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            TaskDAL op = new TaskDAL();
+            DataTable table = op.getTask(Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString()));
+            
+            t = new Task(table);
+            txtTaskNameEdit.Text = t.Name;
+            txtTaskDescriptionEdit.Text = t.Description;
+            dateTimeDeadlineEdit.Text = t.DeadLine.ToString();
+            cmbPriorityEdit.SelectedIndex = t.Priority - 1;
+            tskStat.Checked = t.Completion;
+            BunifuPage.SetPage("Edit Task");
+        }
+
+        private void bunifuButton25_Click(object sender, EventArgs e)
+        {
+            TaskDAL op = new TaskDAL();
+            dataGridView6.DataSource = op.getTaskAndUser(t.Id);
+            dataGridView7.DataSource = op.getRecentProjectMembers(projectID);
+            BunifuPage.SetPage("AddTaskMember");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            TaskDAL ts = new TaskDAL();
+            try{
+                ts.deleteTask(t.Id);
+                BunifuPage.SetPage("ListTask");
+             }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
-            else
-                MessageBox.Show("Please enter a valid input");
+        }
+
+        private void tskStat_CheckedChanged(object sender, EventArgs e)
+        {
+            btnSaveTaskEdit.Enabled = true;
+        }
+
+        private void dataGridView7_SelectionChanged(object sender, EventArgs e)
+        {
+            dataGridView6.DataSource = dataGridView7.SelectedRows;
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            TaskDAL op = new TaskDAL();
+            for (int i = 0; i < (dataGridView7.SelectedCells.Count); i++)
+            {
+                string fullName = dataGridView7.SelectedCells[i].EditedFormattedValue.ToString();
+                string firstName = fullName.Split(' ')[0];
+                int id = Convert.ToInt32(op.getUserId(firstName).Rows[0][0]);
+                t.Id = Convert.ToInt32(op.getTaskId(t.Name).Rows[0][0]);
+                op.assignTaskToUser(t.Id, id);
+            }
+            dataGridView6.DataSource = op.getTaskAndUser(t.Id);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("Edit Task");
         }
     }
 }

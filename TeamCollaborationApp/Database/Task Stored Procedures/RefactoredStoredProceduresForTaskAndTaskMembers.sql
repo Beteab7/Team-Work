@@ -15,14 +15,14 @@ GO
 	into the task table takes all the necessary
 	values and performs an insert statement.
 */
-CREATE PROC spInsertTask
+ALTER PROC spInsertTask
 	(
 	-- [!!] id is omitted since it's an auto incrementing property.
 	@name VARCHAR(50),
 	@description VARCHAR(200),
 	@priority INT,
 	@completion BIT,
-	@projectId VARCHAR(22),
+	@projectId INT,
 	@deadline DATETIME
 	)
 AS
@@ -50,7 +50,7 @@ GO
 	from the database. 
 	Performs select all statement.
 */
-CREATE PROC spFetchTasks
+ALTER PROC spFetchTasks
 AS
 BEGIN
 	SELECT * FROM Task;
@@ -60,7 +60,7 @@ END
 
 GO
 -- Fetch all the tasks ordered by their priority
-CREATE PROC spFetchTasksOrderedByPriority
+ALTER PROC spFetchTasksOrderedByPriority
 AS
 BEGIN
 	SELECT * FROM TASK ORDER BY TASK.Priority;
@@ -69,7 +69,7 @@ END
 -----------------------------------------------------
 
 GO
-CREATE PROC spFetchTasksOrderedByName
+ALTER PROC spFetchTasksOrderedByName
 AS
 BEGIN
 --	Fetch all the tasks ordered by their name.
@@ -79,8 +79,8 @@ END
 -----------------------------------------------------
 
 GO
-CREATE PROC spFetchSingleTaskById
- @taskId varchar(22)
+ALTER PROC spFetchSingleTaskById
+ @taskId INT
 AS
 BEGIN
 	SELECT * FROM TASK 
@@ -88,13 +88,35 @@ BEGIN
 
 END;
 
+-----------------------------------------------------
+
+GO
+ALTER PROC spFetchTasksByProject
+(@projectID INT)
+AS
+BEGIN
+  SELECT *
+  FROM Task
+  WHERE projectId=@projectID;
+END
+
 
 ----------------------------------------------------------------------------------
 /*                BELOW ARE STORED PROCEDURES FOR UPDATE OPERATIONS               */
 ----------------------------------------------------------------------------------
-
-CREATE PROC spUpdateTaskName
-	(@taskId varchar(22), @name VARCHAR(50))
+GO
+CREATE PROC spUpdateTaskDeadLine
+	(@taskId INT, @deadline DATETIME2)
+AS
+BEGIN
+	UPDATE Task
+	SET Task.Deadline = @deadline
+	WHERE Task.[tid] = @taskId;
+END
+select * from task;
+GO
+ALTER PROC spUpdateTaskName
+	(@taskId INT, @name VARCHAR(50))
 AS
 BEGIN
 	UPDATE Task
@@ -103,9 +125,9 @@ BEGIN
 END
 
 -----------------------------------------------------
-
-CREATE PROC spUpdateTaskDescription
-	(@taskId varchar(22), @description VARCHAR(200))
+GO
+ALTER PROC spUpdateTaskDescription
+	(@taskId INT, @description VARCHAR(200))
 AS
 BEGIN
 	UPDATE Task
@@ -113,9 +135,9 @@ BEGIN
 	WHERE Task.[tid] = @taskId;
 END
 -----------------------------------------------------
-
-CREATE PROC spUpdateTaskPriority
-	(@taskId varchar(22), @priority int)
+GO
+ALTER PROC spUpdateTaskPriority
+	(@taskId INT, @priority int)
 AS
 BEGIN
 	UPDATE Task
@@ -124,9 +146,9 @@ BEGIN
 END
 
 ----------------------------------------------------
-
-CREATE PROC spUpdateTaskCompletion
-	(@taskId varchar(22), @completion bit)
+GO
+ALTER PROC spUpdateTaskCompletion
+	(@taskId INT, @completion bit)
 AS
 BEGIN
 	UPDATE Task
@@ -135,15 +157,15 @@ BEGIN
 END
 
 -----------------------------------------------------
-
-CREATE PROC spUpdateTask
+GO
+ALTER PROC spUpdateTask
 	(
-	@id varchar(22),
+	@id INT,
 	@name VARCHAR(50),
 	@description VARCHAR(200),
 	@priority INT,
 	@completion BIT,
-	@projectId VARCHAR(22),
+	@projectId INT,
 	@deadline DATETIME2
 	)
 AS
@@ -164,8 +186,8 @@ END
 /*                BELOW ARE STORED PROCEDURES FOR DELETE OPERATIONS             */
 ----------------------------------------------------------------------------------
 GO
-CREATE PROC spDeleteTask
-	(@taskId varchar(22))
+ALTER PROC spDeleteTask
+	(@taskId INT)
 AS
 BEGIN
 	DELETE FROM TASK
@@ -185,8 +207,8 @@ END
 --------------------------------------------------------------------------------
 
 GO
-CREATE PROC spInsertTaskAndMember 
-	(@TaskId VARCHAR(22), @UserId varchar(22))
+ALTER PROC spInsertTaskAndMember 
+	(@TaskId INT, @UserId INT)
 AS
 BEGIN
 	INSERT INTO TaskMember 
@@ -213,7 +235,7 @@ END
 	row.
 */
 
-CREATE PROC spFetchTasksAndUsers
+ALTER PROC spFetchTasksAndUsers
 AS
 BEGIN
 	SELECT 
@@ -247,8 +269,8 @@ GO
 	a single task base on a given task id or
 	user id
 */
-CREATE PROC spFetchTaskAndUserById
- (@id varchar(22))
+ALTER PROC spFetchTaskAndUserById
+ (@id INT)
 AS
 BEGIN
 SELECT 
@@ -277,8 +299,7 @@ SELECT
 	*/
 	WHERE
 		[TaskId] = @id
-	OR
-		[uid] = @id
+
 END
 
 
@@ -287,8 +308,8 @@ END
 --------------------------------------------------------------------------------
 
 GO
-CREATE PROC spUpdateUserTask
-	@userId varchar(22), @taskId varchar(22)
+ALTER PROC spUpdateUserTask
+	@userId INT, @taskId INT
 AS
 BEGIN
 	UPDATE TaskMember
@@ -301,8 +322,8 @@ END
 --------------------------------------------------------------------------------
 
 GO
-CREATE PROC spDeleteTaskMemberUser
-	@userId varchar(22)
+ALTER PROC spDeleteTaskMemberUser
+	@userId INT
 AS
 BEGIN
 	DELETE TaskMember
@@ -312,10 +333,34 @@ END
 ------------------------------------------
 
 GO
-CREATE PROC spDeleteTaskMemberTask
-	@taskId varchar(22)
+ALTER PROC spDeleteTaskMemberTask
+	@taskId INT
 AS
 BEGIN
 	DELETE TaskMember
 	WHERE TaskId = @taskId
 END
+
+
+GO
+create proc spFetchAllProjectMembers
+		@projectId int
+as
+begin
+	select Fname + ' ' +Lname as [Full Name] from [User]
+	Join
+	ProjectMember
+	ON
+	[USER].[UID] = ProjectMember.UserId
+	WHERE
+	ProjectMember.ProjectId = @projectId
+end
+
+
+create proc spSelectUserId
+	(@fname varchar(50))
+as
+begin
+	select [uid] from [User] 
+	where [User].Fname like '%' + @fname
+end

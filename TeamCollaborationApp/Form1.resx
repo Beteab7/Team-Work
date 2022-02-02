@@ -909,18 +909,17 @@ The Create a New Project page is broken up into sections that allow you to confi
   </data>
   <data name="bunifuButton4.IdleIconRightImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAJHSURBVFhH7ZW9a1RBFMV3Lfw2KgQLxUILCwvBQrCzsthCosLCfrNssSCIhdoal/wd1iIEIfgP
-        aBo1GvyogkYLC4sYUYwWCor+zniyrm/frLskguA7cHg7Z869d959M7O5DBky/LMoFAqbKpXK5Wq1+gS+
-        Mx/DS8VicaNtfweNRmNfrVZ7RLHvEc6XSqW9tq8vms3mZoo/VSE68AxOlMvlcRHtDFzUnBaoLjmsi3a7
-        vZWYq/apa8/hJF3bYstgkPiiCsAFFrPLchck362FycPzguWAer2+DX3O8Une1+JsjYOkDxXAc8JSH5hX
-        J0JSSwHETFmPcdLWODB9lLnVau2w1AfaudMJP1gKYPzSeoyLtsaB6ZPMFNluqQ89C1ixFMD4i/VU0qHP
-        tsaB8YHN0U/A3FknvWspgPHaO8AmPG/zMJvwnOUAxmvfAzpavceQ36e1H0TGevPuMUxeSOtyCgRdRBR7
-        kZJklQuxiyhxD3yDo90DmA/DezCtcC9vs4j9DltFngvrFHPT6h5PXUSv4AzjaqfT2WBfOgg+gfk9VIEl
-        2tzheYzW7hH1m0RT6G/sUYHjimX+APod6zHOyReKJUHbD2FQQhmv63t6qg86onhu2LvkhetNe4vFuMxL
-        HHSqX2Bi1oZphvmf6kDk8d50zKic/+1z0LqTnliGY5b/CB1T/G8dOxLpQslpwgKuSeR5xdLQIEb7JLXI
-        IBJ3yynCBRIuFr7lEUtDg5NwNJl8SL52ivD9VyQO+gOKgbgxJxyVX50iQ4b/GrncD+ohWbMC5vQVAAAA
-        AElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAkdJREFUWEft
+        lb1rVEEUxXct/DYqBAvFQgsLC8FCsLOy2EKiwsJ+s2yxIIiF2hqX/B3WIgQh+A9oGjUa/KiCRgsLixhR
+        jBYKiv7OeLKub9+suySC4DtweDtnzr133n0zs7kMGTL8sygUCpsqlcrlarX6BL4zH8NLxWJxo21/B41G
+        Y1+tVntEse8RzpdKpb22ry+azeZmij9VITrwDE6Uy+VxEe0MXNScFqguOayLdru9lZir9qlrz+EkXdti
+        y2CQ+KIKwAUWs8tyFyTfrYXJw/OC5YB6vb4Nfc7xSd7X4myNg6QPFcBzwlIfmFcnQlJLAcRMWY9x0tY4
+        MH2UudVq7bDUB9q50wk/WApg/NJ6jIu2xoHpk8wU2W6pDz0LWLEUwPiL9VTSoc+2xoHxgc3RT8DcWSe9
+        aymA8do7wCY8b/Mwm/Cc5QDGa98DOlq9x5Dfp7UfRMZ68+4xTF5I63IKBF1EFHuRkmSVC7GLKHEPfIOj
+        3QOYD8N7MK1wL2+ziP0OW0WeC+sUc9PqHk9dRK/gDONqp9PZYF86CD6B+T1UgSXa3OF5jNbuEfWbRFPo
+        b+xRgeOKZf4A+h3rMc7JF4olQdsPYVBCGa/re3qqDzqieG7Yu+SF6017i8W4zEscdKpfYGLWhmmG+Z/q
+        QOTx3nTMqJz/7XPQupOeWIZjlv8IHVP8bx07EulCyWnCAq5J5HnF0tAgRvsktcggEnfLKcIFEi4WvuUR
+        S0ODk3A0mXxIvnaK8P1XJA76A4qBuDEnHJVfnSJDhv8audwP6iFZswLm9BUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1672,21 +1671,21 @@ The Create a New Project page is broken up into sections that allow you to confi
   </data>
   <data name="btnReference.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAMISURBVGhD7ZjLaxNRFMaD+BaroSKi4FtEwY3gzkIWbqKCYgnJ5EUIGnApCO40FPVfKOLChYoL
-        3bmJiIIiKigIRUSoD0Swoi7caNVq9DvDd8OYTDKdmTvTVO8PDveexz33fs0MnZmEYTZRKBR+R2SXU6nU
-        XG4TPS4H0GlXa7XaPG4VLWpTulpwCBFrZDKZRUxFh9qQrhYcIt5yvFOtVpcyHQ1qU7paUD3z+fw6jC/p
-        34MNsEQ/3CQSITIvl8trMR9n7DH8QbtIN85NddHes1KprIL/lPEnlmWtYEof7ZvqwK1nqVRaidgYc89y
-        udxqpvTgtmlYuvXEPZOEPWL+OS6zNUyFp9umYejVE5fZcuQesuY1fqkNTIWj16ZB8eqJ/yvLkL/PujfF
-        YnEzU8Hx2jQI0+mJX2IJam6zdgK2nalgsFHsQgQ8vixG3U3Wv4ftYMo/bBKJkAD2ji38o5rQ1YLjYNO1
-        KTVnC/+EbqAJI0RhhGjGCFH8N0Lw+LAVD3onULOfoRby0Ifccdgp/KfexnALPiRWsPYsxqO9Xnm9zuGJ
-        VwMIGWbNRYZscLCNiH1S62GTqB1iWtYNIfbRkf+eTqcXMN2BqqPrH68GPYSclzjGMxhPs6bBXBLrPjB2
-        Af5e+AfthV1gbbxC5BMP/M+wKXlewqP5Qsx/4MDfxMd4jGtucIknrI9XCA4qHxUk9ooh6WN/ZEC93FPX
-        mD8ilxN8uVeSuEfms7wD1scrBPNdjI0xJDH1Ti65uzLH4eWSOsy4iBxmeQeqhq5/vBq4CZG/OmPjDEns
-        hcTwLr4eAm7JHGPGsqzdGO3X274TgvkA7Cfsi9wv8o0X80lYUy4ljKMwETLC+pPi950QAb56u8viwAc4
-        fyA5+HvoT2C+BWNfCWmZXC6I78O8CfsFk1+nKYK4TNZdkVrmv8p8poXshJ1rM/tjAQ5+CGsbsOuI/XXI
-        er0+B/Eq4pdYM5rNZjcx3QHy0QqJCyNEYYRoxghRGCGaMUIURohmjBDFPyekX4zH8o9bs5k0HsswC0gk
-        /gDXS/kUt/X5HAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAwhJREFUaEPt
+        mMtrE1EUxoP4FquhIqLgW0TBjeDOQhZuooJiCcnkRQgacCkI7jQU9V8o4sKFigvduYmIgiIqKAhFRKgP
+        RLCiLtxo1Wr0O8N3w5hMMp2ZO9NU7w8O957HPfd+zQydmYRhNlEoFH5HZJdTqdRcbhM9LgfQaVdrtdo8
+        bhUtalO6WnAIEWtkMplFTEWH2pCuFhwi3nK8U61WlzIdDWpTulpQPfP5/DqML+nfgw2wRD/cJBIhMi+X
+        y2sxH2fsMfxBu0g3zk110d6zUqmsgv+U8SeWZa1gSh/tm+rArWepVFqJ2Bhzz3K53Gqm9OC2aVi69cQ9
+        k4Q9Yv45LrM1TIWn26Zh6NUTl9ly5B6y5jV+qQ1MhaPXpkHx6on/K8uQv8+6N8VicTNTwfHaNAjT6Ylf
+        YglqbrN2AradqWCwUexCBDy+LEbdTda/h+1gyj9sEomQAPaOLfyjmtDVguNg07UpNWcL/4RuoAkjRGGE
+        aMYIUfw3QvD4sBUPeidQs5+hFvLQh9xx2Cn8p97GcAs+JFaw9izGo71eeb3O4YlXAwgZZs1FhmxwsI2I
+        fVLrYZOoHWJa1g0h9tGR/55Opxcw3YGqo+sfrwY9hJyXOMYzGE+zpsFcEus+MHYB/l74B+2FXWBtvELk
+        Ew/8z7ApeV7Co/lCzH/gwN/Ex3iMa25wiSesj1cIDiofFST2iiHpY39kQL3cU9eYPyKXE3y5V5K4R+az
+        vAPWxysE812MjTEkMfVOLrm7Msfh5ZI6zLiIHGZ5B6qGrn+8GrgJkb86Y+MMSeyFxPAuvh4CbskcY8ay
+        rN0Y7dfbvhOC+QDsJ+yL3C/yjRfzSVhTLiWMozARMsL6k+L3nRABvnq7y+LABzh/IDn4e+hPYL4FY18J
+        aZlcLojvw7wJ+wWTX6cpgrhM1l2RWua/ynymheyEnWsz+2MBDn4Iaxuw64j9dch6vT4H8Sril1gzms1m
+        NzHdAfLRCokLI0RhhGjGCFEYIZoxQhRGiGaMEMU/J6RfjMfyj1uzmTQeyzALSCT+ANdL+RS39fkcAAAA
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="stateProperties126.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1844,7 +1843,7 @@ The Create a New Project page is broken up into sections that allow you to confi
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACe
-        BwAAAk1TRnQBSQFMAwEBAAFQAQEBUAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        BwAAAk1TRnQBSQFMAwEBAAFwAQEBcAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm

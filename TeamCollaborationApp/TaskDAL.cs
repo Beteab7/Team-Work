@@ -10,13 +10,36 @@ namespace TeamCollaborationApp
         const string CONSTR = "Server = (local); database = Team; uid = lab; pwd = 123";
        
 
-        public Boolean taskIsValid(Task t)
+        public int taskIsValid(Task t)
         {
-            if (t.Name.Length > 50 || t.Name.Length == 0) return false;
-            if (t.Description.Length > 200) return false;
-            if (t.Priority < 1 || t.Priority > 4) return false;
-            if (t.DeadLine < DateTime.Now) return false;
-            return true;
+            if (t.Name.Length > 50 || t.Name.Length == 0) return -1;
+            if (t.Description.Length > 200) return -2;
+            if (t.Priority < 1 || t.Priority > 4) return -3;
+            if (t.DeadLine < DateTime.Now) return -4;
+            return 0;
+        }
+
+        public void showErrorMessage(int errorCode)
+        {
+            switch (errorCode)
+            {
+                case -1:
+                    MessageBox.Show("Name is either empty or greater than 50 Error Code: " + errorCode);
+                    break;
+                case -2:
+                    MessageBox.Show("Description can not contain more than 200 characters. Error Code: " + errorCode);
+                    break;
+                case -3:
+                    MessageBox.Show("You've entered a wrong priority value. Error Code: " + errorCode);
+                    break;
+                case -4:
+                    MessageBox.Show("Your date value is wrong! You can't not time travel. Error Code: " + errorCode);
+                    break;
+                default:
+                    MessageBox.Show("Unkown error have occured. Error Code: " + errorCode);
+                    break;
+            }
+            
         }
 
         public void saveTask(Task t)
@@ -259,6 +282,12 @@ namespace TeamCollaborationApp
                     con.Open();
                     SqlCommand cmd = new SqlCommand("spUpdateTask", con);
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@name", t.Name);
+                    cmd.Parameters.AddWithValue("@description", t.Description);
+                    cmd.Parameters.AddWithValue("@priority", t.Priority);
+                    cmd.Parameters.AddWithValue("@completion", t.Completion);
+                    cmd.Parameters.AddWithValue("@projectId", t.ProjectId);
+                    cmd.Parameters.AddWithValue("@deadline", t.DeadLine);
                     updateTaskName(t.Id, t.Name);
                     updateTaskDescription(t.Id, t.Description);
                     updateTaskPriority(t.Id, t.Priority);
