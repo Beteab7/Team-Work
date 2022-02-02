@@ -7,7 +7,7 @@ namespace TeamCollaborationApp
 {
     internal class TaskDAL
     {
-        const string CONSTR = "Server = (local); database = Team; uid = lab; pwd = 123";
+        const string CONSTR = "Server = (local); database = Team; Integrated Security=True;";
        
 
         public static int taskIsValid(Task t)
