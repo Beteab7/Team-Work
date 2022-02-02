@@ -27,6 +27,7 @@ namespace TeamCollaborationApp
         Project p;
         Task t;
         User u;
+        ProjectMember pm;
         public Form1(User user)
         {
             InitializeComponent();
@@ -400,6 +401,9 @@ namespace TeamCollaborationApp
         private void bunifuTileButton2_Click(object sender, EventArgs e)
         {
             BunifuPage.SetPage("Edit Project");
+
+            p = new Project(currentUserID);
+            dgvProjectList.DataSource = p.getProject();
         }
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
@@ -764,6 +768,59 @@ namespace TeamCollaborationApp
         private void bunifuButton2_Click_2(object sender, EventArgs e)
         {
             BunifuPage.SetPage("Project");
+        }
+
+        private void dgvProjectList_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            projectID = Convert.ToInt32(dgvProjectList.CurrentRow.Cells[0].Value);
+
+            //edit tab, found in settings
+            txtProjectNameEdit.Text = dgvProjectList.CurrentRow.Cells[1].Value.ToString();
+            txtDescriptionProjectEdit.Text = dgvProjectList.CurrentRow.Cells[2].Value.ToString();
+            dateTimeStartProjectEdit.Value = Convert.ToDateTime(dgvProjectList.CurrentRow.Cells[3].Value);
+            dateTimeEndProjectEdit.Value = Convert.ToDateTime(dgvProjectList.CurrentRow.Cells[4].Value);
+        }
+
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            BunifuPage.SetPage("AddProjectMember");
+            dgvAllMembers.DataSource = u.getUsers();
+            pm = new ProjectMember(projectID, currentUserID);
+            dgvAddedMembers.DataSource = pm.getRecentProjectMembers();
+        }
+
+        private void dgvAllMembers_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            ProjectMember pmAll = new ProjectMember(projectID, Convert.ToInt32(dgvAllMembers.CurrentRow.Cells[0].Value));
+            pmAll.insertProjectMember();
+            dgvAddedMembers.DataSource = pm.getRecentProjectMembers();
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0) {
+                dgvAddedMembers.DataSource = pm.getRecentProjectMembers();
+            }
+            else
+                dgvAddedMembers.DataSource = pm.getOldProjectMembers();
+        }
+
+        private void bunifuButton16_Click(object sender, EventArgs e)
+        {
+            dgvAddedMembers.DataSource = pm.searchProjectMembers(txtMembersSearch.Text);
+        }
+
+        private void dgvAddedMembers_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            ProjectMember pmAll = new ProjectMember(projectID, Convert.ToInt32(dgvAllMembers.CurrentRow.Cells[0].Value));
+            pmAll.deleteProjectMember();
+            dgvAddedMembers.DataSource = pm.getRecentProjectMembers();
         }
     }
 }
