@@ -411,12 +411,11 @@ namespace TeamCollaborationApp
         private void dgvProject_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //next tab- task list
-            TaskDAL op = new TaskDAL();
             projectID = Convert.ToInt32(dgvProject.CurrentRow.Cells[0].Value);
             txtProjectNameList.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
             txtDescListTask.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
             
-            dataGridView1.DataSource = op.FetchTaskByProject(projectID);
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             //edit tab, found in settings
             txtProjectNameEdit.Text = dgvProject.CurrentRow.Cells[1].Value.ToString();
             txtDescriptionProjectEdit.Text = dgvProject.CurrentRow.Cells[2].Value.ToString();
@@ -431,8 +430,8 @@ namespace TeamCollaborationApp
 
         private void dgvProject_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            TaskDAL op = new TaskDAL();
-            dataGridView1.DataSource = op.FetchTaskByProject(projectID);
+            
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
@@ -564,15 +563,14 @@ namespace TeamCollaborationApp
             t.Completion = tskStat.Checked;
             t.ProjectId = projectID;
             t.DeadLine = Convert.ToDateTime(dateTimeDeadlineEdit.Text);
-            TaskDAL op = new TaskDAL();
-            int cd = op.taskIsValid(t);
+            int cd = Task.taskIsValid(t);
             if (cd != 0)
-                op.showErrorMessage(cd);
+                Task.showErrorMessage(cd);
             else
             {
                 try
                 {
-                    op.updateTask(t);
+                    Task.updateTask(t);
                     btnSaveTaskEdit.Enabled = false;
                 }
                 catch (Exception ex)
@@ -592,18 +590,17 @@ namespace TeamCollaborationApp
             t.DeadLine = Convert.ToDateTime(dateTimePicker1.Text);
             t.Priority = comboBox2.SelectedIndex + 1;
             t.ProjectId = projectID;
-            TaskDAL op = new TaskDAL();
-            int cd = op.taskIsValid(t);
+            int cd = Task.taskIsValid(t);
             if (cd != 0)
-                op.showErrorMessage(cd);
+                Task.showErrorMessage(cd);
             else
             {
                 try
                 {
-                    op.saveTask(t);
+                    Task.saveTask(t);
                     richTextBox3.Text = "";
                     richTextBox2.Text = "";
-                    dataGridView1.DataSource = op.FetchTaskByProject(projectID);
+                    dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
                     BunifuPage.SetPage("ListTask");
                 }
                 catch (Exception ex)
@@ -638,22 +635,19 @@ namespace TeamCollaborationApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
       
         private void button2_Click(object sender, EventArgs e)
         {
-            TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
@@ -664,22 +658,19 @@ namespace TeamCollaborationApp
 
         private void bunifuButton19_Click(object sender, EventArgs e)
         {
-            TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
         private void bunifuButton20_Click(object sender, EventArgs e)
         {
-            TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.FetchTaskByProject(projectID);
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("ListTask");
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            TaskDAL tsk = new TaskDAL();
-            dataGridView1.DataSource = tsk.getTasks();
+            dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
             BunifuPage.SetPage("Edit Task");
         }
 
@@ -697,18 +688,17 @@ namespace TeamCollaborationApp
             t.DeadLine = Convert.ToDateTime(dateTimePicker1.Text);
             t.Priority = comboBox2.SelectedIndex + 1;
             t.ProjectId = projectID;
-            TaskDAL op = new TaskDAL();
-            int cd = op.taskIsValid(t);
+            int cd = Task.taskIsValid(t);
             if (cd != 0)
-                op.showErrorMessage(cd);
+                Task.showErrorMessage(cd);
             else
             {
                 try
                 {
-                    op.saveTask(t);
+                    Task.saveTask(t);
                     richTextBox3.Text = "";
                     richTextBox2.Text = "";
-                    dataGridView1.DataSource = op.FetchTaskByProject(projectID);
+                    dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
                     BunifuPage.SetPage("ListTask");
                 }catch(Exception ex)
                 {
@@ -720,8 +710,7 @@ namespace TeamCollaborationApp
 
         private void dataGridView1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            TaskDAL op = new TaskDAL();
-            DataTable table = op.getTask(Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString()));
+            DataTable table = Task.getTask(Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString()));
             
             t = new Task(table);
             txtTaskNameEdit.Text = t.Name;
@@ -734,18 +723,16 @@ namespace TeamCollaborationApp
 
         private void bunifuButton25_Click(object sender, EventArgs e)
         {
-            TaskDAL op = new TaskDAL();
-            dataGridView6.DataSource = op.getTaskAndUser(t.Id);
-            dataGridView7.DataSource = op.getRecentProjectMembers(projectID);
+            dataGridView6.DataSource = Task.getTaskAndUser(t.Id);
+            dataGridView7.DataSource = Task.getRecentProjectMembers(projectID);
             BunifuPage.SetPage("AddTaskMember");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            TaskDAL ts = new TaskDAL();
             try{
-                ts.deleteTask(t.Id);
-                dataGridView1.DataSource = ts.FetchTaskByProject(projectID);
+                Task.deleteTask(t.Id);
+                dataGridView1.DataSource = Task.FetchTaskByProject(projectID);
                 BunifuPage.SetPage("ListTask");
              }catch(Exception ex)
             {
@@ -765,16 +752,15 @@ namespace TeamCollaborationApp
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
-            TaskDAL op = new TaskDAL();
             for (int i = 0; i < (dataGridView7.SelectedCells.Count); i++)
             {
                 string fullName = dataGridView7.SelectedCells[i].EditedFormattedValue.ToString();
                 string firstName = fullName.Split(' ')[0];
-                int id = Convert.ToInt32(op.getUserId(firstName).Rows[0][0]);
-                t.Id = Convert.ToInt32(op.getTaskId(t.Name).Rows[0][0]);
-                op.assignTaskToUser(t.Id, id);
+                int id = Convert.ToInt32(Task.getUserId(firstName).Rows[0][0]);
+                t.Id = Convert.ToInt32(Task.getTaskId(t.Name).Rows[0][0]);
+                Task.assignTaskToUser(t.Id, id);
             }
-            dataGridView6.DataSource = op.getTaskAndUser(t.Id);
+            dataGridView6.DataSource = Task.getTaskAndUser(t.Id);
         }
 
         private void button3_Click(object sender, EventArgs e)

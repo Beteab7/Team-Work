@@ -10,7 +10,7 @@ namespace TeamCollaborationApp
         const string CONSTR = "Server = (local); database = Team; uid = lab; pwd = 123";
        
 
-        public int taskIsValid(Task t)
+        public static int taskIsValid(Task t)
         {
             if (t.Name.Length > 50 || t.Name.Length == 0) return -1;
             if (t.Description.Length > 200) return -2;
@@ -19,7 +19,7 @@ namespace TeamCollaborationApp
             return 0;
         }
 
-        public void showErrorMessage(int errorCode)
+        static public void showErrorMessage(int errorCode)
         {
             switch (errorCode)
             {
@@ -42,7 +42,7 @@ namespace TeamCollaborationApp
             
         }
 
-        public void saveTask(Task t)
+        static public void saveTask(Task t)
         {
             if(t == null) throw new ArgumentNullException("The task entered is null");
             try
@@ -76,7 +76,7 @@ namespace TeamCollaborationApp
         }
 
 
-        public DataTable getUserId(string userName)
+        static public DataTable getUserId(string userName)
         {
             try
             {
@@ -101,7 +101,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public DataTable getTaskId(string taskName)
+        static public DataTable getTaskId(string taskName)
         {
             try
             {
@@ -126,7 +126,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public DataTable getTask(int param)
+        static public DataTable getTask(int param)
         {
             using (SqlConnection con = new SqlConnection(CONSTR))
             {
@@ -146,7 +146,7 @@ namespace TeamCollaborationApp
           
         }
 
-        public DataTable getRecentProjectMembers(int projectID)
+        static public DataTable getRecentProjectMembers(int projectID)
         {
             using (SqlConnection con = new SqlConnection(CONSTR))
             {
@@ -164,7 +164,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public DataTable getTasks()
+        static public DataTable getTasks()
         {
             try
             { 
@@ -187,41 +187,8 @@ namespace TeamCollaborationApp
             }
         }
 
-        public DataTable getTasksOrderedByPriority()
-        {
-            using (SqlConnection con = new SqlConnection(CONSTR))
-            {
-                con.Open();
-                using (SqlDataAdapter da = new SqlDataAdapter())
-                {
-                    da.SelectCommand = new SqlCommand("spFetchTasksOrderedByPriority", con);
-                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "dtTask");
-                    DataTable dt = ds.Tables["dtTask"];
-                    return dt;
-                }
-            }
-        }
 
-        public DataTable getTasksOrderedByName()
-        {
-            using (SqlConnection con = new SqlConnection(CONSTR))
-            {
-                con.Open();
-                using (SqlDataAdapter da = new SqlDataAdapter())
-                {
-                    da.SelectCommand = new SqlCommand("spFetchTasksOrderedByName", con);
-                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "dtTask");
-                    DataTable dt = ds.Tables["dtTask"];
-                    return dt;
-                }
-            }
-        }
-
-        public DataTable FetchTaskByProject(int projectId)
+        static public DataTable FetchTaskByProject(int projectId)
         {
             try
             {
@@ -245,7 +212,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void deleteTask(int taskId)
+        static public void deleteTask(int taskId)
         {
             try
             {
@@ -273,34 +240,16 @@ namespace TeamCollaborationApp
 
         }
 
-        public void updateTask(Task t)
+        static public void updateTask(Task t)
         {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(CONSTR))
-                {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("spUpdateTask", con);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@name", t.Name);
-                    cmd.Parameters.AddWithValue("@description", t.Description);
-                    cmd.Parameters.AddWithValue("@priority", t.Priority);
-                    cmd.Parameters.AddWithValue("@completion", t.Completion);
-                    cmd.Parameters.AddWithValue("@projectId", t.ProjectId);
-                    cmd.Parameters.AddWithValue("@deadline", t.DeadLine);
-                    updateTaskName(t.Id, t.Name);
-                    updateTaskDescription(t.Id, t.Description);
-                    updateTaskPriority(t.Id, t.Priority);
-                    updateTaskCompletion(t.Id, t.Completion);
-                    updateTaskDeadLine(t.Id, t.DeadLine);
-                }
-            }catch(SqlException e)
-            {
-                throw;
-            }
+            updateTaskName(t.Id, t.Name);
+            updateTaskDescription(t.Id, t.Description);
+            updateTaskPriority(t.Id, t.Priority);
+            updateTaskCompletion(t.Id, t.Completion);
+            updateTaskDeadLine(t.Id, t.DeadLine);
         }
 
-        public void updateTaskName(int taskId, String name)
+        static public void updateTaskName(int taskId, String name)
         {
             try
             {
@@ -321,7 +270,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void updateTaskDescription(int taskId, String description)
+        static public void updateTaskDescription(int taskId, String description)
         {
             try
             {
@@ -343,7 +292,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void updateTaskDeadLine(int taskId, DateTime deadline)
+        static public void updateTaskDeadLine(int taskId, DateTime deadline)
         {
             try
             {
@@ -365,7 +314,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void updateTaskPriority(int taskId, int priority)
+        static public void updateTaskPriority(int taskId, int priority)
         {
             try
             {
@@ -389,7 +338,7 @@ namespace TeamCollaborationApp
         }
 
 
-        public void updateTaskCompletion(int taskId, bool completion)
+        static public void updateTaskCompletion(int taskId, bool completion)
         {
             try
             {
@@ -412,7 +361,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void assignTaskToUser(int taskId, int userId)
+        static public void assignTaskToUser(int taskId, int userId)
         {
             try
             {
@@ -433,7 +382,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public DataTable getTasksAndUsers()
+        static public DataTable getTasksAndUsers()
         {
             try
             {
@@ -458,7 +407,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public DataTable getTaskAndUser(int param)
+        static public DataTable getTaskAndUser(int param)
         {
             try
             { 
@@ -482,7 +431,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void updateUserTask(int userId, int taskId)
+        static public void updateUserTask(int userId, int taskId)
         {
             try
             {
@@ -503,7 +452,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void deleteUserFromTask(int userId)
+        static public void deleteUserFromTask(int userId)
         {
             try
             {
@@ -523,7 +472,7 @@ namespace TeamCollaborationApp
             }
         }
 
-        public void deleteAssignedTask(int taskId)
+        static public void deleteAssignedTask(int taskId)
         {
             try
             {

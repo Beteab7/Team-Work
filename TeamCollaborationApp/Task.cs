@@ -22,7 +22,7 @@ namespace TeamCollaborationApp
         bool completion;
         DateTime dateCreated;
         DateTime deadLine;
-        Dictionary<string, int> h;
+        TaskDAL op;
     
         internal Task() { }
         //A normal conventional constructor to create a Task object. 
@@ -94,7 +94,74 @@ namespace TeamCollaborationApp
             }
         }
 
-        
+        public static int taskIsValid(Task t)
+        {
+            
+            return TaskDAL.taskIsValid(t);
+        }
+
+        public static void showErrorMessage(int errorCode)
+        {
+            TaskDAL.showErrorMessage(errorCode);
+        }
+
+        public static void saveTask(Task t)
+        {
+            TaskDAL.saveTask(t);
+        }
+
+        static public DataTable getUserId(string userName)
+        {
+            return TaskDAL.getUserId(userName);
+        }
+
+        static public DataTable getTaskId(string taskName)
+        {
+            return TaskDAL.getTaskId(taskName);
+        }
+
+        static public DataTable getTask(int param)
+        {
+            return TaskDAL.getTask(param);
+        }
+
+        static public DataTable getRecentProjectMembers(int projectID)
+        {
+            return TaskDAL.getRecentProjectMembers(projectID);
+        }
+
+        static public DataTable getTasks()
+        {
+            return TaskDAL.getTasks();
+        }
+
+        static public DataTable FetchTaskByProject(int projectId)
+        {
+            return TaskDAL.FetchTaskByProject(projectId);
+        }
+
+        static public void deleteTask(int taskId)
+        {
+            TaskDAL.deleteTask(taskId);
+        }
+
+        static public void updateTask(Task t)
+        {
+            TaskDAL.updateTask(t);
+        }
+
+        static public void assignTaskToUser(int taskId, int userId)
+        {
+            TaskDAL.assignTaskToUser(taskId, userId);
+        }
+
+        static public DataTable getTaskAndUser(int param)
+        {
+            return TaskDAL.getTaskAndUser(param);
+        }
+
+
+
         public int Id
         {
             get
