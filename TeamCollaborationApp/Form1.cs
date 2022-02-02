@@ -168,7 +168,7 @@ namespace TeamCollaborationApp
             BunifuPage.SetPage("Log");
 
             u = new User( );
-            dgvLab.DataSource = u.getLog();
+            dgvLog.DataSource = u.getLog();
 
         }
 

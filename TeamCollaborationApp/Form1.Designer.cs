@@ -450,7 +450,7 @@ namespace TeamCollaborationApp
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvLab = new System.Windows.Forms.DataGridView();
+            this.dgvLog = new System.Windows.Forms.DataGridView();
             this.label38 = new System.Windows.Forms.Label();
             bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.BunifuPage.SuspendLayout();
@@ -499,7 +499,7 @@ namespace TeamCollaborationApp
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.panel7.SuspendLayout();
             this.menuStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -1104,7 +1104,7 @@ namespace TeamCollaborationApp
             // 
             this.ReferencePage.BackColor = System.Drawing.Color.White;
             this.ReferencePage.Controls.Add(this.label38);
-            this.ReferencePage.Controls.Add(this.dgvLab);
+            this.ReferencePage.Controls.Add(this.dgvLog);
             this.ReferencePage.Location = new System.Drawing.Point(4, 4);
             this.ReferencePage.Name = "ReferencePage";
             this.ReferencePage.Padding = new System.Windows.Forms.Padding(3);
@@ -6321,22 +6321,22 @@ namespace TeamCollaborationApp
             this.signOutToolStripMenuItem.Text = "Sign out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
-            // dgvLab
+            // dgvLog
             // 
-            this.dgvLab.AllowUserToAddRows = false;
-            this.dgvLab.AllowUserToDeleteRows = false;
-            this.dgvLab.AllowUserToResizeRows = false;
+            this.dgvLog.AllowUserToAddRows = false;
+            this.dgvLog.AllowUserToDeleteRows = false;
+            this.dgvLog.AllowUserToResizeRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkGray;
-            this.dgvLab.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvLab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvLog.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvLab.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvLab.BackgroundColor = System.Drawing.Color.White;
-            this.dgvLab.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvLab.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvLog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLog.BackgroundColor = System.Drawing.Color.White;
+            this.dgvLog.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvLog.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6344,8 +6344,8 @@ namespace TeamCollaborationApp
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLab.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvLab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLog.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6353,10 +6353,10 @@ namespace TeamCollaborationApp
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLab.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvLab.GridColor = System.Drawing.Color.White;
-            this.dgvLab.Location = new System.Drawing.Point(30, 36);
-            this.dgvLab.Name = "dgvLab";
+            this.dgvLog.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvLog.GridColor = System.Drawing.Color.White;
+            this.dgvLog.Location = new System.Drawing.Point(30, 36);
+            this.dgvLog.Name = "dgvLog";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6364,11 +6364,11 @@ namespace TeamCollaborationApp
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLab.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvLab.RowHeadersWidth = 51;
-            this.dgvLab.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLab.Size = new System.Drawing.Size(772, 423);
-            this.dgvLab.TabIndex = 14;
+            this.dgvLog.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvLog.RowHeadersWidth = 51;
+            this.dgvLog.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLog.Size = new System.Drawing.Size(772, 423);
+            this.dgvLog.TabIndex = 14;
             // 
             // label38
             // 
@@ -6465,7 +6465,7 @@ namespace TeamCollaborationApp
             this.panel7.ResumeLayout(false);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6673,7 +6673,7 @@ namespace TeamCollaborationApp
         private System.Windows.Forms.RadioButton tskStat;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.DataGridView dgvLab;
+        private System.Windows.Forms.DataGridView dgvLog;
 
         public string TxtbEditFirstname {set { txtbEditFirstname.Text = value; } get { return txtbEditFirstname.Text; } }
         public string TxtbEditLastname { set { txtbEditLastname.Text = value; } get { return txtbEditLastname.Text; } }
