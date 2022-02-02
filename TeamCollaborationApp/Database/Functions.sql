@@ -25,8 +25,7 @@ RETURN
 	FROM [User]
 	WHERE Fname like @querry+'%' or Lname like @querry+'%' 
 
-
-
+---------------------------------------------------------
 
 GO
 ALTER function splitFullname
@@ -46,5 +45,44 @@ ALTER function splitFullname
   SET @LASTNAME = SUBSTRING(@FULLNAME,CHARINDEX(' ',@Fullname)+1, LEN(@FULLNAME))
    insert into @temp 
    values( @FIRSTNAME, @LASTNAME)
-   RETURN  
-  end
+   RETURN
+end
+
+---------------------------------------------------------
+
+GO
+ALTER FUNCTION getTaskName(
+	@tid int,
+	@pid int)
+RETURNS VARCHAR(100)
+AS
+BEGIN
+	DECLARE @Name VARCHAR(100) = 'Project '
+	
+	SELECT @Name += [Name] + ' | Task '
+	FROM Project
+	WHERE pid = @pid
+	
+	SELECT @Name += [Name] + ' '
+	FROM Task
+	WHERE tid = @tid
+
+	RETURN @Name
+END
+
+---------------------------------------------------------
+
+GO
+CREATE FUNCTION getProjectLog(
+	@pid int)
+RETURNS VARCHAR(100)
+AS
+BEGIN
+	DECLARE @Name VARCHAR(100) = 'Project '
+
+	SELECT @Name += [Name] + ' Updated'
+	FROM Project
+	WHERE @pid = pid
+
+	RETURN @Name
+END

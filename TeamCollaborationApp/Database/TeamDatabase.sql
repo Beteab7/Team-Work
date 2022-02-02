@@ -89,7 +89,8 @@ REFERENCES [User]([uid])
 
 --------------------------------------------------------------
 
-CREATE TABLE UserLoggedIn(
-	UserID int primary key,
-	loginTime dateTime2
-	)
+CREATE TABLE ProjectLog(
+	projectID int,
+	actionPerformed varchar(30),
+	timePerformed dateTime2
+)
