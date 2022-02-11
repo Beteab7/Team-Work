@@ -73,14 +73,14 @@ END
 ---------------------------------------------------------
 
 GO
-CREATE FUNCTION getProjectLog(
+ALTER FUNCTION getProjectLog(
 	@pid int)
 RETURNS VARCHAR(100)
 AS
 BEGIN
 	DECLARE @Name VARCHAR(100) = 'Project '
 
-	SELECT @Name += [Name] + ' Updated'
+	SELECT @Name += [Name] 
 	FROM Project
 	WHERE @pid = pid
 

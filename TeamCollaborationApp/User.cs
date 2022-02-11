@@ -77,8 +77,8 @@ namespace TeamCollaborationApp
             username = b;
             firstname = c;
             lastname = d;
-            phonenumber = f;
-            email = e;
+            phonenumber = e;
+            email = f;
 
             fullname = c + " " + d;
 

@@ -449,8 +449,15 @@ namespace TeamCollaborationApp
             //save new project
             p = new Project(currentUserID, txtProjectName.Text, txtDescription.Text, dateTimeStartProject.Value, dateTimeEndProject.Value);
             p.InsertProject();
+            MessageBox.Show("Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Clear();
+            BunifuPage.SetPage("Project");
         }
-
+        public void Clear()
+        {
+            txtProjectName.Clear();
+            txtDescription.Clear();
+        }
         private void btnSearchProject_Click(object sender, EventArgs e)
         {
             p = new Project(currentUserID);

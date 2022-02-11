@@ -1,42 +1,3 @@
-GO
-CREATE TRIGGER DeleteProject
-ON Project
-INSTEAD OF DELETE
-AS
-BEGIN
-	DECLARE @pid int
-	
-	SELECT @PID = deleted.pid
-	FROM deleted
-
-	DELETE FROM ProjectMember
-	WHERE @pid = ProjectId
-	
-	DELETE FROM Project
-	WHERE @pid = [pid]
-END
-
---------------------------------------------------
-
-GO
-CREATE TRIGGER DeleteTask
-ON Task
-INSTEAD OF DELETE
-AS
-BEGIN
-	DECLARE @tid int
-	
-	SELECT @tid = deleted.tid
-	FROM deleted
-
-	DELETE FROM TaskMember
-	WHERE @tid = TaskId
-	
-	DELETE FROM Task
-	WHERE @tid = [tid]
-END
-
---------------------------------------------------
 
 GO
 ALTER TRIGGER trgdeleteTask
@@ -83,7 +44,7 @@ END
 --------------------------------------------------
 
 GO
-CREATE TRIGGER trgUpdateProject
+alter TRIGGER trgUpdateProject
 ON Project
 FOR UPDATE
 AS
@@ -93,12 +54,49 @@ BEGIN
 	SELECT @projectID = [pid]
 	FROM inserted
 	
-	SELECT @actionPerformed = dbo. getProjectLog(@projectID)
+	SELECT @actionPerformed = dbo.getProjectLog(@projectID)+ ' Updated'
 	FROM inserted
 
 	INSERT INTO ProjectLog
 	VALUES (@projectID, @actionPerformed, GETDATE())
 END
 
-select * from Project
-select * from TaskMember
+--------------------------------------------------
+
+GO
+CREATE TRIGGER trgDeleteProject
+ON Project
+FOR Delete
+AS
+BEGIN
+	DECLARE @actionPerformed VARCHAR(100), @projectID int
+	
+	SELECT @projectID = [pid]
+	FROM inserted
+	
+	SELECT @actionPerformed = dbo. getProjectLog(@projectID)+ ' Deleted'
+	FROM inserted
+
+	INSERT INTO ProjectLog
+	VALUES (@projectID, @actionPerformed, GETDATE())
+END
+
+--------------------------------------------------
+
+GO
+CREATE TRIGGER trgInsertProject
+ON Project
+FOR INSERT
+AS
+BEGIN
+	DECLARE @actionPerformed VARCHAR(100), @projectID int
+	
+	SELECT @projectID = [pid]
+	FROM inserted
+	
+	SELECT @actionPerformed = dbo. getProjectLog(@projectID)+ 'Insert'
+	FROM inserted
+
+	INSERT INTO ProjectLog
+	VALUES (@projectID, @actionPerformed, GETDATE())
+END

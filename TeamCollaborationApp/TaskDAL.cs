@@ -242,11 +242,18 @@ namespace TeamCollaborationApp
 
         static public void updateTask(Task t)
         {
-            updateTaskName(t.Id, t.Name);
-            updateTaskDescription(t.Id, t.Description);
-            updateTaskPriority(t.Id, t.Priority);
-            updateTaskCompletion(t.Id, t.Completion);
-            updateTaskDeadLine(t.Id, t.DeadLine);
+            try
+            {
+                updateTaskName(t.Id, t.Name);
+                updateTaskDescription(t.Id, t.Description);
+                updateTaskPriority(t.Id, t.Priority);
+                updateTaskCompletion(t.Id, t.Completion);
+                updateTaskDeadLine(t.Id, t.DeadLine);
+                MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }catch(SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         static public void updateTaskName(int taskId, String name)
@@ -260,9 +267,8 @@ namespace TeamCollaborationApp
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@taskId", taskId);
                     cmd.Parameters.AddWithValue("@name", name);
-                    if (cmd.ExecuteNonQuery() > 1)
-                        MessageBox.Show("Updated Succesfully");
-                    con.Close();
+                    cmd.ExecuteNonQuery();
+                        con.Close();
                 }
             }catch(SqlException e)
             {
@@ -281,9 +287,7 @@ namespace TeamCollaborationApp
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@taskId", taskId);
                     cmd.Parameters.AddWithValue("@description", description);
-                    if (cmd.ExecuteNonQuery() > 1)
-                        MessageBox.Show("Updated Succesfully");
-                    con.Close();
+                    cmd.ExecuteNonQuery();
                 }
             }
             catch (SqlException e)
@@ -303,8 +307,7 @@ namespace TeamCollaborationApp
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@taskId", taskId);
                     cmd.Parameters.AddWithValue("@deadline", deadline);
-                    if (cmd.ExecuteNonQuery() > 1)
-                        MessageBox.Show("Updated Succesfully");
+                    cmd.ExecuteNonQuery();
                     con.Close();
                 }
             }
@@ -325,9 +328,8 @@ namespace TeamCollaborationApp
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@taskId", taskId);
                     cmd.Parameters.AddWithValue("@priority", priority);
-                    int rowAffected = cmd.ExecuteNonQuery();
-                    if (rowAffected > 0)
-                        MessageBox.Show("Update Succesfull");
+                    cmd.ExecuteNonQuery();
+                    
                     con.Close();
                 }
             }
@@ -349,9 +351,7 @@ namespace TeamCollaborationApp
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@taskId", taskId);
                     cmd.Parameters.AddWithValue("@completion", completion);
-                    int rowAffected = cmd.ExecuteNonQuery();
-                    if (rowAffected > 0)
-                        MessageBox.Show("Update Succesfull");
+                    cmd.ExecuteNonQuery();
                     con.Close();
                 }
             }
