@@ -1,4 +1,4 @@
-How to use:
+#How to use:
 	1. Sql server and visual studio are required.
 	2. Create a database with the name Team(other database names won't work).
 	3. Run the all scripts which are found in the database folder.
